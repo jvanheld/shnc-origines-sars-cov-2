@@ -1,3 +1,5 @@
+[shnc-origines-sars-cov-2](../../) > [data](../) > S-gene
+
 # Séquences du gène S
 
 
