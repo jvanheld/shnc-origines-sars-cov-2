@@ -19,4 +19,4 @@ Cours **Nature et Culture 3** de la Licence Sciences et Humanités
 
 | Contenu | Lien |
 |------------------|-------------------------------|
-| Séquences du gène S | <data/S-gene/REAMDE.md>
+| Séquences du gène S | [data/S-gene/REAMDE.md](data/S-gene/REAMDE.md)
