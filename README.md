@@ -45,17 +45,17 @@ Il s'adrsse aux étudiants de la 2ème licence en Sciences et Humanité de l'Uni
 
 ## Ressources bioinformatiques
 
- | Ressource | Description | URL |
- | ----------- | -------------------------- | ------------------------------- |
- | Supports de ce cours | Diapos, tuto, données | [https://jvanheld.github.io/shnc-origines-sars-cov-2/](https://jvanheld.github.io/shnc-origines-sars-cov-2/) |
- | Uniprot | Base de donnée de séquences protéiques | [https://www.uniprot.org/](https://www.uniprot.org/) |
- | NCBI Entrez | Bases de données biologiques | [https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
- | EMBOSS needle | Alignement de paires de séquences | [https://www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
- | NCBI BLAST | Recherche de séquences par similarité | [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
- | PIPprofileR | Profils de pourcentages de positions identiques | [https://pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
- | Clustal | Alignement multiple | [https://www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
- | phylogeny.fr | Phylogénie moléculaire | [https://www.phylogeny.fr/](https://www.phylogeny.fr/) |
- 
+| Ressource | Description | URL |
+|-----------|--------------------------------|-------------------------------|
+| Supports de ce cours | Diapos, tuto, données | [https://jvanheld.github.io/shnc-origines-sars-cov-2/](https://jvanheld.github.io/shnc-origines-sars-cov-2/) |
+| Uniprot | Base de donnée de séquences protéiques | [https://www.uniprot.org/](https://www.uniprot.org/) |
+| NCBI Entrez | Bases de données biologiques | [https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
+| EMBOSS needle | Alignement de paires de séquences | [https://www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
+| NCBI BLAST | Recherche de séquences par similarité | [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
+| PIPprofileR | Profils de pourcentages de positions identiques | [https://pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
+| Clustal | Alignement multiple | [https://www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
+| phylogeny.fr | Phylogénie moléculaire | [https://www.phylogeny.fr/](https://www.phylogeny.fr/) |
+
 ## Données
 
 | Contenu | Lien |
