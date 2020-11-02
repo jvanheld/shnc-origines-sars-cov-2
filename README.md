@@ -8,14 +8,14 @@ Ce dépôt contient le matériel du cours de phylogénie moléculaire, qui fait 
 
 ### Enseignants
 
-- Jacques van Helden (ORCID [0000-0002-8799-8584](https://orcid.org/0000-0002-8799-8584))
-- Emese Méclecz (ORCID [0000-0001-7547-4858](https://orcid.org/0000-0001-7547-4858))
-- Gabriel Neve (ORCID [0000-0002-0304-8937](https://orcid.org/0000-0002-0304-8937))
+- Jacques van Helden ([AMU](https://www.univ-amu.fr/): [IFB](https://www.france-bioinformatique.fr/); ORCID [0000-0002-8799-8584](https://orcid.org/0000-0002-8799-8584))
+- Emese Méclecz ([AMU](https://www.univ-amu.fr/); ORCID [0000-0001-7547-4858](https://orcid.org/0000-0001-7547-4858))
+- Gabriel Neve ([AMU](https://www.univ-amu.fr/); ORCID [0000-0002-0304-8937](https://orcid.org/0000-0002-0304-8937))
 
 ### Outils bioinformatiques
 
-- Thomas Denecker (ORCID [0000-0003-1421-7641](https://orcid.org/0000-0003-1421-7641))
-- François Gerbes
+- Thomas Denecker ([IFB](https://www.france-bioinformatique.fr/); ORCID [0000-0003-1421-7641](https://orcid.org/0000-0003-1421-7641))
+- François Gerbes ([IFB](https://www.france-bioinformatique.fr/))
 
 ## Objectifs pédagogiques
 
