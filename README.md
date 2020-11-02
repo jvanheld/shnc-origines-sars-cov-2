@@ -37,7 +37,17 @@ Ce dépôt contient le matériel du cours de phylogénie moléculaire, qui fait 
  
  ## Diapos
 
-## Travaux pratiques
+## Ressources bioinformatiques
+
+ | Ressource | Description | URL |
+ | ----------- | -------------------------- | ------------------------------- |
+ | Uniprot |  | @@{https://www.uniprot.org/](https://www.uniprot.org/) |
+ | NCBI Entrez |  | @@{https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
+ | EMBOSS needle |  | @@{https://www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
+ | NCBI BLAST |  | @@{]() |
+ | PIPprofileR |  | @@{https://pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
+ | Clustal en ligne ??? |  | @@{]() |
+ | phylogeny.fr |  | @@{https://www.phylogeny.fr/](https://www.phylogeny.fr/) |
 
 ## Données
 
