@@ -24,6 +24,7 @@ Ce cours fournit une introduction aux concepts et méthodes de base de la phylog
 Il s'adrsse aux étudiants de la 2ème licence en Sciences et Humanité de l'Université d'Aix-Marseille, qui disposent d'une formation de base en biologie. 
 
 
+****
 ## Programme du cours 2020
 
 
@@ -41,7 +42,10 @@ Il s'adrsse aux étudiants de la 2ème licence en Sciences et Humanité de l'Uni
  |  | 15:30-16:00 | Pause |  |
  |  | 16:00-17:00 | CM3 | Interprétation, résumé et conclusion du cours |
  
- ## Diapos
+****
+## Diapos
+
+- [CM1](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
 
 ## Ressources bioinformatiques
 
@@ -57,6 +61,8 @@ Il s'adrsse aux étudiants de la 2ème licence en Sciences et Humanité de l'Uni
 | phylogeny.fr | Phylogénie moléculaire | [https://www.phylogeny.fr/](https://www.phylogeny.fr/) |
 
 
+
+****
 ## Données
 
 | Contenu | Lien |
@@ -64,7 +70,6 @@ Il s'adrsse aux étudiants de la 2ème licence en Sciences et Humanité de l'Uni
 | Séquences du gène S | [data/S-gene/REAMDE.md](data/S-gene/REAMDE.md)
 
 
-## Ressources bioinformatiques
-
+****
 
 
