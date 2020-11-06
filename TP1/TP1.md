@@ -1,6 +1,6 @@
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
-<link href="../tp.css" rel="stylesheet">
+<link href="https://raw.githubusercontent.com/jvanheld/shnc-origines-sars-cov-2/styleMD/tp.css" rel="stylesheet">
 
 >Chaque TP est constitué d'une série d'exercices.
 >
