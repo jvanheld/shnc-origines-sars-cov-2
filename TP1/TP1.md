@@ -1,7 +1,6 @@
-<link href="../tp.css" rel="stylesheet"></link>
-
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
+<link href="../tp.css" rel="stylesheet">
 
 >Chaque TP est constitué d'une série d'exercices.
 >
@@ -82,11 +81,11 @@ Dans cet exercices vous allez apprendre à faire une requête rapide pour retour
 2. Ce centre de ressources englobe un grande nombre d'outils et bases données (BDD), dont vous pouvez rapidement découvrir l'étendue à l'aide de menu à gauche de la page d'accueil.
 
 3. Localisez les génomes de *SARS-CoV-2* soumis dans la BDD **NCBI genomes**. 
-   - Choisissez **Genome** dans le menu déroulant en haut de la page accueil 
-   - Tapez *SARS-CoV-2* dans la boîte de recherche
+   - Dans le menu déroulant **Database** en haut de la page accueil, choisissez **Genome**
+   - Tapez `SARS-CoV-2` dans la boîte de recherche
    - Cliquez sur **Search**
 
-4. Vous trouverez une page assez succincte, qui présente une série des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
+4. Vous obtiendrez une page assez succincte, qui présente une série des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
 
 <div class="question"> 
 Questions 1.1 - NCBI genomes
@@ -97,7 +96,7 @@ Questions 1.1 - NCBI genomes
 - 1.1.4. Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
 </div>
 
-5. Cliquez sur le lien du génome de référence, pour visualiser les annotations de ce génome. 
+5. Cliquez sur le lien du génome de référence, pour visualiser ses annotations. 
 
 <div class="question"> 
 Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
