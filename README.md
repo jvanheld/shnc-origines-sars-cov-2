@@ -1,4 +1,4 @@
-# Enquête bioinformatique sur les origines de SARS-CoV-2 [AMU-S&H-N&C3] 
+# Enquête bioinformatique sur les origines de SARS-CoV-2 [[AMU](https://www.univ-amu.fr/) > [S&H](https://formations.univ-amu.fr/ME3SHU.html) > [N&C3](https://formations.univ-amu.fr/ME3SHU-S11XX3M1.html)] 
 
 ## Audience
 
@@ -21,7 +21,7 @@ Ce dépôt contient le matériel du cours de phylogénie moléculaire, qui fait 
 
 Ce cours fournit une introduction aux concepts et méthodes de base de la phylogénie moléculaire, en s'appuyant sur la question des origines biologiques du virus SARS-CoV-2, responsable de la pandémie Covid-19. 
 
-Il s'adrsse aux étudiants de la 2ème licence en Sciences et Humanité de l'Université d'Aix-Marseille, qui disposent d'une formation de base en biologie. 
+Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Université d'Aix-Marseille, qui disposent d'une formation de base en biologie. 
 
 
 ****
