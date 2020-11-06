@@ -1,0 +1,10 @@
+.question {
+  font-size: 13px; 
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; 
+  color: #440000; 
+  padding: 8px 15px; 
+  background: #FFFFDD; 
+  border-radius: 5px; 
+  border: 1px solid #e5e5e5; 
+  margin: 10px 0px 10px 50px;
+}

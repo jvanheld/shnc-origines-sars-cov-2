@@ -1,16 +1,18 @@
+<link href="../tp.css" rel="stylesheet"></link>
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
->Chaque TP est constitué d'une série d'exercices.
->
->1. Ouvrez deux fenêtres : une pour ce tutoriel et l'autre pour le QCM (questionnaire) associé au tutoriel (vous trouverez le lien sur AMETICE).
->2.  Suivez ce tutoriel et faites les exercices. Les questions, mais pas les explications, se trouvent également dans le QCM.
->3.  Répondez aux questions au fur et à mesure dans le QCM.
->4. Attention! Si vous ne suivez pas le tutoriel, les questions de QCM peuvent être ambiguës. Ne faites pas l'impasse sur le tutoriel, c'est le cœur de l'apprentissage dans cet enseignement.
->5. Attention aux réponses libres du questionnaire :
->     Ecrivez les nombres sans espace et sans virgule. Par exemple : 9365589 à la place de 9 365 589 ou 9,365,589
->   * Utilisez le point pour les valeurs décimales. Par exemple 3.14 à la place de 3,14
->   * Si on demande un pourcentage écrivez uniquement le nombre sans le signe %. Par exemple 30 à la place de 30% ou 0.3
->   * Si on demande une proportion ne donnez pas la réponse en pourcentage. Par exemple écrivez 0.3 à la place de 30%
+Chaque TP est constitué d'une série d'exercices.
+
+1. Ouvrez deux fenêtres : une pour ce tutoriel et l'autre pour le QCM (questionnaire) associé au tutoriel (vous trouverez le lien sur AMETICE).
+2.  Suivez ce tutoriel et faites les exercices. Les questions, mais pas les explications, se trouvent également dans le QCM.
+3.  Répondez aux questions au fur et à mesure dans le QCM.
+4. Attention! Si vous ne suivez pas le tutoriel, les questions de QCM peuvent être ambiguës. Ne faites pas l'impasse sur le tutoriel, c'est le cœur de l'apprentissage dans cet enseignement.
+5. Attention aux réponses libres du questionnaire : 
+
+    * Ecrivez les nombres sans espace et sans virgule. Par exemple : `9365589` à la place de `9 365 589` ou `9,365,589`.
+    * Utilisez le point pour les valeurs décimales. Par exemple `3.14` à la place de `3,14`.
+    * Si on demande un pourcentage écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
+    * Si on demande une proportion ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
 
 
 ## Contenu
@@ -20,17 +22,17 @@
 * Objectifs
 * Contrôle des connaissances
 * Tutoriel
-  * Exercice 1 - NCBI genomes - Exploration de la génome de SARS-CoV-2
-  * Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
-  * Exercice 3 - Alignement par paires
-  * Exercice 4 - BLAST: Recherche par similarité dans les bases de données de séquences
-  * Exercice 5 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
+    * Exercice 1 - NCBI genomes - Exploration de la génome de SARS-CoV-2
+    * Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
+    * Exercice 3 - Alignement par paires
+    * Exercice 4 - BLAST: Recherche par similarité dans les bases de données de séquences
+    * Exercice 5 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 * Concepts
 * Ressources
 
 ## Prérequis
 
-Le matériel de support est disponible ici: [diapos CM1](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
+Le matériel de support est disponible ici : [diapos CM1](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
 
 Lors du premier cours, nous avons présenté une introduction aux concepts biologiques liés à l'origine de coronavirus SARS-CoV-2, et commencé à fournir les premiers éléments pour l'analyse bioinformatique des séquences.
 
@@ -44,6 +46,7 @@ Lors du premier cours, nous avons présenté une introduction aux concepts biolo
 [A ECRIRE ...]
 
 ## Objectifs des TP
+
 Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
 
 **Objectifs spécifiques**
@@ -55,7 +58,6 @@ Le but de cette série de TP sera d'utiliser une série de méthodes bioinformat
 * TP2 Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus pour pouvoir démontrer l'importance des recombinaisons entre différents virus.
 
 
-
 ## Contrôle des connaissances
 
 Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [d'Ametice](https://ametice.univ-amu.fr/course/view.php?id=62928). 
@@ -65,50 +67,51 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 ## Tutoriel
 
 
-
 ### Exercice 1 - NCBI genomes - Exploration de la génome de SARS-CoV-2
 
-Dans cet exercices vous allez apprendre de faire une requête rapide pour retourner un génome dans la base de données (BDD) **NCBI Genome** et vous allez découvrir le type d'information disponible sur le génome *SARS-CoV-2*.
+Dans cet exercices vous allez apprendre à faire une requête rapide pour retourner un génome dans la base de données (abréviation ci-dessous: ***BDD***) **NCBI Genome** et vous allez découvrir le type d'information disponible sur le génome du coronavirus *SARS-CoV-2*.
 
-1. Rendez-vous sur la page accueil de Centre de Ressource [NCBI](https://www.ncbi.nlm.nih.gov/)
-2. Ce centre de ressource englobe un grande nombre d 'outils et bases données (BDD). Vous pouvez rapidement découvrir l'étendue de ces ressources à l'aide de menu à gauche de la page d'accueil.
-3. Localisez les génomes de *SARS-CoV-2* soumis dans le BDD **NCBI genomes**. 
+1. Rendez-vous sur la page d'accueil de Centre de Ressources [NCBI](https://www.ncbi.nlm.nih.gov/)
+
+2. Ce centre de ressources englobe un grande nombre d'outils et bases données (BDD), dont vous pouvez rapidement découvrir l'étendue à l'aide de menu à gauche de la page d'accueil.
+
+3. Localisez les génomes de *SARS-CoV-2* soumis dans la BDD **NCBI genomes**. 
    - Choisissez **Genome** dans le menu déroulant en haut de la page accueil 
    - Tapez *SARS-CoV-2* dans la boîte de recherche
    - Cliquez sur **Search**
-4. Vous trouverez une page assez succincte, qui présente une séries des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
 
-> Questions 1.1 - NCBI genomes
->
-> 1.1.1 Combien de génomes de Coronaviridae sont disponibles en ce moment ?
->
-> 1.1.2 Combien d'assemblages de génome de SARS-CoV-2 sont disponibles en ce moment ?
->
-> 1.1.3 Quelle est la taille moyenne en paires de bases (bp) des différentes assemblages de génome de SARS-CoV-2 ?
->
-> 1.1.4 Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
+4. Vous trouverez une page assez succincte, qui présente une série des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
 
+<div class="question"> 
+Questions 1.1 - NCBI genomes
+
+- 1.1.1. Combien de génomes de Coronaviridae sont disponibles en ce moment ?
+- 1.1.2. Combien d'assemblages de génome de SARS-CoV-2 sont disponibles en ce moment ?
+- 1.1.3. Quelle est la taille moyenne en paires de bases (bp) des différentes assemblages degénome de SARS-CoV-2 ?
+- 1.1.4. Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
+</div>
 
 5. Cliquez sur le lien du génome de référence, pour visualiser les annotations de ce génome. 
 
-```{text}
+<div class="question"> 
 Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 
-1.2.1 Quelle est la longueur de ce génome ? (en paires de base)
-1.2.2 Quelle est le lien entre les séquences MN908947 et NC_045512 ? 
-1.2.3 Quelle est la date de collection de ce virus à origine du séquençage ?
-1.2.4 Quelle est la première base de la séquence nucléotidique ?
-1.2.5 Quelle est la dernière base de la séquence nucléotidique ?
-```
+- 1.2.1. Quelle est la longueur de ce génome ? (en paires de base)
+- 1.2.2. Quelle est le lien entre les séquences MN908947 et NC_045512 ? 
+- 1.2.3. Quelle est la date de collection de ce virus à origine du séquençage ?
+- 1.2.4. Quelle est la première base de la séquence nucléotidique ?
+- 1.2.5. Quelle est la dernière base de la séquence nucléotidique ?
+</div>
 
 6. Cliquez sur le lien **Graphics** en haut de la page pour obtenir une représentation schématique des gènes (en vert) séquences codantes (en rouge) les peptides matures (en marron) et certaines régions fonctionnelles (en noir).
 
-```{text}
+<div class="question"> 
 Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
-1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
-1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
-1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
-```
+
+- 1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
+- 1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
+- 1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
+</div>
 
 ### Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
 
@@ -117,14 +120,14 @@ Dans cet exercice, vous allez apprendre de faire des requêtes naïves et struct
 1. Ouvrez une connexion à la base de données [Uniprot](https://www.uniprot.org/).
 2. Le page d'accueil affiche le nombre des séquences accessibles dans UniProt.
 
-```
+<div class="question"> 
 Questions 2.1 - Uniprot - Page d'accueil
 
-2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
-2.1.2 Combien de séquences contient-elle ?
-2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
-2.1.4 Combien de séquences contient-elle ?
-```
+- 2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
+- 2.1.2 Combien de séquences contient-elle ?
+- 2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
+- 2.1.4 Combien de séquences contient-elle ?
+</div>
 
 
 3. **Requête naïve** :  Dans la boîte de requêtes (en haut de la page), tapez les mots-clés suivants pour sélectionner les protéines spike de SARS-CoV-2 : *spike sars-cov-2*. 
@@ -136,17 +139,18 @@ Questions 2.1 - Uniprot - Page d'accueil
 - Cliquez sur l'identifiant **Q9BYF1** dans le tableau de résultats pour examiner les annotations de cette protéine.
 
 
-```
+<div class="question"> 
 Questions 2.2 - Uniprot - Requête naïve
 
-2.2.1 De quelle espèce provient cette séquence ?
-2.2.2 Quelle est sa fonction ?
-2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
-2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
+- 2.2.1 De quelle espèce provient cette séquence ?
+- 2.2.2 Quelle est sa fonction ?
+- 2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
+- 2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F). 
 
 Répondez par VRAI ou FAUX
-2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
-```
+
+- 2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
+</div>
 
 
 4. **Requête structurée** :
