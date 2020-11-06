@@ -1,7 +1,5 @@
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
-
-
 >Chaque TP est constitué d'une série d'exercices.
 >
 >1. Ouvrez deux fenêtres : une pour ce tutoriel et l'autre pour le QCM (questionnaire) associé au tutoriel (vous trouverez le lien sur AMETICE).
@@ -16,6 +14,7 @@
 
 
 ## Contenu
+
 * Prérequis
 * Introduction
 * Objectifs
@@ -31,7 +30,7 @@
 
 ## Prérequis
 
-Le matériel de support est disponible ici: [diapos CM1](https://github.com/jvanheld/shnc-origines-sars-cov-2/blob/main/slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
+Le matériel de support est disponible ici: [diapos CM1](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
 
 Lors du premier cours, nous avons présenté une introduction aux concepts biologiques liés à l'origine de coronavirus SARS-CoV-2, et commencé à fournir les premiers éléments pour l'analyse bioinformatique des séquences.
 
@@ -42,7 +41,7 @@ Lors du premier cours, nous avons présenté une introduction aux concepts biolo
 
 ## Introduction
 
-
+[A ECRIRE ...]
 
 ## Objectifs des TP
 Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
