@@ -111,8 +111,6 @@ Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
 1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
 ```
 
-
-
 ### Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
 
 Dans cet exercice, vous allez apprendre de faire des requêtes naïves et structurées pour trouver les protéines qui vous intéressent et découvrir le type d'information disponibles dans Uniprot.
