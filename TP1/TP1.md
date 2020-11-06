@@ -3,20 +3,23 @@
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
 
-<div class="tuto"> 
-Chaque TP est constitué d'une série d'exercices.
+>Chaque TP est constitué d'une série d'exercices.
+>
+>1. Ouvrez deux fenêtres : une pour ce tutoriel et l'autre pour le QCM (questionnaire) associé au tutoriel (vous trouverez le lien sur AMETICE).
+>
+>2.  Suivez ce tutoriel et faites les exercices. Les questions, mais pas les explications, se trouvent également dans le QCM.
+>
+>3.  Répondez aux questions au fur et à mesure dans le QCM.
+>
+>4. Attention! Si vous ne suivez pas le tutoriel, les questions de QCM peuvent être ambiguës. Ne faites pas l'impasse sur le tutoriel, c'est le cœur de l'apprentissage dans cet enseignement.
+>
+>5. Attention aux réponses libres du questionnaire : 
+>
+>    * Ecrivez les nombres sans espace et sans virgule. Par exemple : `9365589` à la place de `9 365 589` ou `9,365,589`.
+>    * Utilisez le point pour les valeurs décimales. Par exemple `3.14` à la place de `3,14`.
+>    * Si on demande un pourcentage écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
+>    * Si on demande une proportion ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
 
-1. Ouvrez deux fenêtres : une pour ce tutoriel et l'autre pour le QCM (questionnaire) associé au tutoriel (vous trouverez le lien sur AMETICE).
-2.  Suivez ce tutoriel et faites les exercices. Les questions, mais pas les explications, se trouvent également dans le QCM.
-3.  Répondez aux questions au fur et à mesure dans le QCM.
-4. Attention! Si vous ne suivez pas le tutoriel, les questions de QCM peuvent être ambiguës. Ne faites pas l'impasse sur le tutoriel, c'est le cœur de l'apprentissage dans cet enseignement.
-5. Attention aux réponses libres du questionnaire : 
-
-    * Ecrivez les nombres sans espace et sans virgule. Par exemple : `9365589` à la place de `9 365 589` ou `9,365,589`.
-    * Utilisez le point pour les valeurs décimales. Par exemple `3.14` à la place de `3,14`.
-    * Si on demande un pourcentage écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
-    * Si on demande une proportion ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
-</div>
 
 ## Contenu
 
