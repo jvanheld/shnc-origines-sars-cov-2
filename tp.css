@@ -1,4 +1,4 @@
-.language-tuto code{
+pre code.language-tuto{
   font-size: 13px; 
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; 
   color: #004400; 
@@ -10,7 +10,7 @@
   white-space: pre-line;
 }
 
-.language-question code{
+pre code.language-question {
   font-size: 13px; 
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; 
   color: #440000; 
