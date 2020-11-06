@@ -1,6 +1,8 @@
 <link href="../tp.css" rel="stylesheet"></link>
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
+
+<div class="tuto"> 
 Chaque TP est constitué d'une série d'exercices.
 
 1. Ouvrez deux fenêtres : une pour ce tutoriel et l'autre pour le QCM (questionnaire) associé au tutoriel (vous trouverez le lien sur AMETICE).
@@ -13,7 +15,7 @@ Chaque TP est constitué d'une série d'exercices.
     * Utilisez le point pour les valeurs décimales. Par exemple `3.14` à la place de `3,14`.
     * Si on demande un pourcentage écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
     * Si on demande une proportion ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
-
+</div>
 
 ## Contenu
 
