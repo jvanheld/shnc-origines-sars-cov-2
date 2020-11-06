@@ -87,18 +87,18 @@ Dans cet exercices vous allez apprendre à faire une requête rapide pour retour
 
 4. Vous obtiendrez une page assez succincte, qui présente une série des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
 
-<div class="question"> 
+```question
 Questions 1.1 - NCBI genomes
 
 - 1.1.1. Combien de génomes de Coronaviridae sont disponibles en ce moment ?
 - 1.1.2. Combien d'assemblages de génome de SARS-CoV-2 sont disponibles en ce moment ?
 - 1.1.3. Quelle est la taille moyenne en paires de bases (bp) des différentes assemblages degénome de SARS-CoV-2 ?
 - 1.1.4. Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
-</div>
+```
 
 5. Cliquez sur le lien du génome de référence, pour visualiser ses annotations. 
 
-<div class="question"> 
+```question
 Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 
 - 1.2.1. Quelle est la longueur de ce génome ? (en paires de base)
@@ -106,17 +106,17 @@ Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 - 1.2.3. Quelle est la date de collection de ce virus à origine du séquençage ?
 - 1.2.4. Quelle est la première base de la séquence nucléotidique ?
 - 1.2.5. Quelle est la dernière base de la séquence nucléotidique ?
-</div>
+```
 
 6. Cliquez sur le lien **Graphics** en haut de la page pour obtenir une représentation schématique des gènes (en vert) séquences codantes (en rouge) les peptides matures (en marron) et certaines régions fonctionnelles (en noir).
 
-<div class="question"> 
+```question
 Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
 
 - 1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
 - 1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
 - 1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
-</div>
+```
 
 ### Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
 
@@ -125,14 +125,14 @@ Dans cet exercice, vous allez apprendre de faire des requêtes naïves et struct
 1. Ouvrez une connexion à la base de données [Uniprot](https://www.uniprot.org/).
 2. Le page d'accueil affiche le nombre des séquences accessibles dans UniProt.
 
-<div class="question"> 
+```question
 Questions 2.1 - Uniprot - Page d'accueil
 
 - 2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
 - 2.1.2 Combien de séquences contient-elle ?
 - 2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
 - 2.1.4 Combien de séquences contient-elle ?
-</div>
+```
 
 
 3. **Requête naïve** :  Dans la boîte de requêtes (en haut de la page), tapez les mots-clés suivants pour sélectionner les protéines spike de SARS-CoV-2 : *spike sars-cov-2*. 
@@ -144,18 +144,18 @@ Questions 2.1 - Uniprot - Page d'accueil
 - Cliquez sur l'identifiant **Q9BYF1** dans le tableau de résultats pour examiner les annotations de cette protéine.
 
 
-<div class="question"> 
+```question
 Questions 2.2 - Uniprot - Requête naïve
 
 - 2.2.1 De quelle espèce provient cette séquence ?
 - 2.2.2 Quelle est sa fonction ?
 - 2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
-- 2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F). 
+- 2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
 
 Répondez par VRAI ou FAUX
 
 - 2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
-</div>
+```
 
 
 4. **Requête structurée** :
@@ -180,7 +180,7 @@ Répondez par VRAI ou FAUX
      - Un fichier fasta peut contenir plusieurs séquences, chacune étant précédée d'une ligne de description commençant par un caractère **>**. Le premier mot de la ligne de description (ce qui précède le premier espace) est l'identifiant de la séquence (par exemple `sp|P0DTC2|SPIKE_SARS2`). La ligne de description peut éventuellement contenir des commentaires libres (dans l'exemple ci-dessus: *Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=S PE=1 SV=1*).
      - Le fichier devrait ressembler à ceci :
 
-```
+```question
 >sp|P0DTC2|SPIKE_SARS2 Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=S PE=1 SV=1
 MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFS
 NVTWFHAIHVSGTNGTKRFDNPVLPFNDGVYFASTEKSNIIRGWIFGTTLDSKTQSLLIV
@@ -194,14 +194,12 @@ GKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQT
     **Attention!** En utilisant les connecteurs logiques AND et OR dans la même requête, il est recommandé d'ajouter des parenthèses manuellement dans la phrase de recherche.
 
 
-```
+```question
 Questions 2.3 - Uniprot - Requête structurée
 
 2.3.1 Combien de protéines avez-vous trouvées ?
 2.3.2 Quel est l'identifiant de la protéine 'Envelope glycoprotein' parmi vos résultats ?
 ```
-
-
 
 ### Exercice 3 - Alignement par paires
 
