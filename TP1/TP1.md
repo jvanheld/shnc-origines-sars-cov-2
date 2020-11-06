@@ -200,7 +200,7 @@ Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va
 
 1. Nous avons extrait des séquences du gène S (codant pour la protéine Spike) à partir de 3 génomes complets et nous avons identifié les séquences protéiques correspondantes.
 
-    Utilisez les liens dans le tableau ci-dessous pour accéder aux séquences protéiques en format fasta. l'extraction des séquences de gène S à partir de génome complet est un peu plus long. Nous avons fait le travail pour vous. Vous trouverez les séquences ARN de gène S dans le fichier suivant : [S_gene_3.fasta](.../data/S-gene/S_gene_3.fasta)
+    Utilisez les liens dans le tableau ci-dessous pour accéder aux séquences protéiques en format fasta. l'extraction des séquences de gène S à partir de génome complet est un peu plus long. Nous avons fait le travail pour vous. Vous trouverez les séquences ARN de gène S dans le fichier suivant : [S-gene_3.fasta](../data/S-gene/S-gene_3.fasta)
 
 |Virus | Hôte |Génome | Protéine spike |
 |--------|---------|---------------------|---------------------------|
