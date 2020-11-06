@@ -79,19 +79,20 @@ Dans cet exercices vous allez apprendre de faire une requête rapide pour retour
    - Cliquez sur **Search**
 4. Vous trouverez une page assez succincte, qui présente une séries des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
 
-```
-Questions 1.1 - NCBI genomes
-
-1.1.1 Combien de génomes de Coronaviridae sont disponibles en ce moment ?
-1.1.2 Combien d'assemblages de génome de SARS-CoV-2 sont disponibles en ce moment ? 
-1.1.3 Quelle est la taille moyenne en paires de bases (bp) des différentes assemblages de génome de SARS-CoV-2 ?
-1.1.4 Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
-```
+> Questions 1.1 - NCBI genomes
+>
+> 1.1.1 Combien de génomes de Coronaviridae sont disponibles en ce moment ?
+>
+> 1.1.2 Combien d'assemblages de génome de SARS-CoV-2 sont disponibles en ce moment ?
+>
+> 1.1.3 Quelle est la taille moyenne en paires de bases (bp) des différentes assemblages de génome de SARS-CoV-2 ?
+>
+> 1.1.4 Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
 
 
 5. Cliquez sur le lien du génome de référence, pour visualiser les annotations de ce génome. 
 
-```
+```{text}
 Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 
 1.2.1 Quelle est la longueur de ce génome ? (en paires de base)
@@ -103,7 +104,7 @@ Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 
 6. Cliquez sur le lien **Graphics** en haut de la page pour obtenir une représentation schématique des gènes (en vert) séquences codantes (en rouge) les peptides matures (en marron) et certaines régions fonctionnelles (en noir).
 
-```
+```{text}
 Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
 1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
 1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
@@ -170,7 +171,7 @@ Répondez par VRAI ou FAUX
      - Uniprot vous permet d'exporter les résultats dans divers formats. Les formats les plus pratiques pour les tableaux de résultats sont **Tab-Delimited** ou Excel. 
      - Pour obtenir les séquences, le format le plus souvent utilisé est le format **fasta**. Choisissez le fomat **fasta (canonical)** et la version **Uncompressed**.
      - Sauvegardez le fichier fasta sur votre ordinateur, et ouvrez-le avec un éditeur de texte simple (Notepad++, gedit, Bloc-notes). Vérifiez le format des séquences. 
-     - Un fichier fasta peut contenir plusieurs séquences, chacune étant précédée d'une ligne de description commençant par un caractère **>**. Le premier mot de la ligne de description (ce qui précède le premier espace) est l'identifiant de la séquence (par exemple *sp|P0DTC2|SPIKE_SARS2*). La ligne de description peut éventuellement contenir des commentaires libres (dans l'exemple ci-dessus: *Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=S PE=1 SV=1*).
+     - Un fichier fasta peut contenir plusieurs séquences, chacune étant précédée d'une ligne de description commençant par un caractère **>**. Le premier mot de la ligne de description (ce qui précède le premier espace) est l'identifiant de la séquence (par exemple `sp|P0DTC2|SPIKE_SARS2`). La ligne de description peut éventuellement contenir des commentaires libres (dans l'exemple ci-dessus: *Spike glycoprotein OS=Severe acute respiratory syndrome coronavirus 2 OX=2697049 GN=S PE=1 SV=1*).
      - Le fichier devrait ressembler à ceci :
 
 ```
