@@ -1,23 +1,7 @@
-pre code.language-tuto{
-  font-size: 13px; 
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; 
-  color: #004400; 
-  padding: 8px 15px; 
-  background: #EEFFEE; 
-  border-radius: 5px; 
-  border: 1px solid #e5e5e5; 
-  margin: 10px 0 10px 20px;
+code.language-tuto{
   white-space: pre-line;
 }
 
-pre code.language-question {
-  font-size: 13px; 
-  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; 
-  color: #440000; 
-  padding: 8px 15px; 
-  background: #FFFFDD; 
-  border-radius: 5px; 
-  border: 1px solid #e5e5e5; 
-  margin: 10px 0 10px 50px;
+code.language-question {
   white-space: pre-line;
 }
