@@ -1,6 +1,7 @@
 # Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
 
 ## Contenu
+
 * Prérequis
 * Introduction
 * Objectifs
@@ -15,6 +16,7 @@
 * Ressources
 
 ## Objectifs des TP
+
 Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
 
 **Objectifs spécifiques**
