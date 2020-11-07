@@ -76,11 +76,12 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 Dans cet exercices vous allez apprendre à faire une requête rapide pour retourner un génome dans la base de données (abréviation ci-dessous: ***BDD***) **NCBI Genome** et vous allez découvrir le type d'information disponible sur le génome du coronavirus *SARS-CoV-2*.
 
-1. Rendez-vous sur la page d'accueil de Centre de Ressources [NCBI](https://www.ncbi.nlm.nih.gov/)
+1. Rendez vous sur la page d'accueil de Centre de Ressources [NCBI](https://www.ncbi.nlm.nih.gov/)
 
 2. Ce centre de ressources englobe un grande nombre d'outils et bases données (BDD), dont vous pouvez rapidement découvrir l'étendue à l'aide de menu à gauche de la page d'accueil.
 
 3. Localisez les génomes de *SARS-CoV-2* soumis dans la BDD **NCBI genomes**. 
+
    - Dans le menu déroulant **Database** en haut de la page accueil, choisissez **Genome**
    - Tapez `SARS-CoV-2` dans la boîte de recherche
    - Cliquez sur **Search**
