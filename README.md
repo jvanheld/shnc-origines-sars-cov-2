@@ -67,7 +67,9 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
 
 | Contenu | Lien |
 |------------------|-------------------------------|
+| Génomes de coronavirus | [data/genomes/REAMDE.md](data/genomes/REAMDE.md)
 | Séquences du gène S | [data/S-gene/REAMDE.md](data/S-gene/REAMDE.md)
+| Séquences de la protéine spicule | [data/spike-protein/REAMDE.md](data/spike-protein/REAMDE.md)
 
 
 ****
