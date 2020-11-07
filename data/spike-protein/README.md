@@ -1,6 +1,6 @@
-[shnc-origines-sars-cov-2](../../) / [data](../) / spike_proteins
+[shnc-origines-sars-cov-2](../../) / [data](../) / spike-proteins
 
-# Séquences du gène S
+# Séquences de la protéine spicule
 
 
 | Voir le fichier  | Collection |
