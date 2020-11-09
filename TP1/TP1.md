@@ -66,7 +66,7 @@ Le but de cette série de TP sera d'utiliser une série de méthodes bioinformat
 
 ## Contrôle des connaissances
 
-Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [Ametice](https://ametice.univ-amu.fr/mod/quiz/view.php?id=1659853). 
+Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [Ametice](https://ametice.univ-amu.fr/course/view.php?id=62928#section-7). 
 
 
 
