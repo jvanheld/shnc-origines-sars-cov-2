@@ -221,7 +221,7 @@ Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va
      * En STEP 1, sélectionnez **DNA**, à la place de PROTEIN, et copiez les chacune des deux séquences ARN à aligner dans les deux cases suivantes.
      * Laissez les autres paramètres par défaut, et lancez l'alignement (**Submit**)
 
-```
+```question
 Questions 3.1 - Alignement par paires - Gene S
 
 3.1.1 Quel est le pourcentage d'identité entre les gènes S de SARS-CoV-2 et RaTG13_2013_Yunnan ?
@@ -231,7 +231,7 @@ Questions 3.1 - Alignement par paires - Gene S
 
 3. La similarité entre les gènes SARS-CoV-2 et MERS_172-06_2015, n'est pas très convainquante. On observe beaucoup de gaps sur la totalité de l'alignement. Alignons maintenant les séquences **protéiques** (les liens sont donnés dans le tableau ci-dessus). Utilisez toujours [needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/), mais sélectionnez **PROTEIN** en STEP1.
 
-```
+```question
 Questions 3.2 - Alignement par paires - Protéine Spike
 
 3.2.1 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et RaTG13_2013_Yunnan ?
@@ -285,7 +285,7 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
      - **Taxonomy** : Représentation des hits selon leurs origines taxonomiques
   4. Parmi les meilleurs hits examinez l'alignement de la séquence requête avec la séquence **QHR63300.2**. Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
-```
+```question
 Questions 4.1 - BLAST - Alignmement de la Protéine Spike  et la séquence QHR63300.2
 
 4.1.1 Nom de l'organisme de la séquence QHR63300.2 
@@ -310,7 +310,7 @@ Répondez par VRAI ou FAUX
 
 5. Examinez l'alignement de la séquence requête avec la séquence **AGT51451.1** (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
-```
+```question
 Questions 4.2 - BLAST - Alignmement de la Protéine Spike  et la séquence AGT51451.1
 
 4.2.1 Nom de l'organisme de la séquence AGT51451.1 
@@ -371,7 +371,7 @@ Le génome de HIV a 9181 nucléotides. Nous allons générer une séquence aléa
 	-  **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
 	-  Lancez la recherche à l'aide du bouton **BLAST**
 
-```
+```question
 Questions 5.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 
 **Répondez aux questions suivantes sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.**
