@@ -114,9 +114,9 @@ Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 ```question
 Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
 
-- 1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
-- 1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
-- 1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
+1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
+1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
+1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
 ```
 
 ### Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
@@ -129,10 +129,10 @@ Dans cet exercice, vous allez apprendre de faire des requêtes naïves et struct
 ```question
 Questions 2.1 - Uniprot - Page d'accueil
 
-- 2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
-- 2.1.2 Combien de séquences contient-elle ?
-- 2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
-- 2.1.4 Combien de séquences contient-elle ?
+2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
+2.1.2 Combien de séquences contient-elle ?
+2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
+2.1.4 Combien de séquences contient-elle ?
 ```
 
 
@@ -148,14 +148,14 @@ Questions 2.1 - Uniprot - Page d'accueil
 ```question
 Questions 2.2 - Uniprot - Requête naïve
 
-- 2.2.1 De quelle espèce provient cette séquence ?
-- 2.2.2 Quelle est sa fonction ?
-- 2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
-- 2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
+2.2.1 De quelle espèce provient cette séquence ?
+2.2.2 Quelle est sa fonction ?
+2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
+2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
 
 Répondez par VRAI ou FAUX
 
-- 2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
+2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
 ```
 
 
@@ -221,7 +221,7 @@ Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va
      * En STEP 1, sélectionnez **DNA**, à la place de PROTEIN, et copiez les chacune des deux séquences ARN à aligner dans les deux cases suivantes.
      * Laissez les autres paramètres par défaut, et lancez l'alignement (**Submit**)
 
-```
+```question
 Questions 3.1 - Alignement par paires - Gene S
 
 3.1.1 Quel est le pourcentage d'identité entre les gènes S de SARS-CoV-2 et RaTG13_2013_Yunnan ?
@@ -231,7 +231,7 @@ Questions 3.1 - Alignement par paires - Gene S
 
 3. La similarité entre les gènes SARS-CoV-2 et MERS_172-06_2015, n'est pas très convainquante. On observe beaucoup de gaps sur la totalité de l'alignement. Alignons maintenant les séquences **protéiques** (les liens sont donnés dans le tableau ci-dessus). Utilisez toujours [needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/), mais sélectionnez **PROTEIN** en STEP1.
 
-```
+```question
 Questions 3.2 - Alignement par paires - Protéine Spike
 
 3.2.1 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et RaTG13_2013_Yunnan ?
@@ -285,7 +285,7 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
      - **Taxonomy** : Représentation des hits selon leurs origines taxonomiques
   4. Parmi les meilleurs hits examinez l'alignement de la séquence requête avec la séquence **QHR63300.2**. Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
-```
+```question
 Questions 4.1 - BLAST - Alignmement de la Protéine Spike  et la séquence QHR63300.2
 
 4.1.1 Nom de l'organisme de la séquence QHR63300.2 
@@ -295,39 +295,40 @@ Notez les valeurs des indices suivants
 4.1.3 Longueur de l'alignement
 4.1.4 Pourcentage d'identité
 4.1.5 Pourcentage de positifs
-
 4.1.6 Pourcentage de gaps
 4.1.7 E-valeur (expect)
 
+4.1.8 Combien y -t-il d'indel entre les deux séquences ?
+4.1.9 Que signifie la ligne entre les deux séquences comparées ?
+
 Répondez par VRAI ou FAUX
-4.1.8 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
-4.1.9 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
-4.1.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
-4.1.11 Combien y -t-il d'indel entre les deux séquences ?
-4.1.12 Que signifie la ligne entre les deux séquences comparées ?
+4.1.10 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
+4.1.11 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
+4.1.12 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
+
 ```
 
 5. Examinez l'alignement de la séquence requête avec la séquence **AGT51451.1** (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
-```
+```question
 Questions 4.2 - BLAST - Alignmement de la Protéine Spike  et la séquence AGT51451.1
 
-4.1.1 Nom de l'organisme de la séquence AGT51451.1 
-4.1.2 Nom de  l'hôte de cet organisme
+4.2.1 Nom de l'organisme de la séquence AGT51451.1 
+4.2.2 Nom de  l'hôte de cet organisme
 
 Notez les valeurs des indices suivants du premier alignement
-4.1.3 Longueur de l'alignement
-4.1.4 Pourcentage d'identité
-4.1.5 Pourcentage de positifs
-4.1.6 Pourcentage de gaps
-4.1.7 E-valeur (expect)
+4.2.3 Longueur de l'alignement
+4.2.4 Pourcentage d'identité
+4.2.5 Pourcentage de positifs
+4.2.6 Pourcentage de gaps
+4.2.7 E-valeur (expect)
 
 Répondez par VRAI ou FAUX
 
-4.1.7 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
-4.1.8 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
-4.1.9 La séquence AGT51451.1 a deux alignements (positions 614-1351 et 72-438) contre la protéine Spike de SARS-COV-2. Ceci indique que la région 439-613 de la protéine AGT51451 est une insertion.
-4.1.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
+4.2.7 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
+4.2.8 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
+4.2.9 La séquence AGT51451.1 a deux alignements (positions 614-1351 et 72-438) contre la protéine Spike de SARS-COV-2. Ceci indique que la région 439-613 de la protéine AGT51451 est une insertion.
+4.2.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
 ```
 
 
@@ -362,15 +363,15 @@ Le génome de HIV a 9181 nucléotides. Nous allons générer une séquence aléa
 
 2. Faites un BLAST avec cette séquence aléatoire comme séquence requête contre le génome de SARS-CoV-2
 
-    	- Choisissez **Nucleotide blast (BLASTn)** sur [NCBI BLAST](http://blast.ncbi.nlm.nih.gov/)
-    	- Copiez la séquence aléatoire dans le première case
-    	- Cochez la case **Align two or more sequences**. Une nouvelle case apparait sous le titre de **Enter Subject Sequence**. Entrez l'identifiant du génome de SARS-CoV-2 dans ce case *MT019529.1*. BLAST va comparer ces deux séquences à la place de comparer la séquence aléatoire avec toute une BDD.
-    	- **Program Selection**: *Optimize for Somewhat similar sequences (blastn)*
-    	- Cochez la case **Show results in a new window** pour que les résultats apparaissent dans une nouvelle fenêtre.
-    	-  **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
-  	-  Lancez la recherche à l'aide du bouton **BLAST**
+	- Choisissez **Nucleotide blast (BLASTn)** sur [NCBI BLAST](http://blast.ncbi.nlm.nih.gov/)
+	- Copiez la séquence aléatoire dans le première case
+	- Cochez la case **Align two or more sequences**. Une nouvelle case apparait sous le titre de **Enter Subject Sequence**. Entrez l'identifiant du génome de SARS-CoV-2 dans ce case *MT019529.1*. BLAST va comparer ces deux séquences à la place de comparer la séquence aléatoire avec toute une BDD.
+	- **Program Selection**: *Optimize for Somewhat similar sequences (blastn)*
+	- Cochez la case **Show results in a new window** pour que les résultats apparaissent dans une nouvelle fenêtre.
+	-  **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
+	-  Lancez la recherche à l'aide du bouton **BLAST**
 
-```
+```question
 Questions 5.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 
 **Répondez aux questions suivantes sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.**
