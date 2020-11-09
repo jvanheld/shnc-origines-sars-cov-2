@@ -313,22 +313,22 @@ Répondez par VRAI ou FAUX
 ```
 Questions 4.2 - BLAST - Alignmement de la Protéine Spike  et la séquence AGT51451.1
 
-4.1.1 Nom de l'organisme de la séquence AGT51451.1 
-4.1.2 Nom de  l'hôte de cet organisme
+4.2.1 Nom de l'organisme de la séquence AGT51451.1 
+4.2.2 Nom de  l'hôte de cet organisme
 
 Notez les valeurs des indices suivants du premier alignement
-4.1.3 Longueur de l'alignement
-4.1.4 Pourcentage d'identité
-4.1.5 Pourcentage de positifs
-4.1.6 Pourcentage de gaps
-4.1.7 E-valeur (expect)
+4.2.3 Longueur de l'alignement
+4.2.4 Pourcentage d'identité
+4.2.5 Pourcentage de positifs
+4.2.6 Pourcentage de gaps
+4.2.7 E-valeur (expect)
 
 Répondez par VRAI ou FAUX
 
-4.1.7 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
-4.1.8 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
-4.1.9 La séquence AGT51451.1 a deux alignements (positions 614-1351 et 72-438) contre la protéine Spike de SARS-COV-2. Ceci indique que la région 439-613 de la protéine AGT51451 est une insertion.
-4.1.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
+4.2.7 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
+4.2.8 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
+4.2.9 La séquence AGT51451.1 a deux alignements (positions 614-1351 et 72-438) contre la protéine Spike de SARS-COV-2. Ceci indique que la région 439-613 de la protéine AGT51451 est une insertion.
+4.2.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
 ```
 
 
