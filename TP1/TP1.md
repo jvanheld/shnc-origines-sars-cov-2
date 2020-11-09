@@ -363,13 +363,13 @@ Le génome de HIV a 9181 nucléotides. Nous allons générer une séquence aléa
 
 2. Faites un BLAST avec cette séquence aléatoire comme séquence requête contre le génome de SARS-CoV-2
 
-    	- Choisissez **Nucleotide blast (BLASTn)** sur [NCBI BLAST](http://blast.ncbi.nlm.nih.gov/)
-    	- Copiez la séquence aléatoire dans le première case
-    	- Cochez la case **Align two or more sequences**. Une nouvelle case apparait sous le titre de **Enter Subject Sequence**. Entrez l'identifiant du génome de SARS-CoV-2 dans ce case *MT019529.1*. BLAST va comparer ces deux séquences à la place de comparer la séquence aléatoire avec toute une BDD.
-    	- **Program Selection**: *Optimize for Somewhat similar sequences (blastn)*
-    	- Cochez la case **Show results in a new window** pour que les résultats apparaissent dans une nouvelle fenêtre.
-    	-  **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
-  	-  Lancez la recherche à l'aide du bouton **BLAST**
+	- Choisissez **Nucleotide blast (BLASTn)** sur [NCBI BLAST](http://blast.ncbi.nlm.nih.gov/)
+	- Copiez la séquence aléatoire dans le première case
+	- Cochez la case **Align two or more sequences**. Une nouvelle case apparait sous le titre de **Enter Subject Sequence**. Entrez l'identifiant du génome de SARS-CoV-2 dans ce case *MT019529.1*. BLAST va comparer ces deux séquences à la place de comparer la séquence aléatoire avec toute une BDD.
+	- **Program Selection**: *Optimize for Somewhat similar sequences (blastn)*
+	- Cochez la case **Show results in a new window** pour que les résultats apparaissent dans une nouvelle fenêtre.
+	-  **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
+	-  Lancez la recherche à l'aide du bouton **BLAST**
 
 ```
 Questions 5.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
