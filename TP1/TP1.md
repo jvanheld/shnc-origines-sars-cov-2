@@ -56,16 +56,19 @@ Le but de cette série de TP sera d'utiliser une série de méthodes bioinformat
 
 **Objectifs spécifiques**
 
-* TP1 Apprendre à formuler une requête structurée pour obtenir la liste des séquences dans une base de données.
-* TP1 Effectuer des alignements par paires.
-* TP1 Effectuer une recherche par similarité de séquences.
-* TP2 Effectuer des alignements multiples.
-* TP2 Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus pour pouvoir démontrer l'importance des recombinaisons entre différents virus.
+- TP1 
+    - Apprendre à formuler une requête structurée pour obtenir la liste des séquences dans une base de données.
+    - Effectuer des alignements par paires.
+    - Effectuer une recherche par similarité de séquences.
+
+- TP2 
+    - Effectuer des alignements multiples.
+    - Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus pour pouvoir démontrer l'importance des recombinaisons entre différents virus.
 
 
 ## Contrôle des connaissances
 
-Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [d'Ametice](https://ametice.univ-amu.fr/course/view.php?id=62928). 
+Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [Ametice](https://ametice.univ-amu.fr/course/view.php?id=62928). 
 
 
 
@@ -74,14 +77,12 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 ### Exercice 1 - NCBI genomes - Exploration de la génome de SARS-CoV-2
 
-Dans cet exercices vous allez apprendre à faire une requête rapide pour retourner un génome dans la base de données (abréviation ci-dessous: ***BDD***) **NCBI Genome** et vous allez découvrir le type d'information disponible sur le génome du coronavirus *SARS-CoV-2*.
+Dans cet exercice vous allez apprendre à faire une requête rapide pour accéder à un génome dans la base de données (***BDD***) **NCBI Genome**. Vous explorerez ensuite les annotations du génome du coronavirus *SARS-CoV-2* pour découvrir le type d'information disponible.
 
 1. Rendez vous sur la page d'accueil de Centre de Ressources [NCBI](https://www.ncbi.nlm.nih.gov/)
+    - Ce centre de ressources englobe un grande nombre d'outils et bases données (BDD), dont vous pouvez rapidement découvrir l'étendue à l'aide de menu à gauche de la page d'accueil.
 
-2. Ce centre de ressources englobe un grande nombre d'outils et bases données (BDD), dont vous pouvez rapidement découvrir l'étendue à l'aide de menu à gauche de la page d'accueil.
-
-3. Localisez les génomes de *SARS-CoV-2* soumis dans la BDD **NCBI genomes**. 
-
+3. Trouvez les génomes de *SARS-CoV-2* disponible dans la BDD **NCBI genomes**. 
    - Dans le menu déroulant **Database** en haut de la page accueil, choisissez **Genome**
    - Tapez `SARS-CoV-2` dans la boîte de recherche
    - Cliquez sur **Search**
@@ -91,10 +92,9 @@ Dans cet exercices vous allez apprendre à faire une requête rapide pour retour
 ```question
 Questions 1.1 - NCBI genomes
 
-- 1.1.1. Combien de génomes de Coronaviridae sont disponibles en ce moment ?
-- 1.1.2. Combien d'assemblages de génome de SARS-CoV-2 sont disponibles en ce moment ?
-- 1.1.3. Quelle est la taille moyenne en paires de bases (bp) des différentes assemblages degénome de SARS-CoV-2 ?
-- 1.1.4. Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
+1.1.1. Combien de génomes de Coronaviridae sont disponibles en ce moment ?
+1.1.2. Quelle est la taille médiane *en paires de bases* (bp) des différentes assemblages de génomes de SARS-CoV-2 ?
+1.1.3. Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
 ```
 
 5. Cliquez sur le lien du génome de référence, pour visualiser ses annotations. 
@@ -102,11 +102,11 @@ Questions 1.1 - NCBI genomes
 ```question
 Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 
-- 1.2.1. Quelle est la longueur de ce génome ? (en paires de base)
-- 1.2.2. Quelle est le lien entre les séquences MN908947 et NC_045512 ? 
-- 1.2.3. Quelle est la date de collection de ce virus à origine du séquençage ?
-- 1.2.4. Quelle est la première base de la séquence nucléotidique ?
-- 1.2.5. Quelle est la dernière base de la séquence nucléotidique ?
+1.2.1. Quelle est la longueur de ce génome ? (en paires de base)
+1.2.2. Quelle est le lien entre les séquences MN908947 et NC_045512 ? 
+1.2.3. Quelle est la date de collection de ce virus à origine du séquençage ?
+1.2.4. Quelle est la première base de la séquence nucléotidique ?
+1.2.5. Quelle est la dernière base de la séquence nucléotidique ?
 ```
 
 6. Cliquez sur le lien **Graphics** en haut de la page pour obtenir une représentation schématique des gènes (en vert) séquences codantes (en rouge) les peptides matures (en marron) et certaines régions fonctionnelles (en noir).
