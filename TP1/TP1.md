@@ -114,9 +114,9 @@ Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
 ```question
 Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
 
-- 1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
-- 1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
-- 1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
+1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
+1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
+1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
 ```
 
 ### Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
@@ -129,10 +129,10 @@ Dans cet exercice, vous allez apprendre de faire des requêtes naïves et struct
 ```question
 Questions 2.1 - Uniprot - Page d'accueil
 
-- 2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
-- 2.1.2 Combien de séquences contient-elle ?
-- 2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
-- 2.1.4 Combien de séquences contient-elle ?
+2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
+2.1.2 Combien de séquences contient-elle ?
+2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
+2.1.4 Combien de séquences contient-elle ?
 ```
 
 
@@ -148,14 +148,14 @@ Questions 2.1 - Uniprot - Page d'accueil
 ```question
 Questions 2.2 - Uniprot - Requête naïve
 
-- 2.2.1 De quelle espèce provient cette séquence ?
-- 2.2.2 Quelle est sa fonction ?
-- 2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
-- 2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
+2.2.1 De quelle espèce provient cette séquence ?
+2.2.2 Quelle est sa fonction ?
+2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
+2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
 
 Répondez par VRAI ou FAUX
 
-- 2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
+2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
 ```
 
 
