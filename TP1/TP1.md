@@ -48,8 +48,6 @@ Lors du premier cours, nous avons présenté une introduction aux concepts biolo
 
 ## Introduction
 
-[A ECRIRE ...]
-
 ## Objectifs des TP
 
 Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
@@ -68,7 +66,7 @@ Le but de cette série de TP sera d'utiliser une série de méthodes bioinformat
 
 ## Contrôle des connaissances
 
-Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [Ametice](https://ametice.univ-amu.fr/course/view.php?id=62928). 
+Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [Ametice](https://ametice.univ-amu.fr/mod/quiz/view.php?id=1659853). 
 
 
 
@@ -430,6 +428,6 @@ Répondez par VRAI ou FAUX sur base de la comparaison entre les génomes de SARS
 | NCBI Entrez | Bases de données biologiques | [https://www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
 | EMBOSS needle | Alignement de paires de séquences | [https://www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
 | NCBI BLAST | Recherche de séquences par similarité | [https://blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
-| AMU | page AMETICE de N&C3 | [https://ametice.univ-amu.fr/course/view.php?id=62928](https://ametice.univ-amu.fr/course/view.php?id=62928) |
+| AMU | page AMETICE de N&C3 | [https://ametice.univ-amu.fr/course/view.php?id=62928](https://ametice.univ-amu.fr/course/view.php?id=62928#section-7) |
 
 
