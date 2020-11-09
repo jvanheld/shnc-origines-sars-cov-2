@@ -295,16 +295,17 @@ Notez les valeurs des indices suivants
 4.1.3 Longueur de l'alignement
 4.1.4 Pourcentage d'identité
 4.1.5 Pourcentage de positifs
-
 4.1.6 Pourcentage de gaps
 4.1.7 E-valeur (expect)
 
+4.1.8 Combien y -t-il d'indel entre les deux séquences ?
+4.1.9 Que signifie la ligne entre les deux séquences comparées ?
+
 Répondez par VRAI ou FAUX
-4.1.8 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
-4.1.9 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
-4.1.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
-4.1.11 Combien y -t-il d'indel entre les deux séquences ?
-4.1.12 Que signifie la ligne entre les deux séquences comparées ?
+4.1.10 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
+4.1.11 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
+4.1.12 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
+
 ```
 
 5. Examinez l'alignement de la séquence requête avec la séquence **AGT51451.1** (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
