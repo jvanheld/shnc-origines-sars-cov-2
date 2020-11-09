@@ -411,13 +411,13 @@ Répondez par VRAI ou FAUX sur base de la comparaison entre les génomes de SARS
 >Une e-valeur faible indique qu'un résultat est statistiquement significatif.
 >
 >
->- Par exemple, si un alignement obtenu par BLAST est associé à une e-valeur de 1e-3, cela signifie qu'on s'attendrait à 0.001 faux-positifs dans des conditions similaires. Autrement dit, si l'on faisait l'analyse avec des séquences aléatoires, un alignement d'aussi bonne qualité sortirait en moyenne une fois sur 1000.
->	   
->- Au contraire, des résultats associés à une e-valeur supérieure à 1 devraient toujours être considérés avec prudence (je dirais même méfiance). En effet, une e-valeur de 10 signifie que si l'on avait effectué une analyse avec des données aléatoires, on s'attendrait à obtenir une dizaine de résultats. Ces résultats pourraient être qualifiés de faux-positifs, c'est-à-dire des éléments déclarés significatifs alors qu'ils ne le sont pas. Il est donc généralement recommandé d'imposer un seuil stringent sur l'e-valeur.
->	   
->- Il n'est pas rare que des alignements de BLAST retournent une e-valeur très basse, par exemple 1e-150. Ce score très significatif indique qu'il est extrêmement improbable que ce la similarité entre la protéine requête et le hit provienne du hasard. L'hypothèse alternative est que cette similarité de séquence reflète le fait que les deux séquences dérivent d'un ancêtre commun. Dans un tel cas, on peut conclure que les deux séquences sont très vraisemblablement homologues.
+>	Par exemple, si un alignement obtenu par BLAST est associé à une e-valeur de 1e-3, cela signifie qu'on s'attendrait à 0.001 faux-positifs dans des conditions similaires. Autrement dit, si l'on faisait l'analyse avec des séquences aléatoires, un alignement d'aussi bonne qualité sortirait en moyenne une fois sur 1000.
 >	
->- Dans certains cas, les programmes affichent une e-valeur de 0. Ceci ne signifie pas qu'il est formellement impossible d'obtenir un tel alignement par hasard, mais que la e-valeur est inférieure à la limite de précision de BLAST (~1e-172).
+>	Au contraire, des résultats associés à une e-valeur supérieure à 1 devraient toujours être considérés avec prudence (je dirais même méfiance). En effet, une e-valeur de 10 signifie que si l'on avait effectué une analyse avec des données aléatoires, on s'attendrait à obtenir une dizaine de résultats. Ces résultats pourraient être qualifiés de faux-positifs, c'est-à-dire des éléments déclarés significatifs alors qu'ils ne le sont pas. Il est donc généralement recommandé d'imposer un seuil stringent sur l'e-valeur.
+>	
+>	Il n'est pas rare que des alignements de BLAST retournent une e-valeur très basse, par exemple 1e-150. Ce score très significatif indique qu'il est extrêmement improbable que ce la similarité entre la protéine requête et le hit provienne du hasard. L'hypothèse alternative est que cette similarité de séquence reflète le fait que les deux séquences dérivent d'un ancêtre commun. Dans un tel cas, on peut conclure que les deux séquences sont très vraisemblablement homologues.
+>	
+>	Dans certains cas, les programmes affichent une e-valeur de 0. Ceci ne signifie pas qu'il est formellement impossible d'obtenir un tel alignement par hasard, mais que la e-valeur est inférieure à la limite de précision de BLAST (~1e-172).
 >
 >La e-valeur ne s'applique pas uniquement aux résultats de BLAST. La plupart des logiciels bioinformatiques indiquent la significativité des résultats, sous forme de e-valeur ou d'autres statistiques apparentées. Il est essentiel de pouvoir interpréter ces nombres pour éviter de se faire flouer par un résultat apparemment prometteur.
 
