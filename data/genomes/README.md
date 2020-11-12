@@ -13,5 +13,6 @@ Les données ont été obtenues sur le site Web du NCBI.
 |-------------------|----------------------------|
 | [genomes_around-CoV-2.fasta](https://raw.githubusercontent.com/jvanheld/shnc-origines-sars-cov-2/main/data/genomes/genomes_around-CoV-2.fasta) | génomes de 16 virus proches de SARS-CoV-2 | 
 | [GCF_009858895.2_ASM985889v3_genomic.gff](https://raw.githubusercontent.com/jvanheld/shnc-origines-sars-cov-2/main/data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) | annotations génomiques de SARS-CoV-2 |
+|[genomes_ppi.fasta](https://raw.githubusercontent.com/jvanheld/shnc-origines-sars-cov-2/main/data/genomes/genomes_ppi.fasta)| génomes de 7 virus proches de SARS-CoV-2 |
 
 ****
