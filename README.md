@@ -36,9 +36,9 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
  |  | 12:30-15:30 | [TP1](TP1/TP1.md) groupe 2 | cf groupe 1 |
  |  | 15:30-15:45 | Pause |  |
  |  | 15:45-18:00 | CM2 | (1) Interprétation des résultats du TP 1.<br>(2) Profils de pourcents de positions identiques.<br>(3) Alignements multiples. <br>(4) Inférence phylogénétique |
- | 17/11 | 08:30-11:30 | TP2 groupe 1 | (1) Alignements 1 à N et profils de PPI (PIPprofileR)<br>(2) Alignements multiples (clustal).<br>(3) Inférence phylogénétique (phylogeny.fr) |
+ | 17/11 | 08:30-11:30 | [TP2](TP2/TP2.md) groupe 1 | (1) Alignements 1 à N et profils de PPI (PIPprofileR)<br>(2) Alignements multiples (clustal).<br>(3) Inférence phylogénétique (phylogeny.fr) |
  |  | 11:30-12:30 | Déjeuner |  |
- |  | 12:30-15:30 | TP2 groupe 2 | cf groupe 1 |
+ |  | 12:30-15:30 | [TP2](TP2/TP2.md) groupe 2 | cf groupe 1 |
  |  | 15:30-16:00 | Pause |  |
  |  | 16:00-17:00 | CM3 | Interprétation, résumé et conclusion du cours |
  
