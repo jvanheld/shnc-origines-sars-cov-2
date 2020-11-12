@@ -1,6 +1,7 @@
 # TP2 - Alignement multiple et phylogénie moléculaire
 
 
+<link href="../tp.css" rel="stylesheet">
 
 >Chaque TP est constitué d'une série d'exercices.
 >
