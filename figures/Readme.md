@@ -1,12 +1,4 @@
-# Phylogénie moléculaire - TP2 - Alignement multiple et phylogénie moléculaire
-
 ##Contenu
 
-- Prérequis
-- Introduction
-- Objectifs
-- Contrôle des connaissances
-- Tutoriel
-  - Exercice 1 - Profil de pourcentage de position identiques (PPI)
-  - Exercice 2 - Inférence phylogénétique
-- Ressources
+|Vloir le fichier|Legend|
+|[Figure_1_PhyML_based_on_genomes.PNG](https://github.com/jvanheld/shnc-origines-sars-cov-2/tree/main/figures/Figure_1_PhyML_based_on_genomes.PNG)| Arbre phylogenetique basé sur les genomes des coronavirus|
