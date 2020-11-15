@@ -5,3 +5,7 @@ code.language-tuto{
 code.language-question {
   white-space: pre-line;
 }
+
+img {
+  border: 1px solid #888888;
+}
