@@ -1,4 +1,4 @@
-# TP2 - Alignement multiple et phylogénie moléculaire
+# TP2 - Alignement multiple et phylogénie moléculaire [[AMU](https://www.univ-amu.fr/) / [S&H](https://formations.univ-amu.fr/ME3SHU.html) / [N&C3](https://formations.univ-amu.fr/ME3SHU-S11XX3M1.html)] 
 
 
 <link href="../tp.css" rel="stylesheet">
@@ -28,9 +28,7 @@
 
 ## Prérequis
 
-Le matériel de support est disponible ici: 
-[diapos CM1](https://github.com/jvanheld/shnc-origines-sars-cov-2/blob/main/slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
-[diapos CM2](xxxxxxxxxxxxxxxxxxxxxxxxx)
+Le matériel de support est disponible ici: [[diapos CM1](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)] [[diapos CM2](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)]
 
 * Biologie de SARS-CoV-2
 * Bases de données biologiques
@@ -43,21 +41,24 @@ Le matériel de support est disponible ici:
 
 
 ## Objectifs des TP
-Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
+
+Le but de cette série de TP sera d'utiliser des méthodes et outils bioinformatiques afin de retracer l'origine de SARS-CoV-2.
 
 **Objectifs spécifiques**
 
-* TP1 Apprendre à formuler une requête structurée pour obtenir la liste des séquences dans une base de données.
-* TP1 Effectuer des alignements par paires.
-* TP1 Effectuer une recherche par similarité de séquences.
-* TP2 Créer des profils de pourcentage de position identiques (PPI)
-* TP2 Effectuer des alignements multiples.
-* TP2 Inférer des arbres phylogénétiques
+- TP1 
+    - Apprendre à formuler une requête structurée pour obtenir la liste des séquences dans une base de données.
+    - Effectuer des alignements par paires.
+    - Effectuer une recherche par similarité de séquences.
+
+- TP2 
+    - Effectuer des alignements multiples.
+    - Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus pour pouvoir démontrer l'importance des recombinaisons entre différents virus.
 
 
 ## Contrôle des connaissances
 
-Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [d'Ametice](https://ametice.univ-amu.fr/mod/quiz/view.php?id=1673084). 
+Les tutoriels sont entrecoupés de questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [d'Ametice](https://ametice.univ-amu.fr/mod/quiz/view.php?id=1673084). 
 
 
 
@@ -65,9 +66,11 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 ### Exercice 1 - Identification de recombinaison entre virus à l'aide de profil de pourcentage de position identiques (PPI) 
 
-Nous allons visualiser le profil de pourcentage de position identiques (PPI) entre le SARS-CoV-2 et quelques autre coronavirus, pour pouvoir identifier les virus les plus proche au SARS-CoV-2 sur différents régions du génome. 
+Nous allons générer des profils de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 (génome de référence) et quelques autre coronavirus (génomes requêtes), pour pouvoir
+- identifier les virus les plus proche au SARS-CoV-2 sur différents régions du génome. 
+- localiser les régions génomiques ayant vraisemblablement fait l'objet de recombinaisons entre souches de virus
 
-1. Rendez vous sur le site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
+1. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
 2. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi.fasta)) qui contient la génomes de SARS-Cov-2 et six autres génomes de coronavirus que nous allons comparer. 
     **Dans l'identifiant des séquences *Bt*, *Pn* et *Hu* indiquent l'hôte de chaque génome: Chauve-souris (Bat), Pangolin, Humain.**
