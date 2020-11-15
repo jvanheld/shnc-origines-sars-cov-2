@@ -222,7 +222,7 @@ Le logiciel Gblock ne fait pas qu'enlever les colonnes de l’alignement avec ga
 
 
 1. Pour retournez d'une étape cliquez sur **go back**
-2.  **Cliquez sur l'icone **.html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de alignement retenues par Gblocks. Ces régions sont soulignées en bleu foncé. La construction phylogénétique sera basée uniquement sur elles. 
+2.  **Cliquez sur l'icone .html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de alignement retenues par Gblocks. Ces régions sont soulignées en bleu foncé. La construction phylogénétique sera basée uniquement sur elles. 
 3. Vous pouvez voir l'alignement multiple qui contient uniquement des positions retenus en cliquant sur le bouton **MSAViewer** de **Step 5 Gblocks Cleaned sequences**.
 
 ```question
