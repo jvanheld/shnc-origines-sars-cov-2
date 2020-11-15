@@ -63,12 +63,21 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 
 
+
 ## Tutoriel
 
 ### Exercice 1 - Identification de recombinaisons entre virus à l'aide de profils de pourcentages de positions identiques (PPI) 
 
 **But de l'exercice:** nous allons visualiser le profil de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 (considéré ici comme le *génome de référence*) et quelques autre coronavirus (*génomes requêtes*), pour identifier les virus les plus proches du SARS-CoV-2, et évaluer si ces degrés de proximité varient sur différentes régions du génome. 
 
+
+**Identifiants des séquences génomiques** : nous allons analyser un fichier qui contient les séquences génomiques complètes d'une demi-douzaine de coronavirus plus ou moins proches de SARS-CoV-2. Les deux premières lettres de chaque identifiant indiquent l'organisme hôte; 
+
+| Préfixe | Hôte |
+|-----------|---------------------|
+| Bt | Chauve-souris (bat) |
+| Pn | Pangolin |
+| Hu | Humain |
 
 1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi.fasta)) qui contient la génomes de SARS-Cov-2 et six autres génomes de coronavirus que nous allons comparer. 
     **Dans l'identifiant des séquences *Bt*, *Pn* et *Hu* indiquent l'hôte de chaque génome: Chauve-souris (Bat), Pangolin, Humain.**
@@ -78,8 +87,8 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 3. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
 
-<a href="images/PIPprofiler_01_home.png">
-<img src="images/PIPprofiler_01_home.png" alt="Page d'accueil de PIPprofiler" width="600px" border=10 color="blue">
+<a href="images/01_PIPprofileR-home.png">
+<img src="images/01_PIPprofileR-home.png" alt="Page d'accueil de PIPprofiler" width="600px" border=10 color="blue">
 </a>
 
 4. Cliquez sur "Import sequence" et téléversez le fichier fasta que vous venez de sauvegarder sur votre ordinateur.
@@ -89,18 +98,11 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
     - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 7 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**.
 
 
-<a href="images/PIPprofiler_02_import-sequence.png">
-<img src="images/PIPprofiler_02_import-sequence.png" alt="Fenêtre d'import des séquences en format fasta" width="300px">
+<a href="images/02_import-fasta-sequence.png">
+<img src="images/02_import-fasta-sequence.png" alt="Fenêtre d'import des séquences en format fasta" width="300px">
 </a>
 
-
-5. Retournez à l'onglet **Import** pour importer le fichier *GCF_009858895.2_ASM985889v3_genomic.gff* à PIPprofileR.
-
-    - Dans la fenêtre **Import annotation** cliquer sur **Select file**
-    - Choisissez le bouton **GFF3** et sélectionnez le fichier *GCF_009858895.2_ASM985889v3_genomic.gff*
-    - Cliquez sur **OK** quand **Upload complete** est affiché.
-
-6. Dans l'onglet **Filters** vous pouvez faire une série de réglages
+5. Dans l'onglet **Filters** vous pouvez faire une série de réglages
 
     - Assurez-vous que le génome HuCoV2_WN01_2019 est sélectionné comme référence dans la fenêtre **1 - Select Reference sequence**. Cette séquence sera comparée à toutes les autres du jeux de données.
     - Dans la fenêtre **2 - Select query sequences**, les séquences disponibles sont affichées à gauche, les séquences sélectionnées sont à droite. Assurez-vous que tous les séquences sont sélectionnées pour la comparaison.
@@ -108,24 +110,35 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
     - Laissez choisissez *600* dans **4- Select a windows size**. Le pourcentage d'identité sera calculé pour chaque fragment de 600 nucléotides. On dit que 600 est la *longueur de la fenêtre*.
 
 
-<a href="images/PIPprofiler_03_sequence-filters.png">
-<img src="images/PIPprofiler_03_sequence-filters.png" alt="Fenêtre de paramétrage et filtrage des équences" width="300px">
+<a href="images/03_sequence-filters.png">
+<img src="images/03_sequence-filters.png" alt="Fenêtre de paramétrage et filtrage des équences" width="600px">
 </a>
 
-7. Appuyer sur **Run** pour commencer les alignements et produire les graphique de PPI. Le calcul va prendre quelques minutes (durant lesquelles une fenêtre indique **Alignment in progress**).
+6. Appuyer sur **Run** pour commencer les alignements et produire les graphique de PPI. Le calcul va prendre quelques minutes (durant lesquelles une fenêtre indique **Alignment in progress**).
 
-8. Une fois le graphique affiché, vous pouvez sélectionner des couleurs pour chaque séquence. Ne passez pas trop de temps sur cette opération, car malheureusement le choix des couleurs sont remis par défaut quand vous allez changer d'autres paramètres d'affichage. Néanmoins, le choix de couleur est très pratique si vous voulez mettre en valeur une des séquences.
+7. Une fois le graphique affiché, vous pouvez sélectionner des couleurs pour chaque séquence. Ne passez pas trop de temps sur cette opération, car malheureusement le choix des couleurs sont remis par défaut quand vous allez changer d'autres paramètres d'affichage. Néanmoins, le choix de couleur est très pratique si vous voulez mettre en valeur une des séquences.
 
     - Allez dans Settings > Colors
     - choisissez une séquence du menu déroulant et un couleur, en ajustant des curseurs de la boite **Select color**. 
     - Faites un mise à jour (**Update**) après chaque séquence. 
 
-9. En positionnant le curseur sur la ligne bleue en abscisse, les annotations de séquences codantes apparaissent dans la fenêtre **Annotation**.
+<a href="images/05_recolored-profiles.png">
+<img src="images/05_recolored-profiles.png" alt="Fenêtre de paramétrage et filtrage des équences" width="600px">
+</a>
+
+8. Nous allons maintenant charger les annotations génomiques afin de pouvoir interpréter les variations de PPI en fonction des gènes sous-jacents. Retournez à l'onglet **Import** pour importer le fichier *GCF_009858895.2_ASM985889v3_genomic.gff* à PIPprofileR.
+
+    - Dans la fenêtre **Import annotation** cliquer sur **Select file**
+    - Choisissez le bouton **GFF3** et sélectionnez le fichier *GCF_009858895.2_ASM985889v3_genomic.gff*
+    - Cliquez sur **OK** quand **Upload complete** est affiché.
+
+
+9. Suite au chargement du fichier d'annotations génomiques, des flèches bleues épaisses se sont ajoutées au bas du graphique. Elles représentent les gènes décrits dans le fichier GFF que vous avez téléchargé. Si vous positionnez le curseur sur une flèche bleue, les annotations de séquences codantes apparaîtront dans la fenêtre **Annotation**.
 
 ```question
 Questions 1.1 Pourcentage de Positions Identiques (PPI , en anglais PIP) de génomes des coronavirus
 
-1.1.1 Quel génome a le pourcentage d'identité le plus élévé avec le SARS-CoV-2 (Reference: HuCoV2_WH01_2019) ?
+1.1.1 Quel génome a le pourcentage d'identité moyen le plus élévé avec le SARS-CoV-2 (Reference: HuCoV2_WH01_2019) ?
 
 1.1.2 Quel est son pourcentage d'identité avec le génôme de référence ? 
 
@@ -137,11 +150,15 @@ Questions 1.1 Pourcentage de Positions Identiques (PPI , en anglais PIP) de gén
 
 Focalisons-nous maintenant sur le **gène S**.
 
-1. Dans **Feature Exploration**, sélectionnez **Genbank:YP_009724390.1,GeneID:43740568** (c'est l'identifiant du gène S) et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique devient plus "lisse", car les le PPI sont calculés sur des fragments relativement longs (600 nucléotides).
+1. Dans **Feature Exploration**, sélectionnez **Genbank:YP_009724390.1,GeneID:43740568** (c'est l'identifiant du gène S) et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier. .
 
-2. Changez la longueur de la fenêtre à *120* pour pouvoir comparer les séquences de Gène S plus en détail dans : **Settings > Size of the sliding window > Update**. Le graphique est mis à jour, et de nouveau, le PPI est affiché pour le génome complet. Revenez sur l'affichage de gène S en cliquant sur **Focus** dans **Feature exploraion**
+2. Pour pouvoir comparer les séquences de Gène S de façon plus fine, fixez la largeur de la fenêtre à *120*  dans : **Settings > Size of the sliding window** et cliquez **Update**. Le graphique est mis à jour, et de nouveau, le PPI est affiché pour le génome complet. 
 
-3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspondant au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Mean area** 
+
+    - Revenez sur l'affichage de gène S en cliquant sur **Focus** dans **Feature exploraion**. 
+    - Vous devrez sans doute re-spécifier les couleurs des génomes d'intérêt (RaTG13, PnMP789). Nous avons signalé ce problème aux développeurs qui vont essayer de le résoudre.
+
+3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspond au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Mean area** 
 
 ```question
 Questions 1.2 PPI de gène S des coronavirus
@@ -171,7 +188,7 @@ Répondez par VRAI ou FAUX
 
 1.3.4 Cette recombinaison a eu lieu très probablement entre les génomes BtRATG13 et PnMP789.
 
-1.3.5 La similarité entre ce fragment de génome PnMP789 et le SARS-CoV-2 est suffisamment elevée pour en déduire, que le génome le SARS-CoV-2 a obtenu un morceau de sa séquence du génome du virus de pangolin.
+1.3.5 La similarité entre ce fragment de génome PnMP789 et le SARS-CoV-2 est suffisamment élevée pour en déduire que le virus de pangolin a constitué la source d'unepartie du génome de SARS-CoV-2.
 
 ```
 
