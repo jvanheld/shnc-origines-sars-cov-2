@@ -65,19 +65,22 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 ## Tutoriel
 
-### Exercice 1 - Identification de recombinaison entre virus à l'aide de profil de pourcentage de position identiques (PPI) 
+### Exercice 1 - Identification de recombinaisons entre virus à l'aide de profils de pourcentages de positions identiques (PPI) 
 
-Nous allons visualiser le profil de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 et quelques autre coronavirus, pour pouvoir identifier les virus les plus proche au SARS-CoV-2 sur différents régions du génome. 
+**But de l'exercice:** nous allons visualiser le profil de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 (considéré ici comme le *génome de référence*) et quelques autre coronavirus (*génomes requêtes*), pour identifier les virus les plus proches du SARS-CoV-2, et évaluer si ces degrés de proximité varient sur différentes régions du génome. 
 
 
 1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi.fasta)) qui contient la génomes de SARS-Cov-2 et six autres génomes de coronavirus que nous allons comparer. 
     **Dans l'identifiant des séquences *Bt*, *Pn* et *Hu* indiquent l'hôte de chaque génome: Chauve-souris (Bat), Pangolin, Humain.**
 
-2.  Enregistrerez sur votre ordinateur le fichier [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir associer des différents région du graphique aux gènes.
+2.  Enregistrerez sur votre ordinateur le **fichier d'annotations génomiques** [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir interpréter les profils de PPI, ou pour focaliser l'analyse sur l'un ou l'autre gène.
 
 3. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
-![Page d'accueil de PIPprofiler](images/PIPprofiler_01_home.png =300x)
+
+<a href="images/PIPprofiler_01_home.png">
+<img src="images/PIPprofiler_01_home.png" alt="Page d'accueil de PIPprofiler" width="600px" border=10 color="blue">
+</a>
 
 4. Cliquez sur "Import sequence" et téléversez le fichier fasta que vous venez de sauvegarder sur votre ordinateur.
 
@@ -85,7 +88,11 @@ Nous allons visualiser le profil de **pourcentage de position identiques** (**PP
     - Choisissez le bouton **Input FASTA** et sélectionnez le fichier *genomes_ppi.fasta*.
     - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 7 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**.
 
-![Fenêtre d'import des séquences en format fasta](images/PIPprofiler_02_import-sequence.png)
+
+<a href="images/PIPprofiler_02_import-sequence.png">
+<img src="images/PIPprofiler_02_import-sequence.png" alt="Fenêtre d'import des séquences en format fasta" width="300px">
+</a>
+
 
 5. Retournez à l'onglet **Import** pour importer le fichier *GCF_009858895.2_ASM985889v3_genomic.gff* à PIPprofileR.
 
@@ -99,6 +106,11 @@ Nous allons visualiser le profil de **pourcentage de position identiques** (**PP
     - Dans la fenêtre **2 - Select query sequences**, les séquences disponibles sont affichées à gauche, les séquences sélectionnées sont à droite. Assurez-vous que tous les séquences sont sélectionnées pour la comparaison.
     - Choisissez *global-local* dans l'étape **3 - Pairwise Alignment type**
     - Laissez choisissez *600* dans **4- Select a windows size**. Le pourcentage d'identité sera calculé pour chaque fragment de 600 nucléotides. On dit que 600 est la *longueur de la fenêtre*.
+
+
+<a href="images/PIPprofiler_03_sequence-filters.png">
+<img src="images/PIPprofiler_03_sequence-filters.png" alt="Fenêtre de paramétrage et filtrage des équences" width="300px">
+</a>
 
 7. Appuyer sur **Run** pour commencer les alignements et produire les graphique de PPI. Le calcul va prendre quelques minutes (durant lesquelles une fenêtre indique **Alignment in progress**).
 
