@@ -187,6 +187,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
   - **Alignment Curation** : *Gblocks*
   - **Tree Inference** : *PhyML+SMS*
   - **Multiple Alignment** : *Newick Display*
+  
 7.  Créez le pipeline : cliquez (**Create workflow**)
 8. Sélectionnez le fichier *spike_proteins_16.fasta* dans la section **Input data**. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Nous allons commencer les analyses avec les paramètres par défaut.
 9. Cliquer sur **Submit** pour commencer les analyses.
