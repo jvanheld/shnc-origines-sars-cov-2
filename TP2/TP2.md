@@ -17,6 +17,7 @@
 
 
 ## Contenu
+
 * Prérequis
 * Introduction
 * Objectifs
@@ -42,7 +43,7 @@ Le matériel de support est disponible ici: [[diapos CM1](../slides/NC3_enquete
 
 ## Objectifs des TP
 
-Le but de cette série de TP sera d'utiliser des méthodes et outils bioinformatiques afin de retracer l'origine de SARS-CoV-2.
+Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
 
 **Objectifs spécifiques**
 
@@ -58,7 +59,7 @@ Le but de cette série de TP sera d'utiliser des méthodes et outils bioinformat
 
 ## Contrôle des connaissances
 
-Les tutoriels sont entrecoupés de questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [d'Ametice](https://ametice.univ-amu.fr/mod/quiz/view.php?id=1673084). 
+Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre en un ou quelques mots. Nous vous indiquerons, au fil de ce TP, les moments où il vous faudra encoder les réponses dans les questionnaires du site [d'Ametice](https://ametice.univ-amu.fr/mod/quiz/view.php?id=1673084). 
 
 
 
@@ -66,9 +67,7 @@ Les tutoriels sont entrecoupés de questions auxquelles vous pouvez répondre en
 
 ### Exercice 1 - Identification de recombinaison entre virus à l'aide de profil de pourcentage de position identiques (PPI) 
 
-Nous allons générer des profils de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 (génome de référence) et quelques autre coronavirus (génomes requêtes), pour pouvoir
-- identifier les virus les plus proche au SARS-CoV-2 sur différents régions du génome. 
-- localiser les régions génomiques ayant vraisemblablement fait l'objet de recombinaisons entre souches de virus
+Nous allons visualiser le profil de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 et quelques autre coronavirus, pour pouvoir identifier les virus les plus proche au SARS-CoV-2 sur différents régions du génome. 
 
 1. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
@@ -115,7 +114,7 @@ Questions 1.1 Pourcentage de Positions Identiques (PPI , en anglais PIP) de gén
 
 1.1.3 Quel est le pourcentage d'identité moyen entre la séquence PnMP789 et le HuCoV2_WH01_2019 ? 
 
-1.1.3 Dans quel gène observez-vous une chute de pourcentage d'identité de plus de 5 % entre la séquence HuCoV2_WH01_2019 et BtRaTG13_Yunnan ? 
+1.1.4 Dans quel gène observez-vous une chute de pourcentage d'identité de plus de 5 % entre la séquence HuCoV2_WH01_2019 et BtRaTG13_Yunnan ? 
 
 ```
 
@@ -190,10 +189,13 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
   - **Alignment Curation** : *Gblocks*
   - **Tree Inference** : *PhyML+SMS*
   - **Multiple Alignment** : *Newick Display*
+  
 7.  Créez le pipeline : cliquez (**Create workflow**)
 8. Sélectionnez le fichier *spike_proteins_16.fasta* dans la section **Input data**. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Nous allons commencer les analyses avec les paramètres par défaut.
 9. Cliquer sur **Submit** pour commencer les analyses.
 10. Au fur et à mesure de l'analyse, les liens apparaissent pour pouvoir découvrir le résultat de chaque étape.
+
+>Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder aux résultats: [Page de Résultats](https://ngphylogeny.fr/workspace/history/678122897744d9fb)
 
 #### Analyse des résultats
 
@@ -225,7 +227,7 @@ Le logiciel Gblock ne fait pas qu'enlever les colonnes de l’alignement avec ga
 
 
 1. Pour retournez d'une étape cliquez sur **go back**
-2.  **Cliquez sur l'icone **.html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de alignement retenues par Gblocks. Ces régions sont soulignées en bleu foncé. La construction phylogénétique sera basée uniquement sur elles. 
+2.  **Cliquez sur l'icone .html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de alignement retenues par Gblocks. Ces régions sont soulignées en bleu foncé. La construction phylogénétique sera basée uniquement sur elles. 
 3. Vous pouvez voir l'alignement multiple qui contient uniquement des positions retenus en cliquant sur le bouton **MSAViewer** de **Step 5 Gblocks Cleaned sequences**.
 
 ```question

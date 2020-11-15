@@ -1,4 +1,4 @@
-# Enquête bioinformatique sur les origines de SARS-CoV-2 [[AMU](https://www.univ-amu.fr/) > [S&H](https://formations.univ-amu.fr/ME3SHU.html) > [N&C3](https://formations.univ-amu.fr/ME3SHU-S11XX3M1.html)] 
+# Enquête bioinformatique sur les origines de SARS-CoV-2 [[AMU](https://www.univ-amu.fr/) / [S&H](https://formations.univ-amu.fr/ME3SHU.html) / [N&C3](https://formations.univ-amu.fr/ME3SHU-S11XX3M1.html)] 
 
 ## Audience
 
@@ -35,7 +35,7 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
  |  | 11:30-12:30 | Déjeuner |  |
  |  | 12:30-15:30 | [TP1](TP1/TP1.md) groupe 2 | cf groupe 1 |
  |  | 15:30-15:45 | Pause |  |
- |  | 15:45-18:00 | CM2 <br>[[diapos 2](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)] <br>[[Vidéo 2](https://amupod.univ-amu.fr/video/9260-/8e50aafcbb364404ecef6c14d56d773b409055121b818c2e5a860f8e1b9b6261/)]| (1) Alignements multiples. <br>(2) Inférence phylogénétique |
+ |  | 15:45-18:00 | CM2 <br>[[diapos 2](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)] <br>[[Vidéo 2](https://amupod.univ-amu.fr/video/9260-/8e50aafcbb364404ecef6c14d56d773b409055121b818c2e5a860f8e1b9b6261/)] | (1) Alignements multiples. <br>(2) Inférence phylogénétique |
  | 17/11 | 08:30-11:30 | [TP2](TP2/TP2.md) groupe 1 | (1) Alignements 1 à N et profils de PPI (PIPprofileR)<br>(2) Alignements multiples (clustal).<br>(3) Inférence phylogénétique (phylogeny.fr) |
  |  | 11:30-12:30 | Déjeuner |  |
  |  | 12:30-15:30 | [TP2](TP2/TP2.md) groupe 2 | cf groupe 1 |

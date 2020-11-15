@@ -1,4 +1,5 @@
-# Phylogénie moléculaire - TP1 - Bases de données et recherche par similarité de séquences
+# TP1 - Bases de données et recherche par similarité de séquences [[AMU](https://www.univ-amu.fr/) / [S&H](https://formations.univ-amu.fr/ME3SHU.html) / [N&C3](https://formations.univ-amu.fr/ME3SHU-S11XX3M1.html)] 
+
 
 <link href="../tp.css" rel="stylesheet">
 
@@ -37,7 +38,7 @@
 
 ## Prérequis
 
-Le matériel de support est disponible ici : [diapos CM1](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
+Le matériel de support est disponible ici : [diapos CM1](../slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
 
 Lors du premier cours, nous avons présenté une introduction aux concepts biologiques liés à l'origine de coronavirus SARS-CoV-2, et commencé à fournir les premiers éléments pour l'analyse bioinformatique des séquences.
 
@@ -50,7 +51,7 @@ Lors du premier cours, nous avons présenté une introduction aux concepts biolo
 
 ## Objectifs des TP
 
-Le but de cette série de TP sera d'utiliser une série de méthodes bioinformatiques afin de retracer l'origine de SARS-CoV-2.
+Le but de cette série de TP sera d'utiliser des méthodes et outils bioinformatiques afin de retracer l'origine de SARS-CoV-2.
 
 **Objectifs spécifiques**
 
