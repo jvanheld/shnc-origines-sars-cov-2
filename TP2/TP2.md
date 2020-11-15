@@ -77,13 +77,15 @@ Nous allons visualiser le profil de **pourcentage de position identiques** (**PP
 
 3. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
+![Page d'accueil de PIPprofiler](images/PIPprofiler_01_home.png =300x)
+
 4. Cliquez sur "Import sequence" et téléversez le fichier fasta que vous venez de sauvegarder sur votre ordinateur.
 
     - Dans la fenêtre **Import your sequences** cliquez sur **Select file**.
     - Choisissez le bouton **Input FASTA** et sélectionnez le fichier *genomes_ppi.fasta*.
     - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 7 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**.
 
-
+![Fenêtre d'import des séquences en format fasta](images/PIPprofiler_02_import-sequence.png)
 
 5. Retournez à l'onglet **Import** pour importer le fichier *GCF_009858895.2_ASM985889v3_genomic.gff* à PIPprofileR.
 
