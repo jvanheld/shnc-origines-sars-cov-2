@@ -30,7 +30,7 @@
 
 Le matériel de support est disponible ici: 
 [diapos CM1](https://github.com/jvanheld/shnc-origines-sars-cov-2/blob/main/slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
-[diapos CM2](xxxxxxxxxxxxxxxxxxxxxxxxx)
+[diapos CM2](https://github.com/jvanheld/shnc-origines-sars-cov-2/blob/main/slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)
 
 * Biologie de SARS-CoV-2
 * Bases de données biologiques
