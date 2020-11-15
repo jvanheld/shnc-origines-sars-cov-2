@@ -112,7 +112,7 @@ Questions 1.1 Pourcentage de Positions Identiques (PPI , en anglais PIP) de gén
 
 1.1.3 Quel est le pourcentage d'identité moyen entre la séquence PnMP789 et le HuCoV2_WH01_2019 ? 
 
-1.1.3 Dans quel gène observez-vous une chute de pourcentage d'identité de plus de 5 % entre la séquence HuCoV2_WH01_2019 et BtRaTG13_Yunnan ? 
+1.1.4 Dans quel gène observez-vous une chute de pourcentage d'identité de plus de 5 % entre la séquence HuCoV2_WH01_2019 et BtRaTG13_Yunnan ? 
 
 ```
 
