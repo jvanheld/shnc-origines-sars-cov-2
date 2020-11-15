@@ -69,18 +69,21 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 Nous allons visualiser le profil de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 et quelques autre coronavirus, pour pouvoir identifier les virus les plus proche au SARS-CoV-2 sur différents régions du génome. 
 
-1. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
-2. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi.fasta)) qui contient la génomes de SARS-Cov-2 et six autres génomes de coronavirus que nous allons comparer. 
+1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi.fasta)) qui contient la génomes de SARS-Cov-2 et six autres génomes de coronavirus que nous allons comparer. 
     **Dans l'identifiant des séquences *Bt*, *Pn* et *Hu* indiquent l'hôte de chaque génome: Chauve-souris (Bat), Pangolin, Humain.**
 
-3.  Enregistrerez sur votre ordinateur le fichier [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir associer des différents région du graphique aux gènes.
+2.  Enregistrerez sur votre ordinateur le fichier [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir associer des différents région du graphique aux gènes.
 
-4. Importez le ficher fasta à [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/)
+3. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
 
-    - Dans la fenêtre **Import your sequences** cliquer sur **Select file**
-    - Choisissez le bouton **Input FASTA** et sélectionnez le fichier *genomes_ppi.fasta*
-    - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 7 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**
+4. Cliquez sur "Import sequence" et téléversez le fichier fasta que vous venez de sauvegarder sur votre ordinateur.
+
+    - Dans la fenêtre **Import your sequences** cliquez sur **Select file**.
+    - Choisissez le bouton **Input FASTA** et sélectionnez le fichier *genomes_ppi.fasta*.
+    - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 7 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**.
+
+
 
 5. Retournez à l'onglet **Import** pour importer le fichier *GCF_009858895.2_ASM985889v3_genomic.gff* à PIPprofileR.
 
