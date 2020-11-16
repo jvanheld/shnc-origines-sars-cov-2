@@ -273,7 +273,7 @@ Questions 2.2 - Curation de l'alignement
 
 2.2.1 Combien de positions ont été retenus pour la construction de l'arbre par Gblocks ? 
 
-2.2.2 Combien de régions (blocks) ont été selctionnées ?
+2.2.2 Combien de régions (blocks) ont été sélectionnées ?
 
 2.2.3 Combien de positions contient la région (block) la plus longue.
 
