@@ -216,20 +216,27 @@ La construction des arbres suit les étapes suivantes.
 
 Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline pour enchainer tous ces étapes tout en rendent disponible de résultats de chaque étapes. 
 
-1. Télécharger le fichier [spike_proteins_16.fasta](../data/spike-protein/spike_proteins_16.fasta) et enregistrez le sur votre ordinateur. 
-2. Ce fichier contient les protéines spike de 16 différents coronavirus. Les virus choisis pour votre analyses sont indiqués par une flèche rouge sur le [Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG) .
-3. Rendez-vous sur le page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/)
+1. Téléchargez le fichier [spike_proteins_16.fasta](../data/spike-protein/spike_proteins_16.fasta) et enregistrez le sur votre ordinateur. 
+
+2. Ce fichier contient les protéines spike de 16 différents coronavirus. Les virus choisis pour votre analyses sont indiqués par une flèche rouge sur le [Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG).
+
+3. Rendez vous sur le page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/). 
+
 4. Choisissez l'option **A la carte** qui va vous permettre de choisir un logiciel pour chaque étape. 
+
 5. Donnez un nom à votre analyse (**Name**), et choisissez les logiciels suivants pour chaque étape
 
-  - **Multiple Alignment** : *MUSCLE*
-  - **Alignment Curation** : *Gblocks*
-  - **Tree Inference** : *PhyML+SMS*
-  - **Multiple Alignment** : *Newick Display*
+    - **Multiple Alignment** : *MUSCLE*
+    - **Alignment Curation** : *Gblocks*
+    - **Tree Inference** : *PhyML+SMS*
+    - **Multiple Alignment** : *Newick Display*
   
 6.  Créez le pipeline : cliquez (**Create workflow**)
+
 7. Sélectionnez le fichier *spike_proteins_16.fasta* dans la section **Input data**. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Nous allons commencer les analyses avec les paramètres par défaut.
-8. Cliquer sur **Submit** pour commencer les analyses.
+
+8. Cliquez sur **Submit** pour commencer les analyses.
+
 9. Au fur et à mesure de l'analyse, les liens apparaissent pour pouvoir découvrir le résultat de chaque étape.
 
 >Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder aux résultats: [Page de Résultats](https://ngphylogeny.fr/workspace/history/6390d9efe7809836)
