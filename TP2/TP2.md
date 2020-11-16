@@ -356,6 +356,7 @@ Questions 2.4 - Interprétation de l'arbre
 | PIPprofileR | Profils de pourcentages de positions identiques | [https://pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
 | Clustal | Alignement multiple | [https://www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
 | phylogeny.fr | Phylogénie moléculaire | [https://www.phylogeny.fr/](https://ngphylogeny.fr/) |
+| NGphylogeny.fr | "Next Generation" phylogeny.fr | [NGphylogeny.fr](https://ngphylogeny.fr/) |
 | AMU | page AMETICE de N&C3 | [https://ametice.univ-amu.fr/course/view.php?id=62928](https://ametice.univ-amu.fr/course/view.php?id=62928) |
 
 
