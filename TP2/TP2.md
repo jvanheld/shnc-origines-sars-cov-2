@@ -253,14 +253,14 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
     - Le code couleur vous permet de visualiser facilement les positions conservées : les acides aminés similaires sont colorés par des couleurs de même type. 
     - Les gaps sont indiqués en blanc. 
-    - Naviguez de gauche à droite pour explorer l'alignement dans son ensemble. 
+    - Naviguez de gauche à droite pour explorer l'alignement dans son ensemble.   
 
 ```question
 Questions 2.1 - Alignement multiple
 
-2.1.1 Quel est la longueur de l'alignement (le nombre de positions de l'alignement) ? 
+2.1.1 Quel est la longueur (nombre de colonnes) de l'alignement ? 
 
-2.1.2 Quelle séquence apparaît la plus divergente par rapport aux autres ?
+2.1.2 Quelle séquence apparaît la plus divergente par rapport aux autres ?
 
 Répondez par VRAI ou FAUX
 
@@ -273,13 +273,16 @@ Répondez par VRAI ou FAUX
 ##### Curation de l'alignement
 
 Cet étape permet de "nettoyer" l'alignement multiple, pour n'en retenir que les sites (colonnes de l'alignement) pertinents pour l'inférence phylogénétique qui suivra.
-Dans un alignement multiple la position des gaps est souvent ambiguë, si les séquences ne sont pas fortement conservées. Pour cette raison, il est préférable de se baser sur les blocks (colonnes contiguës dans l’alignent) sans gap pour inférer des arbres phylogénétiques.
-Le logiciel Gblock ne fait pas qu'enlever les colonnes de l’alignement avec gaps, mais il élimine aussi les blocks sans gap trop courts, car ces positions se trouvent dans une région de l’alignent relativement peu fiable.
+Dans un alignement multiple la position des gaps est souvent ambiguë, si les séquences ne sont pas fortement conservées. Pour cette raison, il est préférable de se baser sur les blocks (colonnes contigües dans l’alignent) sans gap pour inférer des arbres phylogénétiques.
+
+Le logiciel *Gblock* ne fait pas qu'enlever les colonnes de l’alignement avec gaps, il élimine aussi les blocks trop courts entre deux gaps, car ces positions se trouvent généralement dans une région relativement peu fiable de l’alignent.
 
 
-1. Pour retournez d'une étape cliquez sur **go back**
-2.  **Cliquez sur l'icone .html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de alignement retenues par Gblocks. Ces régions sont soulignées en bleu foncé. La construction phylogénétique sera basée uniquement sur elles. 
-3. Vous pouvez voir l'alignement multiple qui contient uniquement des positions retenus en cliquant sur le bouton **MSAViewer** de **Step 5 Gblocks Cleaned sequences**.
+1. Pour revenir en arrière d'une étape, cliquez sur **Go back**.
+
+2.  **Cliquez sur l'icone .html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de l'alignement retenues par *Gblocks*. Ces régions sont soulignées en bleu foncé. La reconstruction phylogénétique sera basée uniquement sur elles. 
+
+3. Vous pouvez voir l'alignement multiple qui contient uniquement des positions retenues en cliquant sur le bouton **MSAViewer** de **Step 5 Gblocks Cleaned sequences**.
 
 ```question
 Questions 2.2 - Curation de l'alignement
