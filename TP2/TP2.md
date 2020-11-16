@@ -311,16 +311,16 @@ Répondez par VRAI ou FAUX
 ```question
 Questions 2.4 - Interprétation de l'arbre
 
-2.4.1 Selon votre arbre, quelle(s) séqunece(s) de virus de chauve souris (indentifiant commence par Bt) est/sont les plus proches à la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) pangolins sont les plus proches à la protéines 
+2.4.1 Selon votre arbre, quelle(s) séqunece(s) de virus de chauve souris (indentifiant commence par Bt) est/sont les plus proches à la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ? 
 
 
-2.4.2 Selon votre arbre, quelle(s) séqunece(s) de virus de pangolins (identifiant commence par Pn) sont les plus proches de la protéine  
+2.4.2 Selon votre arbre, quelle(s) séqunece(s) de virus de pangolins (identifiant commence par Pn) est/sont les plus proches à la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ? 
 
 
 2.4.3 Est-ce coherent avec l'arbre des génomes de Figure 1 du tutoriel ? 
 
 	- Oui, les 3 séquences des virus des pangolins sont tout aussi proches de HuCoV2_WH01_2019 dans les deux arbres
-	- Non, selon l'arbre de génomes la séqunece PnMP789 est plus proches à la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est le plus eloignée parmi les trois séquences de pangolins.
+	- Non, selon l'arbre de génomes la séqunece PnMP789 est plus proches à la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est la plus eloignée parmi les trois séquences de pangolins.
 	- Oui, selon les deux arbres la séqunece PnMP789 est plus proches à la séquneces HuCoV2_WH01_2019 que les deux autres.
 
 ```
