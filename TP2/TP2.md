@@ -198,6 +198,10 @@ Répondez par VRAI ou FAUX
 La [Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG) représente un arbre phylogénétique construite sur base des génomes de quelques coronavirus. 
 Dans cet exercice, vous allez construire une arbre phylogénétique sur base de *protéine Spike* de quelques coronavirus, comparer les arbres et tenter d'expliquer des éventuelles incohérences entre eux.
 
+<a href="../figures/Figure_1_PhyML_based_on_genomes.PNG">
+<img src="../figures/Figure_1_PhyML_based_on_genomes.PNG" alt="PhyML based on genomes" width="600px" border=10 color="blue">
+</a>
+
 La construction des arbres suit les étapes suivantes.      
 
 1. Alignement multiple des séquences.
