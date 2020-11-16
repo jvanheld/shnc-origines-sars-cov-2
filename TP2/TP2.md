@@ -287,19 +287,19 @@ Le logiciel *Gblock* ne fait pas qu'enlever les colonnes de l’alignement avec 
 ```question
 Questions 2.2 - Curation de l'alignement
 
-2.2.1 Combien de positions ont été retenues pour la construction de l'arbre par Gblocks ?
+2.2.1 Combien de positions ont été retenues pour la construction de l'arbre par Gblocks ?
 
-2.2.2 Combien de régions (blocks) ont été sélectionnées ?
+2.2.2 Combien de régions (blocks) ont été sélectionnées ?
 
-2.2.3 Combien de positions contient la région (block) la plus longue ?
+2.2.3 Combien de positions contient la région (block) la plus longue ?
 
 ```
 
-##### Manipulation est interprétation de l'arbre
+##### Manipulation et interprétation de l'arbre
 
 1. Cliquez sur le bouton **Viewer** de **Step 8 PhyML newick tree** pour visualiser l'arbre.
 
-2. L'arbre produit par la méthode de Maximum de vraisemblance (PhyML) est enraciné par un méthode automatique, généralement peu fiable. Nous pouvons placer la racine correctement (re-enraciner l'arbre) en se basant sur nos connaissances à priori. Par exemple, vous pouvez choisir l'emplacement de la racine sur base de l'arbre des génomes ([Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG)). 
+2. L'arbre produit par la méthode de *Maximum de vraisemblance* (logiciel *PhyML*) est enraciné par un méthode automatique, généralement peu fiable. Nous pouvons placer la racine correctement (re-enraciner l'arbre) en nous basant sur nos connaissances à priori. Par exemple, vous pouvez choisir l'emplacement de la racine sur base de l'arbre des génomes ([Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG)). 
 
 ```question
 
@@ -313,27 +313,29 @@ Répondez par VRAI ou FAUX
 
 ```
 
-3. Vous pouvez cliquer sur n'importe quel nœud ou séquences (de point de vue mathématique les séquences sont considérées comme nœuds) de l'arbre. Un menu apparait. Choisissez **Reroot on this node**. pour placer la racine entre ce nœud et le reste de l'arbre. 
+3. Cliquez sur n'importe quel noeud de l'arbre (ou séquence, du point de vue mathématique les séquences sont considérées comme noeuds). Un menu apparait. Choisissez **Reroot on this node**. pour placer la racine entre ce noeud et le reste de l'arbre. 
 
 4. Prenez le temps de découvrir les différentes options d'affichage 
-- Phylogram/Dendogram
-- Linear/Radial/Slanted
-- Display support values: affiche les valeur de robustesse de chaque nœud
-- Display branch length: affiche la longueur de chaque branche (nombre des mutation per site)
 
-5.  Réenracinez correctement votre arbre PhyML. 
+    - *Phylogram/Dendogram*
+    - *Linear/Radial/Slanted*
+    - *Display support values* : affiche les valeur de robustesse de chaque nœud
+    - *Display branch length* : affiche la longueur de chaque branche (nombre des mutation per site)
+
+5.  Ré-enracinez correctement votre arbre PhyML. 
 
 
 ```question
 Questions 2.4 - Interprétation de l'arbre
 
-2.4.1 Selon votre arbre, quelle(s) séquence(s) de virus de chauve souris (identifiant commençant par par Bt) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
+2.4.1 Selon votre arbre, quelle(s) séquence(s) de virus de chauves-souris (identifiant commençant par par Bt) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
 
 
 2.4.2 Selon votre arbre, quelle(s) séquence(s) de virus de pangolins (identifiant commençant par Pn) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
 
 
-2.4.3 Est-ce cohérent avec l'arbre des génomes de la Figure 1 du tutoriel ?
+2.4.3 Ceci est-il cohérent avec l'arbre des génomes de la Figure 1 du tutoriel ?
+
 	a. Non, selon l'arbre de génomes la séquence PnMP789 est plus proche de la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est la plus eloignée parmi les trois séquences de virus de pangolins.
 	b. Oui, les 3 séquences des virus des pangolins sont tout aussi proches de HuCoV2_WH01_2019 dans les deux arbres.
 	c. Oui, selon les deux arbres la séquence PnMP789 est plus proche de la séquence HuCoV2_WH01_2019 que les deux autres.
