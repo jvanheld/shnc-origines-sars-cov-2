@@ -233,7 +233,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 9. Cliquer sur **Submit** pour commencer les analyses.
 10. Au fur et à mesure de l'analyse, les liens apparaissent pour pouvoir découvrir le résultat de chaque étape.
 
->Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder aux résultats: [Page de Résultats](https://ngphylogeny.fr/workspace/history/678122897744d9fb)
+>Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder aux résultats: [Page de Résultats](https://ngphylogeny.fr/workspace/history/6390d9efe7809836)
 
 #### Analyse des résultats
 
