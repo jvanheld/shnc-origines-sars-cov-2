@@ -163,11 +163,11 @@ Focalisons-nous maintenant sur le **gène S**.
 ```question
 Questions 1.2 PPI de gène S des coronavirus
 
-1.2.1 Quel génome a le gène S le plus similaire (sur la longueur total du gène) à celui de le SARS-CoV-2 (Reference: HuCoV2_WH01_2019) ? 
+1.2.1 Quel génome a le gène S le plus similaire (sur la longueur totale du gène) à celui de le SARS-CoV-2 (Reference: HuCoV2_WH01_2019) ?
 
-1.2.2 Quel est ce pourcentage d'identié?
+1.2.2 Quel est ce pourcentage d'identité ?
 
-1.2.3 Quel est le pourcentage d'identité moyen entre les gènes S des séquences PnMP789 et le HuCoV2_WH01_2019 ?
+1.2.3 Quel est le pourcentage d'identité moyen entre les gènes S des séquences PnMP789 et HuCoV2_WH01_2019 ?
 
 ```
 
@@ -178,13 +178,13 @@ Questions 1.2 PPI de gène S des coronavirus
 ```question
 Questions 1.3 PPI de gène S des coronavirus - région de recombinaison
 
-1.3.1 Quel est le pourcentage d'identité moyen sur la zone selectionée entre les séquences BtRATG13 et le HuCoV2_WH01_2019 ?
+1.3.1 Quel est le pourcentage d'identité moyen sur la zone sélectionnée entre les séquences BtRATG13 et HuCoV2_WH01_2019 ?
 
-1.3.2 Quel est le pourcentage d'identité moyen sur la zone selectionée entre les séquences PnMP789 et le HuCoV2_WH01_2019 ? 
+1.3.2 Quel est le pourcentage d'identité moyen sur la zone sélectionnée entre les séquences PnMP789 et HuCoV2_WH01_2019 ? 
 
 Répondez par VRAI ou FAUX
 
-1.3.3 La région selectionnée de génome de SARS-CoV-2 est probablement le résultat d'un recombinaison entre génomes. 
+1.3.3 La région sélectionnée de génome de SARS-CoV-2 est probablement le résultat d'un recombinaison entre génomes.
 
 1.3.4 Cette recombinaison a eu lieu très probablement entre les génomes BtRATG13 et PnMP789.
 
@@ -247,13 +247,13 @@ Questions 2.1 - Alignement multiple
 
 2.1.1 Quel est la longueur de l'alignement (le nombre de positions de l'alignement) ? 
 
-2.1.2 Quelle séquence apparait la plus divergente par rapport au autres ? 
+2.1.2 Quelle séquence apparaît la plus divergente par rapport aux autres ?
 
 Répondez par VRAI ou FAUX
 
 2.1.3 La première moitié de l'alignement contient plus d'indels que la seconde. 
 
-2.1.4 Les lettres en taille variables au-dessous de chaque position reflètent le niveau de la conservation de chaque site (colonne). 
+2.1.4 Les lettres de tailles variables au-dessous de chaque position reflètent le niveau de la conservation de chaque site (colonne).
 
 ```
 
@@ -271,11 +271,11 @@ Le logiciel Gblock ne fait pas qu'enlever les colonnes de l’alignement avec ga
 ```question
 Questions 2.2 - Curation de l'alignement
 
-2.2.1 Combien de positions ont été retenus pour la construction de l'arbre par Gblocks ? 
+2.2.1 Combien de positions ont été retenues pour la construction de l'arbre par Gblocks ?
 
 2.2.2 Combien de régions (blocks) ont été sélectionnées ?
 
-2.2.3 Combien de positions contient la région (block) la plus longue.
+2.2.3 Combien de positions contient la région (block) la plus longue ?
 
 ```
 
@@ -291,7 +291,7 @@ Questions 2.3 - Position de la racine
 
 Répondez par VRAI ou FAUX
 
-2.3.1 En se basant sur l'arbre des génomes de Figure 1 du tutoriel, la racine de l'arbre de protéines Spike devrait être placée entre la séqunece de HuMERS_172-06_2015 et les autres.
+2.3.1 En se basant sur l'arbre des génomes de Figure 1 du tutoriel, la racine de l'arbre de protéines Spike devrait être placée entre la séquence de HuMERS_172-06_2015 et les autres.
 
 2.3.2 La longueur de la branche de la séquence HuMERS_172-06_2015 soutient la réponse à la question précédente.
 
@@ -311,17 +311,16 @@ Répondez par VRAI ou FAUX
 ```question
 Questions 2.4 - Interprétation de l'arbre
 
-2.4.1 Selon votre arbre, quelle(s) séqunece(s) de virus de chauve souris (indentifiant commence par Bt) est/sont les plus proches à la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ? 
+2.4.1 Selon votre arbre, quelle(s) séquence(s) de virus de chauve souris (identifiant commençant par par Bt) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
 
 
-2.4.2 Selon votre arbre, quelle(s) séqunece(s) de virus de pangolins (identifiant commence par Pn) est/sont les plus proches à la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ? 
+2.4.2 Selon votre arbre, quelle(s) séquence(s) de virus de pangolins (identifiant commençant par Pn) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
 
 
-2.4.3 Est-ce coherent avec l'arbre des génomes de Figure 1 du tutoriel ? 
-
-	- Oui, les 3 séquences des virus des pangolins sont tout aussi proches de HuCoV2_WH01_2019 dans les deux arbres
-	- Non, selon l'arbre de génomes la séqunece PnMP789 est plus proches à la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est la plus eloignée parmi les trois séquences de pangolins.
-	- Oui, selon les deux arbres la séqunece PnMP789 est plus proches à la séquneces HuCoV2_WH01_2019 que les deux autres.
+2.4.3 Est-ce cohérent avec l'arbre des génomes de la Figure 1 du tutoriel ?
+	a. Non, selon l'arbre de génomes la séquence PnMP789 est plus proche de la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est la plus eloignée parmi les trois séquences de virus de pangolins.
+	b. Oui, les 3 séquences des virus des pangolins sont tout aussi proches de HuCoV2_WH01_2019 dans les deux arbres.
+	c. Oui, selon les deux arbres la séquence PnMP789 est plus proche de la séquence HuCoV2_WH01_2019 que les deux autres.
 
 ```
 
