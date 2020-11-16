@@ -220,7 +220,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
 2. Ce fichier contient les protéines spike de 16 différents coronavirus. Les virus choisis pour votre analyses sont indiqués par une flèche rouge sur le [Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG).
 
-3. Rendez vous sur le page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/). 
+3. Rendez vous sur la page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/). 
 
 4. Choisissez l'option **A la carte** qui va vous permettre de choisir un logiciel pour chaque étape. 
 
@@ -233,20 +233,27 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
   
 6.  Créez le pipeline : cliquez (**Create workflow**)
 
-7. Sélectionnez le fichier *spike_proteins_16.fasta* dans la section **Input data**. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Nous allons commencer les analyses avec les paramètres par défaut.
+7. Sélectionnez le fichier *spike_proteins_16.fasta* dans la section **Input data**. 
 
-8. Cliquez sur **Submit** pour commencer les analyses.
+    **Note :** Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Nous allons commencer les analyses avec les paramètres par défaut.
+
+8. Cliquez sur **Submit** pour commencer les analyses. 
+
+    **Suggestion :** indiquez votre mail dans la fenêtre de confirmation de la soumission. 
 
 9. Au fur et à mesure de l'analyse, les liens apparaissent pour pouvoir découvrir le résultat de chaque étape.
 
->Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder aux résultats: [Page de Résultats](https://ngphylogeny.fr/workspace/history/6390d9efe7809836)
+>Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder à une copie de secours des résultats : [Page de Résultats](https://ngphylogeny.fr/workspace/history/6390d9efe7809836)
 
 #### Analyse des résultats
 
 ##### Alignement multiple
 
 1. Cliquez sur le buton **MSAViewer** de Step 2 (**Muscle alignement**)
-- Le code couleur vous permet de visualiser facilement les positions conservées, car les acides aminées similaires sont colorées de même type de couleur. Les gaps sont indiqués en blanc. 
+
+    - Le code couleur vous permet de visualiser facilement les positions conservées : les acides aminés similaires sont colorés par des couleurs de même type. 
+    - Les gaps sont indiqués en blanc. 
+    - Naviguez de gauche à droite pour explorer l'alignement dans son ensemble. 
 
 ```question
 Questions 2.1 - Alignement multiple
