@@ -116,7 +116,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 6. Appuyer sur **Run** pour commencer les alignements et produire les graphique de PPI. Le calcul va prendre quelques minutes (durant lesquelles une fenêtre indique **Alignment in progress**).
 
-7. Une fois le graphique affiché, vous pouvez sélectionner des couleurs pour chaque séquence. Ne passez pas trop de temps sur cette opération, car malheureusement le choix des couleurs sont remis par défaut quand vous allez changer d'autres paramètres d'affichage. Néanmoins, le choix de couleur est très pratique si vous voulez mettre en valeur une des séquences.
+7. Une fois le graphique affiché, vous pouvez sélectionner des couleurs pour chaque séquence. Ce choix de couleur est très pratique si vous voulez mettre en valeur des séquences d'intérêt.
 
     - Allez dans Settings > Colors
     - choisissez une séquence du menu déroulant et un couleur, en ajustant des curseurs de la boite **Select color**. 
