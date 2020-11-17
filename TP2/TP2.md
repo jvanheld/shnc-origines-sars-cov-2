@@ -228,7 +228,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
     - **Multiple Alignment** : *MUSCLE*
     - **Alignment Curation** : *Gblocks*
-    - **Tree Inference** : *PhyML+SMS*
+    - **Tree Inference** : *PhyML*
     - **Multiple Alignment** : *Newick Display*
   
 6.  Créez le pipeline : cliquez (**Create workflow**)
