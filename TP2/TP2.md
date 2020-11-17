@@ -84,7 +84,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 2.  Enregistrerez sur votre ordinateur le **fichier d'annotations génomiques** [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir interpréter les profils de PPI, ou pour focaliser l'analyse sur l'un ou l'autre gène.
 
-3. Connectez-vous au site de [PIPprofileR](https://pipprofiler.france-bioinformatique.fr/) 
+3. Connectez-vous au site de  [PIPprofileR](http://134.158.247.37:443/app/PIPprofileR) 
 
 
 <a href="images/01_PIPprofileR-home.png">
@@ -353,7 +353,8 @@ Questions 2.4 - Interprétation de l'arbre
 | NCBI Entrez | Bases de données biologiques | [www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
 | EMBOSS needle | Alignement de paires de séquences | [www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
 | NCBI BLAST | Recherche de séquences par similarité | [blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
-| PIPprofileR | Profils de pourcentages de positions identiques | [pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
+| PIPprofileR |Serveur temporaire pour ce TP-ci | [134.158.247.37:443/app/PIPprofileR](http://134.158.247.37:443/app/PIPprofileR/) |
+| PIPprofileR | Profils de pourcentages de positions identiques. Adresse permanente | [pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
 | Clustal | Alignement multiple | [www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
 | phylogeny.fr | Phylogénie moléculaire | [www.phylogeny.fr/](https://ngphylogeny.fr/) |
 | NGphylogeny.fr | "Next Generation" phylogeny.fr | [NGphylogeny.fr](https://ngphylogeny.fr/) |
