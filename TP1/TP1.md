@@ -15,10 +15,10 @@
 >
 >5. Attention aux réponses libres du questionnaire : 
 >
->    * Ecrivez les nombres sans espace et sans virgule. Par exemple : `9365589` à la place de `9 365 589` ou `9,365,589`.
->    * Utilisez le point pour les valeurs décimales. Par exemple `3.14` à la place de `3,14`.
->    * Si on demande un pourcentage écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
->    * Si on demande une proportion ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
+>    * Ecrivez les nombres **sans espace et sans virgule**. Par exemple : `9365589` à la place de `9 365 589` ou `9,365,589`.
+>    * Utilisez le **point** comme **séparateur de décimales**. Par exemple `3.14` plutôt que `3,14`.
+>    * Si on demande un **pourcentage** écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
+>    * Si on demande une **proportion** ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
 
 
 ## Contenu
@@ -74,7 +74,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 ## Tutoriel
 
 
-### Exercice 1 - NCBI genomes - Exploration de la génome de SARS-CoV-2
+### Exercice 1 - NCBI genomes - Exploration du génome de SARS-CoV-2
 
 Dans cet exercice vous allez apprendre à faire une requête rapide pour accéder à un génome dans la base de données (***BDD***) **NCBI Genome**. Vous explorerez ensuite les annotations du génome du coronavirus *SARS-CoV-2* pour découvrir le type d'information disponible.
 
