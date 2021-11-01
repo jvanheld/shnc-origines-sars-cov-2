@@ -47,21 +47,6 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
 
 - [CM1](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
 
-## Ressources bioinformatiques
-
-| Ressource | Description | URL |
-|-----------|--------------------------------|-------------------------------|
-| Supports de ce cours | Diapos, tuto, données | [jvanheld.github.io/shnc-origines-sars-cov-2/](https://jvanheld.github.io/shnc-origines-sars-cov-2/) |
-| Uniprot | Base de donnée de séquences protéiques | [www.uniprot.org/](https://www.uniprot.org/) |
-| NCBI Entrez | Bases de données biologiques | [www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
-| EMBOSS needle | Alignement de paires de séquences | [www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
-| NCBI BLAST | Recherche de séquences par similarité | [blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
-| PIPprofileR | Profils de pourcentages de positions identiques | [pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
-| Clustal | Alignement multiple | [www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
-| phylogeny.fr | Phylogénie moléculaire | [https://www.phylogeny.fr/](https://www.phylogeny.fr/) |
-| NGphylogeny.fr | "Next Generation" phylogeny.fr | [NGphylogeny.fr](https://ngphylogeny.fr/) |
-| AMU | page AMETICE de N&C3 | [ametice.univ-amu.fr/course/view.php?id=62928](https://ametice.univ-amu.fr/course/view.php?id=62928) |
-
 
 ****
 ## Données
@@ -71,6 +56,42 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
 | Génomes de coronavirus | [data/genomes/README.md](data/genomes/README.md)
 | Séquences du gène S | [data/S-gene/README.md](data/S-gene/README.md)
 | Séquences de la protéine spicule | [data/spike-protein/README.md](data/spike-protein/README.md)
+
+****
+## Ressources bioinformatiques
+
+### Bases de données
+
+| Ressource | Description | URL |
+|-----------|--------------------------------|-------------------------------|
+| Supports de ce cours | Diapos, tuto, données | [jvanheld.github.io/shnc-origines-sars-cov-2/](https://jvanheld.github.io/shnc-origines-sars-cov-2/) |
+| Uniprot | Base de donnée de séquences protéiques | [www.uniprot.org/](https://www.uniprot.org/) |
+| NCBI Entrez | Bases de données biologiques | [www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
+| EBI-ENA | Base de données européenne de séquences nucléiques | |
+| NCBI Genbank | Base de données américaine de séquences nucléiques | |
+| INSDC | International Nucleotide Sequence Database Consortium | <https://www.insdc.org/> | 
+
+### Outils bioinformatiques
+
+| Ressource | Description | URL |
+|-----------|--------------------------------|-------------------------------|
+| EMBOSS needle | Alignement de paires de séquences | [www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
+| NCBI BLAST | Recherche de séquences par similarité | [blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
+| PIPprofileR | Profils de pourcentages de positions identiques | [pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
+| Clustal | Alignement multiple | [www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
+| phylogeny.fr | Phylogénie moléculaire | [https://www.phylogeny.fr/](https://www.phylogeny.fr/) |
+| NGphylogeny.fr | "Next Generation" phylogeny.fr | [NGphylogeny.fr](https://ngphylogeny.fr/) |
+| AMU | page AMETICE de N&C3 | [ametice.univ-amu.fr/course/view.php?id=62928](https://ametice.univ-amu.fr/course/view.php?id=62928) |
+
+### Ressources spécifiques pour la COVID-19
+
+| Ressource | Description | URL |
+|-----------|--------------------------------|-------------------------------|
+| COVID19 Data Portal | Portail d'accès à différentes bases de données COVID-19 | <https://www.covid19dataportal.org/> |
+| GISAID | | |
+| Nextclade | | |
+| outbreak.info | | <http://outbreak.info> |
+
 
 
 ****
