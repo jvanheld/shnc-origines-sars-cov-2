@@ -1,8 +1,14 @@
 # Enquête bioinformatique sur les origines de SARS-CoV-2 [[AMU](https://www.univ-amu.fr/) / [S&H](https://formations.univ-amu.fr/ME3SHU.html) / [N&C3](https://formations.univ-amu.fr/ME3SHU-S11XX3M1.html)] 
 
+## Accès
+
+- Lien court : <https://tinyurl.com/nc3-jvh-21>
+- Site web : <https://jvanheld.github.io/shnc-origines-sars-cov-2/>
+- Dépôt github : <https://github.com/jvanheld/shnc-origines-sars-cov-2>
+
 ## Audience
 
-Ce dépôt contient le matériel du cours de phylogénie moléculaire, qui fait partie du module **Nature et Culture 3** de la Licence Sciences et Humanités, de l'Université d'Aix-Marseille.
+Ce site contient le matériel du cours de phylogénie moléculaire, qui fait partie du module **Nature et Culture 3** de la Licence Sciences et Humanités, de l'Université d'Aix-Marseille.
 
 ## Contributions
 
@@ -24,23 +30,7 @@ Ce cours fournit une introduction aux concepts et méthodes de base de la phylog
 Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Université d'Aix-Marseille, qui disposent d'une formation de base en biologie. 
 
 
-****
-## Programme du cours 2020
 
-
-| Date | Début-Fin | Séance|Contenu |
-|-----|------------|----------|----------------------------|
- | 03/11 | 10:00-12:00 | CM1<br>[[diapos 1](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)] <br>[[Vidéo 1a](https://amupod.univ-amu.fr/video/8884-/3b1da0f21c9b7c2990d1f089ab94ef61e7ddc09be085d93eedf9c0f161c521f2/?start=115)] <br>[[Vidéo 1b](https://amupod.univ-amu.fr/video/9023-2020-11-10_12h40_lsh-nc3_recherche-sequences-par-similaritesmp4/)] | (1) La question des origines de SARS-CoV-2. <br>(2) Biologie de SARS-CoV-2. <br>(3) Evénements évolutifs.<br>(4) Bases de données biologiques. <br>(5) Alignement de séquences par paires. <br>(6) Profils de pourcents de positions identiques. <br>(7) Recherche de séquences par similarité.  |
- | 10/11 | 08:30-11:30 | [TP1](TP1/TP1.md) groupe 1 | (1) Bases de données de séquences biologiques (Uniprot, NCBI). <br>(2) Alignement par paires (needle). <br>(3) Recherche de similarités (BLAST).  |
- |  | 11:30-12:30 | Déjeuner |  |
- |  | 12:30-15:30 | [TP1](TP1/TP1.md) groupe 2 | cf groupe 1 |
- |  | 15:30-15:45 | Pause |  |
- |  | 15:45-18:00 | CM2 <br>[[diapos 2](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)] <br>[[Vidéo 2](https://amupod.univ-amu.fr/video/9260-/8e50aafcbb364404ecef6c14d56d773b409055121b818c2e5a860f8e1b9b6261/)] | (1) Alignements multiples. <br>(2) Inférence phylogénétique |
- | 17/11 | 08:30-11:30 | [TP2](TP2/TP2.md) groupe 1 | (1) Alignements 1 à N et profils de PPI (PIPprofileR)<br>(2) Alignements multiples (clustal).<br>(3) Inférence phylogénétique (phylogeny.fr) |
- |  | 11:30-12:30 | Déjeuner |  |
- |  | 12:30-15:30 | [TP2](TP2/TP2.md) groupe 2 | cf groupe 1 |
- |  | 15:30-16:00 | Pause |  |
- |  | 16:00-17:00 | CM3 | Interprétation, résumé et conclusion du cours |
  
 ****
 ## Diapos
@@ -109,4 +99,24 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
 
 ****
 
+<!--
+****
+## Programme du cours 2020
+
+
+| Date | Début-Fin | Séance|Contenu |
+|-----|------------|----------|----------------------------|
+ | 03/11 | 10:00-12:00 | CM1<br>[[diapos 1](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)] <br>[[Vidéo 1a](https://amupod.univ-amu.fr/video/8884-/3b1da0f21c9b7c2990d1f089ab94ef61e7ddc09be085d93eedf9c0f161c521f2/?start=115)] <br>[[Vidéo 1b](https://amupod.univ-amu.fr/video/9023-2020-11-10_12h40_lsh-nc3_recherche-sequences-par-similaritesmp4/)] | (1) La question des origines de SARS-CoV-2. <br>(2) Biologie de SARS-CoV-2. <br>(3) Evénements évolutifs.<br>(4) Bases de données biologiques. <br>(5) Alignement de séquences par paires. <br>(6) Profils de pourcents de positions identiques. <br>(7) Recherche de séquences par similarité.  |
+ | 10/11 | 08:30-11:30 | [TP1](TP1/TP1.md) groupe 1 | (1) Bases de données de séquences biologiques (Uniprot, NCBI). <br>(2) Alignement par paires (needle). <br>(3) Recherche de similarités (BLAST).  |
+ |  | 11:30-12:30 | Déjeuner |  |
+ |  | 12:30-15:30 | [TP1](TP1/TP1.md) groupe 2 | cf groupe 1 |
+ |  | 15:30-15:45 | Pause |  |
+ |  | 15:45-18:00 | CM2 <br>[[diapos 2](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)] <br>[[Vidéo 2](https://amupod.univ-amu.fr/video/9260-/8e50aafcbb364404ecef6c14d56d773b409055121b818c2e5a860f8e1b9b6261/)] | (1) Alignements multiples. <br>(2) Inférence phylogénétique |
+ | 17/11 | 08:30-11:30 | [TP2](TP2/TP2.md) groupe 1 | (1) Alignements 1 à N et profils de PPI (PIPprofileR)<br>(2) Alignements multiples (clustal).<br>(3) Inférence phylogénétique (phylogeny.fr) |
+ |  | 11:30-12:30 | Déjeuner |  |
+ |  | 12:30-15:30 | [TP2](TP2/TP2.md) groupe 2 | cf groupe 1 |
+ |  | 15:30-16:00 | Pause |  |
+ |  | 16:00-17:00 | CM3 | Interprétation, résumé et conclusion du cours |
+ 
+ -->
 
