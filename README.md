@@ -2,7 +2,7 @@
 
 ## Accès
 
-- Quizz: [tinyurl.com/nc3-jvh-21-quizz](https://tinyurl.com/nc3-jvh-21-quizz)
+- Sondage pré-cours: [tinyurl.com/nc3-jvh-21-sondage](https://tinyurl.com/nc3-jvh-21-sondage)
 - Lien court : [tinyurl.com/nc3-jvh-21](https://tinyurl.com/nc3-jvh-21)
 - Site web : [jvanheld.github.io/shnc-origines-sars-cov-2](https://jvanheld.github.io/shnc-origines-sars-cov-2)
 - Dépôt github : [github.com/jvanheld/shnc-origines-sars-cov-2](https://github.com/jvanheld/shnc-origines-sars-cov-2)
