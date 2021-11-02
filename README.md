@@ -45,7 +45,20 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
 ****
 ## Diapos
 
-- [CM1](slides/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
+
+| Sujet | Diapos |
+|-------------------|-------------------------------|
+| Biologie d'un coronavirus | [slides/2021/01_coronavirus.pdf](slides/2021/01_coronavirus.pdf) |
+| Bases de données de séquences biologiques | [slides/2021/02_bases-de-donnees.pdf](slides/2021/02_bases-de-donnees.pdf) |
+| Alignement d'une paire de séquences | [slides/2021/03_alignement-paires-sequences.pdf](slides/2021/03_alignement-paires-sequences.pdf) |
+| Recherche de séquences par similarité | [slides/2021/04_recherche-similarites.pdf](slides/2021/04_recherche-similarites.pdf) |
+| Recombinaisons | [slides/2021/06_recombinaisons.pdf](slides/2021/06_recombinaisons.pdf) |
+| Alignements multiples | [slides/2021/05_alignements-multiples.pdf](slides/2021/05_alignements-multiples.pdf) |
+
+### Diapos 2020 (pour archive)
+
+- [CM1](slides/2020/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM1.pdf)
+- [CM2](slides/2020/NC3_enquete-bioinfo-origines-SARS-CoV-2_CM2.pdf)
 
 
 ****
