@@ -46,6 +46,7 @@ Il s'adresse aux étudiants de la 2ème licence en Sciences et Humanité de l'Un
 | Recherche de séquences par similarité | [slides/2021/05_recherche-similarites.pdf](slides/2021/05_recherche-similarites.pdf) |
 | Alignements multiples | [slides/2021/06_alignements-multiples.pdf](slides/2021/06_alignements-multiples.pdf) |
 | Recombinaisons | [slides/2021/07_recombinaisons.pdf](slides/2021/07_recombinaisons.pdf) |
+| Inférence phylogénétique | [slides/2021/08_inference-phylogeetnique.pdf](slides/2021/08_inference-phylogeetnique.pdf) |
 
 ### Diapos 2020 (pour archive)
 
