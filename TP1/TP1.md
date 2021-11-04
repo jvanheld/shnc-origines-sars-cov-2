@@ -28,11 +28,10 @@
 * Objectifs
 * Contrôle des connaissances
 * Tutoriel
-    * Exercice 1 - NCBI genomes - Exploration de la génome de SARS-CoV-2
-    * Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
-    * Exercice 3 - Alignement par paires
-    * Exercice 4 - BLAST: Recherche par similarité dans les bases de données de séquences
-    * Exercice 5 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
+    * Exercice 1 - UniprotKb/Swiss-prot, base de données de séquences protéiques
+    * Exercice 2 - Alignement par paires
+    * Exercice 3 - BLAST: Recherche par similarité dans les bases de données de séquences
+    * Exercice 4 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 * Concepts
 * Ressources
 
@@ -74,51 +73,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 ## Tutoriel
 
 
-### Exercice 1 - NCBI genomes - Exploration du génome de SARS-CoV-2
-
-Dans cet exercice vous allez apprendre à faire une requête rapide pour accéder à un génome dans la base de données (***BDD***) **NCBI Genome**. Vous explorerez ensuite les annotations du génome du coronavirus *SARS-CoV-2* pour découvrir le type d'information disponible.
-
-1. Rendez vous sur la page d'accueil de Centre de Ressources [NCBI](https://www.ncbi.nlm.nih.gov/)
-    - Ce centre de ressources englobe un grande nombre d'outils et bases données (BDD), dont vous pouvez rapidement découvrir l'étendue à l'aide de menu à gauche de la page d'accueil.
-
-3. Trouvez les génomes de *SARS-CoV-2* disponible dans la BDD **NCBI genomes**. 
-   - Dans le menu déroulant **Database** en haut de la page accueil, choisissez **Genome**
-   - Tapez `SARS-CoV-2` dans la boîte de recherche
-   - Cliquez sur **Search**
-
-4. Vous obtiendrez une page assez succincte, qui présente une série des liens vers différents représentations des données liés au génome de *SARS-CoV-2* ou vers d'autres BDDs.
-
-```question
-Questions 1.1 - NCBI genomes
-
-1.1.1. Combien de génomes de Coronaviridae sont disponibles en ce moment ?
-1.1.2. Quelle est la taille médiane *en paires de bases* (bp) des différentes assemblages de génomes de SARS-CoV-2 ?
-1.1.3. Quel est l'identifiant du génome de référence (RefSeq) de SARS-CoV-2 ?
-```
-
-5. Cliquez sur le lien du génome de référence, pour visualiser ses annotations. 
-
-```question
-Questions 1.2 - NCBI genomes - Annotations de génome de SARS-CoV-2
-
-1.2.1. Quelle est la longueur de ce génome ? (en paires de base)
-1.2.2. Quelle est le lien entre les séquences MN908947 et NC_045512 ? 
-1.2.3. Quelle est la date de collection de ce virus à origine du séquençage ?
-1.2.4. Quelle est la première base de la séquence nucléotidique ?
-1.2.5. Quelle est la dernière base de la séquence nucléotidique ?
-```
-
-6. Cliquez sur le lien **Graphics** en haut de la page pour obtenir une représentation schématique des gènes (en vert) séquences codantes (en rouge) les peptides matures (en marron) et certaines régions fonctionnelles (en noir).
-
-```question
-Questions 1.3 - NCBI genomes - Visualisation de l’organisation génomique
-
-1.3.1 Quelle est la longueur du gène S (Spike) ? (en paires de base)
-1.3.2 Quelle est la longueur du domaine de liaison au récepteur (RBD) de la protéine Spike ? (en paires de base)
-1.3.3 Quelle est la proportion des régions non-codantes ? (Partie du génome qui ne code pas pour les protéines)
-```
-
-### Exercice 2 - UniprotKb/Swiss-prot, base de données de séquences protéiques
+### Exercice 1 - UniprotKb/Swiss-prot, base de données de séquences protéiques
 
 Dans cet exercice, vous allez apprendre de faire des requêtes naïves et structurées pour trouver les protéines qui vous intéressent et découvrir le type d'information disponibles dans Uniprot.
 
@@ -126,35 +81,35 @@ Dans cet exercice, vous allez apprendre de faire des requêtes naïves et struct
 2. Le page d'accueil affiche le nombre des séquences accessibles dans UniProt.
 
 ```question
-Questions 2.1 - Uniprot - Page d'accueil
+Questions 1.1 - Uniprot - Page d'accueil
 
-2.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
-2.1.2 Combien de séquences contient-elle ?
-2.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
-2.1.4 Combien de séquences contient-elle ?
+1.1.1. Quelle est le nom de la base de données contenant uniquement des séquences annotées par un humain (reviewed) ?
+1.1.2 Combien de séquences contient-elle ?
+1.1.3 Quelle est le nom de la base de données contenant uniquement des séquences annotées automatiquement et qui n'ont fait l'objet d'aucune vérification par un être humain ?
+1.1.4 Combien de séquences contient-elle ?
 ```
 
 
 3. **Requête naïve** :  Dans la boîte de requêtes (en haut de la page), tapez les mots-clés suivants pour sélectionner les protéines spike de SARS-CoV-2 : *spike sars-cov-2*. 
 
-- Vous pouvez sélectionner des champs à afficher dans le tableau de résultats. Cliquez sur le bouton **Columns**. Vous trouverez tous les champs possibles à afficher regroupés par catégories. Affichez le nom de l'espèce (*Organism*), l'*identifiant Taxonomique* de l'espèce (*Organism ID*), la *longueur* et la *fonction* de la séquence. Pour afficher la fonction des protéines, plusieurs options sont possibles. Expérimentez ! Enregistrez ce réglage (**Save**).
+- Vous pouvez sélectionner des champs à afficher dans le tableau de résultats. Cliquez sur le bouton **Columns**. Vous trouverez tous les champs possibles à afficher regroupés par catégories. Affichez l’identifiant de la séquence (*Entry name*), le *nom de la protéine*, le nom de l'espèce (*Organism*), et la *longueur de la séquence*. Enregistrez ce réglage (**Save**).
    
-- La table de résultats est mise à jour, avec l'ajout de colonnes indiquant les informations que vous avez sélectionnées. Ces résultats correspondent-ils à vos attentes ? Toutes les protéines proviennent des *SARS-CoV-2* ? Sont-ils tous des protéines Spike ? 
+- La table de résultats est mise à jour, avec l'ajout de colonnes indiquant les informations que vous avez sélectionnées. Ces résultats correspondent-ils à vos attentes ? Toutes les protéines proviennent des SARS-CoV-2 ? Sont-ils tous des protéines Spike ? (Vous pouvez trier le tableau en fonction d’une colonne à l’aide des triangles à côté du nom de la colonne.) 
   
-- Cliquez sur l'identifiant **Q9BYF1** dans le tableau de résultats pour examiner les annotations de cette protéine.
+- Cliquez sur l'identifiant **Q9BYF1** dans le tableau de résultats pour examiner les annotations de cette protéine. (Vous pouvez afficher plus de séquences par page à l'aide de menu déroulant *Show* et faire une recherche de texte dans la page avec *Ctrl-F*)
 
 
 ```question
-Questions 2.2 - Uniprot - Requête naïve
+Questions 1.2 - Uniprot - Requête naïve
 
-2.2.1 De quelle espèce provient cette séquence ?
-2.2.2 Quelle est sa fonction ?
-2.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
-2.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
+1.2.1 De quelle espèce provient cette séquence ?
+1.2.2 Quelle est sa fonction ?
+1.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
+1.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
 
 Répondez par VRAI ou FAUX
 
-2.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
+1.2.5 Pourquoi la recherche naïve 'spike sars-cov-2' n'est pas précise dans notre cas ?
 ```
 
 
@@ -163,7 +118,7 @@ Répondez par VRAI ou FAUX
      - Cliquez sur **Advanced** à côté de la boîte de recherche.
      - Effacez vos termes de recherche précédents en cliquant sur les petites poubelles à côté des boîtes.
      - Dans le champ **All**, sélectionnez **Organism [OS]**, et commencez à taper *SARS-CoV-2*.  Au fil de votre encodage, l'interface Uniprot affiche un menu de plus en plus restreint, avec la liste des organismes correspondant à ce que vous avez tapé. Sélectionnez *Severe acute respiratory syndrome coronavirus 2 (2019-nCoV) [2697049]* et cliquez sur **Search** pour lancer la recherche. (2697049 est l'identifiant taxonomique du virus SARS-CoV-2)
-     - Nous avons obtenu 11367 séquences (2/11/2020), dont 13 ont été annotées par un être humain (Swiss-Prot)
+     - Nous avons obtenu 75730 séquences (4/11/2021), dont 16 ont été annotées par un être humain (Swiss-Prot)
      - Pour ajouter un filtre de sélection, cliquez à nouveau sur **Advanced**.
      - Notez l'opérateur logique **AND** en début de ligne (il correspond à nos besoins, mais pour d'autres requêtes nous pourrions utiliser NOT ou OR.
      - Sélectionnez le champ **Protein name [DE]**, entrez *spike* et lancez la recherche. La sélection correspond-elle mieux à vos attentes ?
@@ -195,15 +150,15 @@ GKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQT
 
 
 ```question
-Questions 2.3 - Uniprot - Requête structurée
+Questions 1.3 - Uniprot - Requête structurée
 
-2.3.1 Combien de protéines avez-vous trouvées ?
-2.3.2 Quel est l'identifiant de la protéine 'Envelope glycoprotein' parmi vos résultats ?
+1.3.1 Combien de protéines avez-vous trouvées ?
+1.3.2 Quel est l'identifiant de la protéine 'Envelope glycoprotein' parmi vos résultats ?
 ```
 
-### Exercice 3 - Alignement par paires
+### Exercice 2 - Alignement par paires
 
-Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous aller utiliser un logiciel d'alignement deux à deux (ou alignement par paire) qui aligne la totalité des deux séquences  (tout les résidus). [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est abréviation de le nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui aligne que les portions des séquences significativement similaires.
+Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paire) qui aligne la totalité des deux séquences  (tout les résidus). [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est abréviation de le nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui aligne que les portions des séquences significativement similaires.
 
 1. Nous avons extrait des séquences du gène S (codant pour la protéine Spike) à partir de 3 génomes complets et nous avons identifié les séquences protéiques correspondantes.
 
@@ -221,31 +176,31 @@ Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va
      * Laissez les autres paramètres par défaut, et lancez l'alignement (**Submit**)
 
 ```question
-Questions 3.1 - Alignement par paires - Gene S
+Questions 2.1 - Alignement par paires - Gene S
 
-3.1.1 Quel est le pourcentage d'identité entre les gènes S de SARS-CoV-2 et RaTG13_2013_Yunnan ?
-3.1.2 Quel est le pourcentage d'identité entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
-3.1.3 Quel est le pourcentage des gaps dans l'alignment entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
+2.1.1 Quel est le pourcentage d'identité entre les gènes S de SARS-CoV-2 et RaTG13_2013_Yunnan ?
+2.1.2 Quel est le pourcentage d'identité entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
+2.1.3 Quel est le pourcentage des gaps dans l'alignment entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
 ```
 
 3. La similarité entre les gènes SARS-CoV-2 et MERS_172-06_2015, n'est pas très convainquante. On observe beaucoup de gaps sur la totalité de l'alignement. Alignons maintenant les séquences **protéiques** (les liens sont donnés dans le tableau ci-dessus). Utilisez toujours [needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/), mais sélectionnez **PROTEIN** en STEP1.
 
 ```question
-Questions 3.2 - Alignement par paires - Protéine Spike
+Questions 2.2 - Alignement par paires - Protéine Spike
 
-3.2.1 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et RaTG13_2013_Yunnan ?
-3.3.2 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et MERS_172-06_2015 ?
-3.2.3 Quel est le pourcentage de gaps dans l'alignment entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
+2.2.1 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et RaTG13_2013_Yunnan ?
+2.3.2 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et MERS_172-06_2015 ?
+2.2.3 Quel est le pourcentage de gaps dans l'alignment entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
 
 Répondez par VRAI ou FAUX
-3.2.4 Bien que le pourcentage d'identité entre les protéines de SARS-CoV-2 et MERS_172-06_2015 soit plus faible qu'entre les gènes, l'alignement des protéines comporte moins des gaps et la similarité entre des séquences semble plus convainquante.
+2.2.4 Bien que le pourcentage d'identité entre les protéines de SARS-CoV-2 et MERS_172-06_2015 soit plus faible qu'entre les gènes, l'alignement des protéines comporte moins des gaps et la similarité entre des séquences semble plus convainquante.
 ```
 
 
 
 ### Exercice 4 - BLAST: Recherche par similarité dans les bases de données de séquences
 
-Dans l'exercice précédent, vous avez aligné un gène ou protéine à deux autres séquences pour pouvoir les comparer. Si vous voulez comparer la même séquence à toute les séquences d'une base de données pour pouvoir repérer les séquences similaires, cette approche n'est pas tenable. L'outil [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) rempli cette tâche avec une vitesse tout à fait raisonnable malgré la taille énorme des bases de données ([700 milliards de nucleotides en GenBank en oct 2020](https://www.ncbi.nlm.nih.gov/genbank/statistics/)). Il repère les séquences similaires à une séquence requête et aligne les régions significativement similaires entre la séquence requête et les séquences de la BDD. BLAST fait donc des alignement locaux.
+Dans l'exercice précédent, vous avez aligné un gène ou protéine à deux autres séquences pour pouvoir les comparer. Si vous voulez comparer la même séquence à toute les séquences d'une base de données pour pouvoir repérer les séquences similaires, cette approche n'est pas tenable. L'outil [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) rempli cette tâche avec une vitesse tout à fait raisonnable malgré la taille énorme des bases de données ([1000 milliards de nucleotides en GenBank en oct 2021](https://www.ncbi.nlm.nih.gov/genbank/statistics/)). Il repère les séquences similaires à une séquence requête et aligne les régions significativement similaires entre la séquence requête et les séquences de la BDD. BLAST fait donc des alignement locaux.
 Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la BDD protéique de NCBI (Genpept) pour identifier les homologues venant des autres virus. 
 
 
