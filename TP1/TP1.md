@@ -287,7 +287,7 @@ Répondez par VRAI ou FAUX
 
 
 
-### Exercice 5 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
+### Exercice 4 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 
 Dans cet exercice nous allons utiliser BLAST pour repérer les régions similaires entre la génome de SARS-CoV-2 ([MT019529.1](https://www.ncbi.nlm.nih.gov/nuccore/MT019529.1)) et la séquence référence du génome de virus de SIDA (HIV-1 taxid:11676).
 
@@ -307,50 +307,51 @@ Dans cet exercice nous allons utiliser BLAST pour repérer les régions similair
 
 8. Gardez le page de résultats ouverte pour pouvoir répondre aux questions un peu plus tard.
 
-Le génome de HIV a 9181 nucléotides. Nous allons générer une séquence aléatoire (suite des nucléotides aléatoire) de même longueur et comparer cette séquence avec le génome de SARS-CoV-2 à l'aide de BLAST.
+Le génome de SARS-CoV-2 a 29899 nucléotides. Nous allons générer une séquence aléatoire (suite des nucléotides aléatoire) de même longueur et comparer cette séquence avec le génome de HIV-1 à l'aide de BLAST.
 
-1. Connectez-vous au site web Regulatory Sequence Analysis Tools [RSAT]( http://metazoa.rsat.eu/), et utilisez l'outil **random sequence** (qui se trouve dans **Sequence tools**) pour générer une séquence aléatoire de 9181 nt :
-	- **Sequence length** : *9181*
+1. Connectez-vous au site web Regulatory Sequence Analysis Tools [RSAT]( http://metazoa.rsat.eu/), et utilisez l'outil **random sequence** (qui se trouve dans **Sequence tools**) pour générer une séquence aléatoire de 29899 nt :
+	- **Sequence length** : *29899*
 	- **Number of sequences** : *1*
 	- **Background model** : *Independent and equiprobable nucleotides*
 	- **GO**
 
-2. Faites un BLAST avec cette séquence aléatoire comme séquence requête contre le génome de SARS-CoV-2
+2. Faites un BLAST avec cette séquence aléatoire comme séquence requête contre le génome de HIV-1
 
 	- Choisissez **Nucleotide blast (BLASTn)** sur [NCBI BLAST](http://blast.ncbi.nlm.nih.gov/)
 	- Copiez la séquence aléatoire dans le première case
-	- Cochez la case **Align two or more sequences**. Une nouvelle case apparait sous le titre de **Enter Subject Sequence**. Entrez l'identifiant du génome de SARS-CoV-2 dans ce case *MT019529.1*. BLAST va comparer ces deux séquences à la place de comparer la séquence aléatoire avec toute une BDD.
+	- Choisissez la **Database** : *RefSeq Genome Database (refseq_genomes)* pour se concentrer uniquement sur les génomes de référence
+	- Sélectionnez Dans le champs **Organism** *HIV-1 (taxid:1167)* pour limiter la recherche aux séquences de HIV-1
 	- **Program Selection**: *Optimize for Somewhat similar sequences (blastn)*
 	- Cochez la case **Show results in a new window** pour que les résultats apparaissent dans une nouvelle fenêtre.
 	-  **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
 	-  Lancez la recherche à l'aide du bouton **BLAST**
 
 ```question
-Questions 5.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
+Questions 4.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 
 **Répondez aux questions suivantes sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.**
 
-5.1.1 Nombre de fragments alignées entre les génomes de SARS-CoV-2 et de HIV-1.
-5.1.2 Meilleur E-valeur parmi ces alignements.
-5.1.3 Pire E-valeur parmi ces alignements.
-5.1.4 Longueur de l'alignement le plus long.
-5.1.5 Pourcentage d'identité le plus élevé parmi ces alignements.
-5.1.6 Pourcentage d'identité le plus bas parmi ces alignements.
+4.1.1 Nombre de fragments alignées entre les génomes de SARS-CoV-2 et de HIV-1.
+4.1.2 Meilleur E-valeur parmi ces alignements.
+4.1.3 Pire E-valeur parmi ces alignements.
+4.1.4 Longueur de l'alignement le plus long.
+4.1.5 Pourcentage d'identité le plus élevé parmi ces alignements.
+4.1.6 Pourcentage d'identité le plus bas parmi ces alignements.
 
-**Répondez aux questions suivantes sur base de comparaison entre le génome de SARS-CoV-2 et la séquence aléatoire**
+**Répondez aux questions suivantes sur base de comparaison entre le génome de HIV-1 et la séquence aléatoire**
 
-5.1.7 Nombre de fragments alignées entre les génomes de SARS-CoV-2 et la séquence aléatoire.
-5.1.8 Meilleur E-valeur parmi ces alignements.
-5.1.9 La pire E-valeur parmi ces alignements.
-5.1.10 Longueur de l'alignement le plus long.
-5.1.11 Pourcentage d'identité le plus élevé parmi ces alignements.
-5.1.12 Pourcentage d'identité le plus bas parmi ces alignements.
+4.1.7 Nombre de fragments alignées entre les génome de HIV-1 et la séquence aléatoire.
+4.1.8 Meilleur E-valeur parmi ces alignements.
+4.1.9 La pire E-valeur parmi ces alignements.
+4.1.10 Longueur de l'alignement le plus long.
+4.1.11 Pourcentage d'identité le plus élevé parmi ces alignements.
+4.1.12 Pourcentage d'identité le plus bas parmi ces alignements.
 
 Répondez par VRAI ou FAUX sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.
-5.1.13 Le très haut pourcenage d'identité des alignements est suffisant pour conclure sur l'homologie entre des fragments alignés des deux génomes.
-5.1.14 Les longueurs des alignements sont suffisamment élevées pour inférer l'homologie entre les fragments alignés.
-5.1.15 Les E-valeurs indiquent qu'il est probable qu'un tel niveau de similarité résulte du hasard
-5.1.16 Le fait d'avoir plusieurs fragments alignés entre les deux génomes indique une similarité significative entre les génomes
+4.1.13 Le très haut pourcenage d'identité des alignements est suffisant pour conclure sur l'homologie entre des fragments alignés des deux génomes.
+4.1.14 Les longueurs des alignements sont suffisamment élevées pour inférer l'homologie entre les fragments alignés.
+4.1.15 Les E-valeurs indiquent qu'il est probable qu'un tel niveau de similarité résulte du hasard
+4.1.16 Le fait d'avoir plusieurs fragments alignés entre les deux génomes indique une similarité significative entre les génomes
 ```
 
 
