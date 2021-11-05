@@ -189,7 +189,7 @@ Questions 2.1 - Alignement par paires - Gene S
 Questions 2.2 - Alignement par paires - Protéine Spike
 
 2.2.1 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et RaTG13_2013_Yunnan ?
-2.3.2 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et MERS_172-06_2015 ?
+2.2.2 Quel est le pourcentage d'identité entre les protéines Spike de SARS-CoV-2 et MERS_172-06_2015 ?
 2.2.3 Quel est le pourcentage de gaps dans l'alignment entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
 
 Répondez par VRAI ou FAUX
@@ -198,7 +198,7 @@ Répondez par VRAI ou FAUX
 
 
 
-### Exercice 4 - BLAST: Recherche par similarité dans les bases de données de séquences
+### Exercice 3 - BLAST: Recherche par similarité dans les bases de données de séquences
 
 Dans l'exercice précédent, vous avez aligné un gène ou protéine à deux autres séquences pour pouvoir les comparer. Si vous voulez comparer la même séquence à toute les séquences d'une base de données pour pouvoir repérer les séquences similaires, cette approche n'est pas tenable. L'outil [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) rempli cette tâche avec une vitesse tout à fait raisonnable malgré la taille énorme des bases de données ([1000 milliards de nucleotides en GenBank en oct 2021](https://www.ncbi.nlm.nih.gov/genbank/statistics/)). Il repère les séquences similaires à une séquence requête et aligne les régions significativement similaires entre la séquence requête et les séquences de la BDD. BLAST fait donc des alignement locaux.
 Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la BDD protéique de NCBI (Genpept) pour identifier les homologues venant des autres virus. 
@@ -220,69 +220,63 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
      3. Observez les différentes bases des données disponibles dans le menu déroulant **Database**.     Sélectionnez la base de données non-redondante (**non-redundant protein sequences (nr)**. 
      4. L'option **Organism** permet de spécifier un nom de taxon auquel on veut limiter la recherche ou au contraire, le taxon qu'on veut exclure de la recherche (en cochant la case **exclude**)
          L'interface assure la *complétion automatique* : quand vous commencez à taper un nom d'organisme ou de taxon, les noms compatibles sont affichés, et leur choix se restreint au fur et à mesure que vous complétez le nom. Chaque nom de taxon est suivi par un identifiant taxonomique (taxid), pour éviter les éventuelles homonymes.
-         Tapez SARS-CoV-2 dans ce cadre et sélectionnez **SARS-CoV-2 (taxid:2697049)**
-         Cochez la case **exclude** pour éviter des séquences de SARS-CoV-2 dans les résultats de la recherche.
+         Tapez *Merbecovirus* dans ce cadre et sélectionnez **Merbecovirus (taxid:2509494)** pour limiter la recherche aux séquences de ce groupe.
      5. Sélectionnez l'algorithme **blastp** (option par défaut). 
      6. Cochez la case **Show results in a new window** pour que les résultats apparaissent dans une nouvelle fenêtre.
-     7. Cliquer sur **Algorithm parameters** pour modifier les paramètres par défaut de BLAST
-         - Sélectionner *1000* pour **Max target sequences** pour afficher jusqu'à 1000 séquences similaires à la protéine requête.
-         - Modifier le **Expect threshold** à **10** pour afficher les hits (alignements) avec une E-valeur jusqu'à 10.
-         - Laissez les autres options proposées par défaut
+     7. Cliquez sur **Algorithm parameters** pour voir les paramètres de BLAST qui sont modifiables et leurs valeurs par défaut.
+         - Sélectionnez 500 pour Max target sequences pour afficher jusqu'à 500 séquences similaires à la protéine requête.
+         - Modifiez le Expect threshold à 1e-10 pour afficher les hits (alignements) avec une E-valeur jusqu'à 1e-10.
+	 - Laissez les autres options proposées par défaut
      8. Lancez la recherche à l'aide du bouton **BLAST** et soyez patient pour l'obtention des résultats.
 
 
 3. Observez la page de résultat de BLAST qui apparait après quelques secondes/minutes. Il est est composé de 4 onglets  essentiels :
 
      - **Description** : Chaque ligne affiche un hit (alignement/séquences) et quelques indices élémentaires (score, couverture de la séquence requête par l'alignement, E-valeur…)
-     - **Graphic summary** : *Distribution of the tom ### Blast Hits on ### subject sequences*. La barre épaisse turquoise représente la séquence requête. Les autres barres fines représentent les fragments de séquences similaires à la séquence requête trouvés dans la BDD. Le code de couleurs est basé sur le score des alignements.
+     - **Graphic summary** : *Distribution of the top ### Blast Hits on ### subject sequences*. La barre épaisse turquoise représente la séquence requête. Les autres barres fines représentent les fragments de séquences similaires à la séquence requête trouvés dans la BDD. Le code de couleurs est basé sur le score des alignements.
      - **Alignments** : Alignements deux à deux.
      - **Taxonomy** : Représentation des hits selon leurs origines taxonomiques
-  4. Parmi les meilleurs hits examinez l'alignement de la séquence requête avec la séquence **QHR63300.2**. Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
+  4. Parmi les hits examinez l'alignement de la séquence requête avec la séquence **ALK80311.1**. (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**) C’est la séquence de MERS_172-06_2015 que vous avez alignée dans l’exercice précédent avec la protéine spicule de SARS-Cov-2. Analysez l'alignement en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
 ```question
-Questions 4.1 - BLAST - Alignmement de la Protéine Spike  et la séquence QHR63300.2
+Questions 3.1 - BLAST - Alignmement de la Protéine Spike de SARS-Cov-2 et la séquence ALK80311.1
 
-4.1.1 Nom de l'organisme de la séquence QHR63300.2 
-4.1.2 Nom scientifique de son hôte
+3.1.1 Nom de l'organisme de la séquence ALK80311.1 
+3.1.2 Nom scientifique de son hôte
 
 Notez les valeurs des indices suivants
-4.1.3 Longueur de l'alignement
-4.1.4 Pourcentage d'identité
-4.1.5 Pourcentage de positifs
-4.1.6 Pourcentage de gaps
-4.1.7 E-valeur (expect)
+3.1.3 Longueur de l'alignement
+3.1.4 Pourcentage d'identité
+3.1.5 Pourcentage de positifs
+3.1.6 Pourcentage de gaps
+3.1.7 E-valeur (expect)
 
-4.1.8 Combien y -t-il d'indel entre les deux séquences ?
-4.1.9 Que signifie la ligne entre les deux séquences comparées ?
+3.1.8 Que signifie la ligne entre les deux séquences comparées ?
 
 Répondez par VRAI ou FAUX
-4.1.10 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
-4.1.11 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
-4.1.12 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
+3.1.9 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
+3.1.10 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
+3.1.11 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
 
 ```
 
-5. Examinez l'alignement de la séquence requête avec la séquence **AGT51451.1** (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
+5. Examinez l'alignement de la séquence requête avec la séquence **AHC74083.1** (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
 ```question
-Questions 4.2 - BLAST - Alignmement de la Protéine Spike  et la séquence AGT51451.1
-
-4.2.1 Nom de l'organisme de la séquence AGT51451.1 
-4.2.2 Nom de  l'hôte de cet organisme
-
+Questions 3.2 - BLAST - Alignement de la Protéine Spike de SARS-Cov-2 et la séquence AHC74083.1
 Notez les valeurs des indices suivants du premier alignement
-4.2.3 Longueur de l'alignement
-4.2.4 Pourcentage d'identité
-4.2.5 Pourcentage de positifs
-4.2.6 Pourcentage de gaps
-4.2.7 E-valeur (expect)
+3.2.1 Longueur de l'alignement
+3.2.2 Pourcentage d'identité
+3.2.3 Pourcentage de positifs
+3.2.4 Pourcentage de gaps
+3.2.5 E-valeur (expect)
 
 Répondez par VRAI ou FAUX
 
-4.2.7 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
-4.2.8 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
-4.2.9 La séquence AGT51451.1 a deux alignements (positions 614-1351 et 72-438) contre la protéine Spike de SARS-COV-2. Ceci indique que la région 439-613 de la protéine AGT51451 est une insertion.
-4.2.10 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
+3.2.6 La ressemblance entre ces deux protéines est presque parfaite, et l'alignement couvre la longueur totale des deux protéines.
+3.2.7 La e-valeur indique qu'il est probable qu'un tel niveau de similarité résulte du hasard.
+3.2.8 L’alignement ne couvre qu’à peu près 10% de la séquence requête (QHU36824). Ceci est dû au fait que la séquence sujet (AHC74083.1) est partielle.
+3.2.9 L'hypothèse la plus vraisemblable est que ces deux protéines se ressemblent parce qu'elles dérivent d'un ancêtre commun, autrement dit, on peut conclure qu'elles sont homologues.
 ```
 
 
