@@ -170,7 +170,7 @@ Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va
 |RaTG13_2013_Yunnan| *Rhinolophus affinis* |[MN996532.1](https://www.ncbi.nlm.nih.gov/nuccore/MN996532.1)|[QHR63300.2](https://www.ncbi.nlm.nih.gov/protein/QHR63300.2)|
 |MERS_172-06_2015| *Homo sapiens* |[KT868877.1](https://www.ncbi.nlm.nih.gov/nuccore/KT868877.1)|[ALK80311.1](https://www.ncbi.nlm.nih.gov/protein/ALK80311.1)|
 
-2. Un logiciel d'alignement par paires [**needle]**(https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est disponible sur le site de centre de ressources [EBI](https://www.ebi.ac.uk/). Utilisez ce logiciel pour aligner le gène S de SARS-CoV-2 avec les deux autres virus (Faites deux alignements dans deux onglets séparés)
+2. Un logiciel d'alignement par paires **[needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/)** est disponible sur le site de centre de ressources [EBI](https://www.ebi.ac.uk/). Utilisez ce logiciel pour aligner le gène S de SARS-CoV-2 avec les deux autres virus (Faites deux alignements dans deux onglets séparés)
 
      * En STEP 1, sélectionnez **DNA**, à la place de PROTEIN, et copiez les chacune des deux séquences ARN à aligner dans les deux cases suivantes.
      * Laissez les autres paramètres par défaut, et lancez l'alignement (**Submit**)
@@ -200,7 +200,7 @@ Répondez par VRAI ou FAUX
 
 ### Exercice 3 - BLAST: Recherche par similarité dans les bases de données de séquences
 
-Dans l'exercice précédent, vous avez aligné un gène ou protéine à deux autres séquences pour pouvoir les comparer. Si vous voulez comparer la même séquence à toute les séquences d'une base de données pour pouvoir repérer les séquences similaires, cette approche n'est pas tenable. L'outil [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) rempli cette tâche avec une vitesse tout à fait raisonnable malgré la taille énorme des bases de données ([1000 milliards de nucleotides en GenBank en oct 2021](https://www.ncbi.nlm.nih.gov/genbank/statistics/)). Il repère les séquences similaires à une séquence requête et aligne les régions significativement similaires entre la séquence requête et les séquences de la BDD. BLAST fait donc des alignement locaux.
+Dans l'exercice précédent, vous avez aligné un gène ou protéine à deux autres séquences pour pouvoir les comparer. Si vous voulez comparer la même séquence à toute les séquences d'une base de données pour pouvoir repérer les séquences similaires, cette approche n'est pas tenable. L'outil [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) remplit cette tâche avec une vitesse tout à fait raisonnable malgré la taille énorme des bases de données ([1000 milliards de nucleotides en GenBank en oct 2021](https://www.ncbi.nlm.nih.gov/genbank/statistics/)). Il repère les séquences similaires à une séquence requête et aligne les régions significativement similaires entre la séquence requête et les séquences de la BDD. BLAST fait donc des alignement locaux.
 Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la BDD protéique de NCBI (Genpept) pour identifier les homologues venant des autres virus. 
 
 
@@ -217,7 +217,7 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
 
      1. Connectez-vous au site Web [BLAST du NCBI](http://blast.ncbi.nlm.nih.gov/) et sélectionnez l'outil **protein blast (BLASTp)**, qui compare des séquences protéiques avec les banques de données protéiques.
      2. Copiez votre séquence requête (y compris la ligne de description) dans la fenêtre **Enter accession number(s), gi(s), or FASTA séquence(s)**.  Alternativement, vous pouvez copier l'identifiant de votre séquence dans la même fenêtre, ou si vous avez téléchargé la séquence requête en format fasta, vous pouvez sélectionner ce fichier (upload file).
-     3. Observez les différentes bases des données disponibles dans le menu déroulant **Database**.     Sélectionnez la base de données non-redondante (**non-redundant protein sequences (nr)**. 
+     3. Observez les différentes bases de données disponibles dans le menu déroulant **Database**.     Sélectionnez la base de données non-redondante (**non-redundant protein sequences (nr)**. 
      4. L'option **Organism** permet de spécifier un nom de taxon auquel on veut limiter la recherche ou au contraire, le taxon qu'on veut exclure de la recherche (en cochant la case **exclude**)
          L'interface assure la *complétion automatique* : quand vous commencez à taper un nom d'organisme ou de taxon, les noms compatibles sont affichés, et leur choix se restreint au fur et à mesure que vous complétez le nom. Chaque nom de taxon est suivi par un identifiant taxonomique (taxid), pour éviter les éventuelles homonymes.
          Tapez *Merbecovirus* dans ce cadre et sélectionnez **Merbecovirus (taxid:2509494)** pour limiter la recherche aux séquences de ce groupe.
@@ -239,7 +239,7 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
   4. Parmi les hits examinez l'alignement de la séquence requête avec la séquence **ALK80311.1**. (Vous pouvez utilisez la recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**) C’est la séquence de MERS_172-06_2015 que vous avez alignée dans l’exercice précédent avec la protéine spicule de SARS-Cov-2. Analysez l'alignement en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
 ```question
-Questions 3.1 - BLAST - Alignmement de la Protéine Spike de SARS-Cov-2 et la séquence ALK80311.1
+Questions 3.1 - BLAST - Alignmement de la Protéine Spike de SARS-Cov-2 avec la séquence ALK80311.1
 
 3.1.1 Nom de l'organisme de la séquence ALK80311.1 
 3.1.2 Nom scientifique de son hôte
@@ -328,7 +328,7 @@ Questions 4.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de
 **Répondez aux questions suivantes sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.**
 
 4.1.1 Nombre de fragments alignés entre les génomes de SARS-CoV-2 et de HIV-1.
-4.1.2 Meilleur E-valeur parmi ces alignements.
+4.1.2 Meilleure E-valeur parmi ces alignements.
 4.1.3 Pire E-valeur parmi ces alignements.
 4.1.4 Longueur de l'alignement le plus long.
 4.1.5 Pourcentage d'identité le plus élevé parmi ces alignements.
@@ -337,7 +337,7 @@ Questions 4.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de
 **Répondez aux questions suivantes sur base de comparaison entre le génome de HIV-1 et la séquence aléatoire**
 
 4.1.7 Nombre de fragments alignés entre les génome de HIV-1 et la séquence aléatoire.
-4.1.8 Meilleur E-valeur parmi ces alignements.
+4.1.8 Meilleure E-valeur parmi ces alignements.
 4.1.9 La pire E-valeur parmi ces alignements.
 4.1.10 Longueur de l'alignement le plus long.
 4.1.11 Pourcentage d'identité le plus élevé parmi ces alignements.
@@ -355,7 +355,7 @@ Répondez par VRAI ou FAUX sur base de la comparaison entre les génomes de SARS
 >## Concepts
 
 >### E-valeur, Expect, E-value
->La e-valeur (en anglais: e-value ou expect pour expected value) représente le nombre de résultats qu'on s'attendrait à obtenir au hasard, en fonction des paramètres utilisés pour un programme.
+>La e-valeur (en anglais: e-value ou expect pour expected value) représente le nombre de résultats qu'on s'attendrait à obtenir par hasard, en fonction des paramètres utilisés pour un programme.
 >
 >Par exemple, le logiciel BLAST caractérise chaque alignement par une e-valeur, qui est calculée en fonction du le score brut, de la longueur des protéines alignées, et de la taille de la base de données (quand la taille d'une base de données augmente, on a plus de chances d'observer un hit fortuit). La e-valeur est le paramètre le plus informatif, d'une part parce qu'elle tient compte de l'ensemble des autres paramètres, d'autre part parce que son interprétation est directe: elle nous informe quant au risque que nous prenons si nous considérons la similarité comme significative. La e-valeur est liée au concept de risque de faux positifs: le risque de considérer comme significatif un résultat qui ne l'est pas.
 >
