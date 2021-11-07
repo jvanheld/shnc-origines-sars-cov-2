@@ -361,7 +361,6 @@ Répondez par VRAI ou FAUX sur base de la comparaison entre les génomes de SARS
 >
 >Une e-valeur faible indique qu'un résultat est statistiquement significatif.
 >
->
 >Par exemple, si un alignement obtenu par BLAST est associé à une e-valeur de 1e-3, cela signifie qu'on s'attendrait à 0.001 faux-positifs dans des conditions similaires. Autrement dit, si l'on faisait l'analyse avec des séquences aléatoires, un alignement d'aussi bonne qualité sortirait en moyenne une fois sur 1000.
 >	
 >Au contraire, des résultats associés à une e-valeur supérieure à 1 devraient toujours être considérés avec prudence (je dirais même méfiance). En effet, une e-valeur de 10 signifie que si l'on avait effectué une analyse avec des données aléatoires, on s'attendrait à obtenir une dizaine de résultats. Ces résultats pourraient être qualifiés de faux-positifs, c'est-à-dire des éléments déclarés significatifs alors qu'ils ne le sont pas. Il est donc généralement recommandé d'imposer un seuil stringent sur l'e-valeur.
