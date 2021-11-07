@@ -75,7 +75,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 ### Exercice 1 - UniprotKb/Swiss-prot, base de données de séquences protéiques
 
-Dans cet exercice, vous allez apprendre de faire des requêtes naïves et structurées pour trouver les protéines qui vous intéressent et découvrir le type d'information disponibles dans Uniprot.
+Dans cet exercice, vous allez apprendre à faire des requêtes naïves et structurées pour trouver les protéines qui vous intéressent et découvrir le type d'information disponibles dans Uniprot.
 
 1. Ouvrez une connexion à la base de données [Uniprot](https://www.uniprot.org/).
 2. Le page d'accueil affiche le nombre des séquences accessibles dans UniProt.
@@ -94,7 +94,7 @@ Questions 1.1 - Uniprot - Page d'accueil
 
 - Vous pouvez sélectionner des champs à afficher dans le tableau de résultats. Cliquez sur le bouton **Columns**. Vous trouverez tous les champs possibles à afficher regroupés par catégories. Affichez l’identifiant de la séquence (*Entry name*), le *nom de la protéine*, le nom de l'espèce (*Organism*), et la *longueur de la séquence*. Enregistrez ce réglage (**Save**).
    
-- La table de résultats est mise à jour, avec l'ajout de colonnes indiquant les informations que vous avez sélectionnées. Ces résultats correspondent-ils à vos attentes ? Toutes les protéines proviennent des SARS-CoV-2 ? Sont-ils tous des protéines Spike ? (Vous pouvez trier le tableau en fonction d’une colonne à l’aide des triangles à côté du nom de la colonne.) 
+- La table de résultats est mise à jour, avec l'ajout de colonnes indiquant les informations que vous avez sélectionnées. Toutes les protéines proviennent des SARS-CoV-2 ? Sont-ils tous des protéines Spike ? (Vous pouvez trier le tableau en fonction d’une colonne à l’aide des triangles à côté du nom de la colonne.) 
   
 - Cliquez sur l'identifiant **Q9BYF1** dans le tableau de résultats pour examiner les annotations de cette protéine. (Vous pouvez afficher plus de séquences par page à l'aide de menu déroulant *Show* et faire une recherche de texte dans la page avec *Ctrl-F*)
 
@@ -144,7 +144,7 @@ GKQGNFKNLREFVFKNIDGYFKIYSKHTPINLVRDLPQGFSALEPLVDLPIGINITRFQT
 ...
 ```
 
-6. Faites une recherche structurée pour trouver les protéines *ENV* et *GAG* du virus *Human immunodeficiency virus type 1 group M subtype A (isolate MAL) (HIV-1)*  présentes dans SwissProt ?
+6. Faites une recherche structurée pour trouver les protéines *ENV* et *GAG* du virus *Human immunodeficiency virus type 1 group M subtype A (isolate MAL) (HIV-1)*  présentes dans SwissProt.
 
     **Attention!** En utilisant les connecteurs logiques AND et OR dans la même requête, il est recommandé d'ajouter des parenthèses manuellement dans la phrase de recherche.
 
@@ -158,7 +158,8 @@ Questions 1.3 - Uniprot - Requête structurée
 
 ### Exercice 2 - Alignement par paires
 
-Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paire) qui aligne la totalité des deux séquences  (tout les résidus). [Needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est abréviation de le nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui aligne que les portions des séquences significativement similaires.
+Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paires) qui aligne la totalité des deux séquences  (tous les résidus). [
+](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est l'abréviation du nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui n'aligne que les portions des séquences significativement similaires.
 
 1. Nous avons extrait des séquences du gène S (codant pour la protéine Spike) à partir de 3 génomes complets et nous avons identifié les séquences protéiques correspondantes.
 
@@ -170,7 +171,7 @@ Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va
 |RaTG13_2013_Yunnan| *Rhinolophus affinis* |[MN996532.1](https://www.ncbi.nlm.nih.gov/nuccore/MN996532.1)|[QHR63300.2](https://www.ncbi.nlm.nih.gov/protein/QHR63300.2)|
 |MERS_172-06_2015| *Homo sapiens* |[KT868877.1](https://www.ncbi.nlm.nih.gov/nuccore/KT868877.1)|[ALK80311.1](https://www.ncbi.nlm.nih.gov/protein/ALK80311.1)|
 
-2. Un logiciel d'alignement par paire est disponible sur le site de centre de ressources [EBI](https://www.ebi.ac.uk/) : [needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/). Utilisez ce logiciel pour aligner le gène S de SARS-CoV-2 avec les deux autres virus (Faites deux alignements dans deux onglets séparés)
+2. Un logiciel d'alignement par paires [**needle]**(https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est disponible sur le site de centre de ressources [EBI](https://www.ebi.ac.uk/). Utilisez ce logiciel pour aligner le gène S de SARS-CoV-2 avec les deux autres virus (Faites deux alignements dans deux onglets séparés)
 
      * En STEP 1, sélectionnez **DNA**, à la place de PROTEIN, et copiez les chacune des deux séquences ARN à aligner dans les deux cases suivantes.
      * Laissez les autres paramètres par défaut, et lancez l'alignement (**Submit**)
@@ -193,7 +194,7 @@ Questions 2.2 - Alignement par paires - Protéine Spike
 2.2.3 Quel est le pourcentage de gaps dans l'alignment entre les gènes S de SARS-CoV-2 et MERS_172-06_2015 ?
 
 Répondez par VRAI ou FAUX
-2.2.4 Bien que le pourcentage d'identité entre les protéines de SARS-CoV-2 et MERS_172-06_2015 soit plus faible qu'entre les gènes, l'alignement des protéines comporte moins des gaps et la similarité entre des séquences semble plus convainquante.
+2.2.4 Bien que le pourcentage d'identité entre les protéines de SARS-CoV-2 et MERS_172-06_2015 soit plus faible qu'entre les gènes, l'alignement des protéines comporte moins de gaps et la similarité entre des séquences semble plus convainquante.
 ```
 
 
@@ -211,7 +212,7 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
 
 
 
-1. Récupérez la séquence du protéine Spike de SARS-CoV-2 sur NCBI: [QHU36824.1](https://www.ncbi.nlm.nih.gov/protein/QHU36824)
+1. Récupérez la séquence de la protéine Spike de SARS-CoV-2 sur NCBI: [QHU36824.1](https://www.ncbi.nlm.nih.gov/protein/QHU36824)
 
 2. Faites un BLAST en utilisant la protéine [QHU36824.1](https://www.ncbi.nlm.nih.gov/protein/QHU36824) comme séquence requête contre la BDD NCBI protéine.    
 
@@ -236,7 +237,7 @@ Dans cet exercice, vous allez comparer la **protéine Spike SARS-CoV-2** à la B
      - **Graphic summary** : *Distribution of the top ### Blast Hits on ### subject sequences*. La barre épaisse turquoise représente la séquence requête. Les autres barres fines représentent les fragments de séquences similaires à la séquence requête trouvés dans la BDD. Le code de couleurs est basé sur le score des alignements.
      - **Alignments** : Alignements deux à deux.
      - **Taxonomy** : Représentation des hits selon leurs origines taxonomiques
-  4. Parmi les hits examinez l'alignement de la séquence requête avec la séquence **ALK80311.1**. (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**) C’est la séquence de MERS_172-06_2015 que vous avez alignée dans l’exercice précédent avec la protéine spicule de SARS-Cov-2. Analysez l'alignement en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
+  4. Parmi les hits examinez l'alignement de la séquence requête avec la séquence **ALK80311.1**. (Vous pouvez utilisez la recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**) C’est la séquence de MERS_172-06_2015 que vous avez alignée dans l’exercice précédent avec la protéine spicule de SARS-Cov-2. Analysez l'alignement en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
 ```question
 Questions 3.1 - BLAST - Alignmement de la Protéine Spike de SARS-Cov-2 et la séquence ALK80311.1
@@ -260,7 +261,7 @@ Répondez par VRAI ou FAUX
 
 ```
 
-5. Examinez l'alignement de la séquence requête avec la séquence **AHC74083.1** (Vous pouvez utilisez le recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
+5. Examinez l'alignement de la séquence requête avec la séquence **AHC74083.1** (Vous pouvez utilisez la recherche Ctrl-F pour retrouver l'identifiant dans la page de **Descriptions**). Analysez-le en tentant de faire le rapport entre les caractéristiques de l'alignement et les scores qui le caractérisent: score brut, identités, résidus "positifs" (identités et substitutions conservatives: substitution entre acides aminés de propriétés similaires), gaps, E-valeur.
 
 ```question
 Questions 3.2 - BLAST - Alignement de la Protéine Spike de SARS-Cov-2 et la séquence AHC74083.1
@@ -283,7 +284,7 @@ Répondez par VRAI ou FAUX
 
 ### Exercice 4 - Y a-t-il des insertions de séquences de HIV dans le génome de SARS-CoV-2 ?
 
-Dans cet exercice nous allons utiliser BLAST pour repérer les régions similaires entre la génome de SARS-CoV-2 ([MT019529.1](https://www.ncbi.nlm.nih.gov/nuccore/MT019529.1)) et la séquence référence du génome de virus de SIDA (HIV-1 taxid:11676).
+Dans cet exercice nous allons utiliser BLAST pour repérer les régions similaires entre le génome de SARS-CoV-2 ([MT019529.1](https://www.ncbi.nlm.nih.gov/nuccore/MT019529.1)) et la séquence référence du génome de virus de SIDA (HIV-1 taxid:11676).
 
 1. Connectez-vous au site Web [BLAST du NCBI](http://blast.ncbi.nlm.nih.gov/) et sélectionnez l'outil **Nucleotide blast (BLASTn)**, qui compare des séquences nucléotidiques avec les banques de données nucléotidiques.
 
@@ -291,7 +292,7 @@ Dans cet exercice nous allons utiliser BLAST pour repérer les régions similair
 
 3. **Database** : *RefSeq Genome Database (refseq_genomes)* pour se concentrer uniquement sur les génomes de référence
 
-4. **Organism** *HIV-1 (taxid:1167)* pour limiter la recherche aux séquences de HIV-1
+4. **Organism** *HIV-1 (taxid:11676)* pour limiter la recherche aux séquences de HIV-1
 
 5. **Program Selection** : *Somewhat similar sequences (blastn)* pour augmenter la sensibilité de la recherche. 
 
@@ -299,7 +300,9 @@ Dans cet exercice nous allons utiliser BLAST pour repérer les régions similair
 
 7. **Algorithm parameters** : **Expect threshold** à *10* pour afficher les hits avec une E-valeur jusqu'à 10. Valeur par défaut pour les autres paramètres.
 
-8. Gardez le page de résultats ouverte pour pouvoir répondre aux questions un peu plus tard.
+8. Lancez BLAST.
+
+9. Gardez la page de résultats ouverte pour pouvoir répondre aux questions un peu plus tard.
 
 Le génome de SARS-CoV-2 a 29899 nucléotides. Nous allons générer une séquence aléatoire (suite des nucléotides aléatoire) de même longueur et comparer cette séquence avec le génome de HIV-1 à l'aide de BLAST.
 
@@ -325,7 +328,7 @@ Questions 4.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de
 
 **Répondez aux questions suivantes sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.**
 
-4.1.1 Nombre de fragments alignées entre les génomes de SARS-CoV-2 et de HIV-1.
+4.1.1 Nombre de fragments alignés entre les génomes de SARS-CoV-2 et de HIV-1.
 4.1.2 Meilleur E-valeur parmi ces alignements.
 4.1.3 Pire E-valeur parmi ces alignements.
 4.1.4 Longueur de l'alignement le plus long.
@@ -334,7 +337,7 @@ Questions 4.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de
 
 **Répondez aux questions suivantes sur base de comparaison entre le génome de HIV-1 et la séquence aléatoire**
 
-4.1.7 Nombre de fragments alignées entre les génome de HIV-1 et la séquence aléatoire.
+4.1.7 Nombre de fragments alignés entre les génome de HIV-1 et la séquence aléatoire.
 4.1.8 Meilleur E-valeur parmi ces alignements.
 4.1.9 La pire E-valeur parmi ces alignements.
 4.1.10 Longueur de l'alignement le plus long.
@@ -342,7 +345,7 @@ Questions 4.1 -  Y a-t-il des insertions de séquences de HIV dans le génome de
 4.1.12 Pourcentage d'identité le plus bas parmi ces alignements.
 
 Répondez par VRAI ou FAUX sur base de la comparaison entre les génomes de SARS-CoV-2 et de HIV-1.
-4.1.13 Le très haut pourcenage d'identité des alignements est suffisant pour conclure sur l'homologie entre des fragments alignés des deux génomes.
+4.1.13 Le très haut pourcentage d'identité des alignements est suffisant pour conclure sur l'homologie entre des fragments alignés des deux génomes.
 4.1.14 Les longueurs des alignements sont suffisamment élevées pour inférer l'homologie entre les fragments alignés.
 4.1.15 Les E-valeurs indiquent qu'il est probable qu'un tel niveau de similarité résulte du hasard
 4.1.16 Le fait d'avoir plusieurs fragments alignés entre les deux génomes indique une similarité significative entre les génomes
