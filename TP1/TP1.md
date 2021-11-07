@@ -15,10 +15,10 @@
 >
 >5. Attention aux réponses libres du questionnaire : 
 >
->    * Ecrivez les nombres **sans espace et sans virgule**. Par exemple : `9365589` à la place de `9 365 589` ou `9,365,589`.
+>    * Ecrivez les nombres **sans espace et sans virgule**. Par exemple : `9365589` plutôt que `9 365 589` ou `9,365,589`.
 >    * Utilisez le **point** comme **séparateur de décimales**. Par exemple `3.14` plutôt que `3,14`.
->    * Si on demande un **pourcentage** écrivez uniquement le nombre sans le signe %. Par exemple `30` à la place de `30%` ou `0.3`.
->    * Si on demande une **proportion** ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` à la place de `30%`.
+>    * Si on demande un **pourcentage** écrivez uniquement le nombre sans le signe %. Par exemple `30` et non `30%` ou `0.3`.
+>    * Si on demande une **proportion** ne donnez pas la réponse en pourcentage. Par exemple écrivez `0.3` et non `30%`.
 
 
 ## Contenu
