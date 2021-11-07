@@ -158,8 +158,7 @@ Questions 1.3 - Uniprot - Requête structurée
 
 ### Exercice 2 - Alignement par paires
 
-Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paires) qui aligne la totalité des deux séquences  (tous les résidus). [
-](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est l'abréviation du nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui n'aligne que les portions des séquences significativement similaires.
+Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paires) qui aligne la totalité des deux séquences  (tous les résidus). [**needle**](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est l'abréviation du nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui n'aligne que les portions des séquences significativement similaires.
 
 1. Nous avons extrait des séquences du gène S (codant pour la protéine Spike) à partir de 3 génomes complets et nous avons identifié les séquences protéiques correspondantes.
 
