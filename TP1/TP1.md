@@ -43,7 +43,7 @@ Lors du premier cours, nous avons présenté une introduction aux concepts biolo
 
 * Biologie de SARS-CoV-2
 * Bases de données biologiques
-* Alignement par paire
+* Alignements par paires
 * Recherche de séquences par similarité
 
 ## Introduction
@@ -103,9 +103,9 @@ Questions 1.1 - Uniprot - Page d'accueil
 Questions 1.2 - Uniprot - Requête naïve
 
 1.2.1 De quelle espèce provient cette séquence ?
-1.2.2 Quelle est sa fonction ?
-1.2.3 Dans quel champ apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
-1.2.4 Dans quel champ apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
+1.2.2 Quelles sont ses fonctions ?
+1.2.3 Dans quels champs apparait le mot 'Spike' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F)
+1.2.4 Dans quels champs apparait le mot 'SARS-CoV-2' ? (Vous pouvez faire une recherche de texte dans la page avec Ctrl-F).
 
 Répondez par VRAI ou FAUX
 
@@ -156,13 +156,13 @@ Questions 1.3 - Uniprot - Requête structurée
 1.3.2 Quel est l'identifiant de la protéine 'Envelope glycoprotein' parmi vos résultats ?
 ```
 
-### Exercice 2 - Alignement par paires
+### Exercice 2 - Alignements par paires
 
-Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paires) qui aligne la totalité des deux séquences  (tous les résidus). [**needle**](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) est l'abréviation du nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui n'aligne que les portions des séquences significativement similaires.
+Pour pouvoir comparer deux séquences il est nécessaire de les aligner. Ceci va permettre de calculer le pourcentage d'identité entre les séquences et détecter des mutations (substructions, indels) entre elles. Dans cet exercice vous allez utiliser un logiciel d'alignement deux à deux (ou alignement par paires) qui aligne la totalité des deux séquences  (tous les résidus). **[needle](https://www.ebi.ac.uk/Tools/psa/emboss_needle/)** est l'abréviation du nom de l'algorithme de Needleman et Wunsch. Ce type d'alignement s'appelle **alignement global**  par opposition à l'alignement local qui n'aligne que les portions des séquences significativement similaires.
 
 1. Nous avons extrait des séquences du gène S (codant pour la protéine Spike) à partir de 3 génomes complets et nous avons identifié les séquences protéiques correspondantes.
 
-    Utilisez les liens dans le tableau ci-dessous pour accéder aux séquences protéiques en format fasta. l'extraction des séquences de gène S à partir de génome complet est un peu plus long. Nous avons fait le travail pour vous. Vous trouverez les séquences ARN de gène S dans le fichier suivant : [S-gene_3.fasta](../data/S-gene/S-gene_3.fasta)
+    Utilisez les liens dans le tableau ci-dessous pour accéder aux séquences protéiques en format fasta. l'extraction des séquences de gène S à partir de génome complet est un peu plus longue. Nous avons fait le travail pour vous. Vous trouverez les séquences ARN de gène S dans le fichier suivant : [S-gene_3.fasta](../data/S-gene/S-gene_3.fasta)
 
 |Virus | Hôte |Génome | Protéine spike |
 |--------|---------|---------------------|---------------------------|
