@@ -131,11 +131,11 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
     - Faites un mise à jour (**Update**) après chaque séquence. 
 
 Nous vous conseillons les couleurs suivants
-	- Bleu - BtRaTG13_2013_Yunnan
-	- Rouge - Bt-BANAL-20-52_Rhinolophus_malayanus_CoV
-	- Noir - Bt-BANAL-20-116_Rhinolophus_malayanus_CoV
-	- Vert - PnMP789
-	- Gris - HuSARS-Frankfurt-1_2003 
+    - Bleu - BtRaTG13_2013_Yunnan
+    - Rouge - Bt-BANAL-20-52_Rhinolophus_malayanus_CoV
+    - Noir - Bt-BANAL-20-116_Rhinolophus_malayanus_CoV
+    - Vert - PnMP789
+    - Gris - HuSARS-Frankfurt-1_2003 
 
 <a href="images/05_recolored-profiles.png">
 <img src="images/05_recolored-profiles.png" alt="Fenêtre de paramétrage et filtrage des équences" width="600px">
@@ -150,29 +150,28 @@ Questions 1.1 Pourcentage de Positions Identiques (PPI , en anglais PIP) de gén
 
 1.1.2 Quel est son pourcentage d'identité avec le génôme de référence ? 
 
-1.1.3 Quel est le pourcentage d'identité moyen entre la séquence PnMP789 et le HuCoV2_WH01_2019 ? 
+1.1.3 Quel est le pourcentage d'identité entre la séquence Bt-BANAL-20-52 et le HuCoV2_WH01_2019 ? ? 
 
-1.1.4 Dans quel gène observez-vous une chute de pourcentage d'identité de plus de 5 % entre la séquence HuCoV2_WH01_2019 et BtRaTG13_Yunnan ? 
+1.1.4 A TERMINER
 
 ```
 
 Focalisons-nous maintenant sur le **gène S**.
 
-1. Dans **Feature Exploration**, sélectionnez **Genbank:YP_009724390.1,GeneID:43740568** (c'est l'identifiant du gène S) et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier. .
+1. Dans **Feature Exploration**, sélectionnez je gène **S** et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier. .
 
 2. Pour pouvoir comparer les séquences de Gène S de façon plus fine, fixez la largeur de la fenêtre à *120*  dans : **Settings > Size of the sliding window** et cliquez **Update**. Le graphique est mis à jour, et de nouveau, le PPI est affiché pour le génome complet. 
 
-
     - Revenez sur l'affichage de gène S en cliquant sur **Focus** dans **Feature exploraion**. 
-    - Vous devrez sans doute re-spécifier les couleurs des génomes d'intérêt (RaTG13, PnMP789). Nous avons signalé ce problème aux développeurs qui vont essayer de le résoudre.
-
-3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspond au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Mean area** 
+    
+3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspond au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Selected area > Mean** 
 
 ```question
 Questions 1.2 PPI de gène S des coronavirus
 
-1.2.1 Quel génome a le gène S le plus similaire (sur la longueur totale du gène) à celui de le SARS-CoV-2 (Reference: HuCoV2_WH01_2019) ?
+1.2.1 Quel génome a le gène S le plus similaire à celui de le SARS-CoV-2 (Observez les moyennes entre les fenêtres) ?
 
+A TERMINER
 1.2.2 Quel est ce pourcentage d'identité ?
 
 1.2.3 Quel est le pourcentage d'identité moyen entre les gènes S des séquences PnMP789 et HuCoV2_WH01_2019 ?
