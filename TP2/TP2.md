@@ -37,7 +37,7 @@ Le matériel de support est disponible ici: [[diapos CM1](../slides/NC3_enquete
 * Recherche de séquences par similarité
 * Profil d'identité
 * Alignement multiple
-* Construction et interprétation des arbre phylogénétiques
+* Construction et interprétation des arbres phylogénétiques
 
 
 
@@ -53,8 +53,9 @@ Le but de cette série de TP sera d'utiliser une série de méthodes bioinformat
     - Effectuer une recherche par similarité de séquences.
 
 - TP2 
+    - Interpreter de graphique de pourcentage de position identiques (PPI)
     - Effectuer des alignements multiples.
-    - Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus pour pouvoir démontrer l'importance des recombinaisons entre différents virus.
+    - Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus.
 
 
 ## Contrôle des connaissances
@@ -71,16 +72,16 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 **But de l'exercice:** nous allons visualiser le profil de **pourcentage de position identiques** (**PPI**) entre le SARS-CoV-2 (considéré ici comme le *génome de référence*) et quelques autre coronavirus (*génomes requêtes*), pour identifier les virus les plus proches du SARS-CoV-2, et évaluer si ces degrés de proximité varient sur différentes régions du génome. 
 
 
-**Identifiants des séquences génomiques** : nous allons analyser un fichier qui contient les séquences génomiques complètes de quelques coronavirus plus ou moins proches de SARS-CoV-2. Les deux premières lettres de chaque identifiant indiquent l'organisme hôte; 
+**Identifiants des séquences génomiques** : nous allons analyser un fichier qui contient les séquences génomiques complètes de quelques coronavirus plus ou moins proches de SARS-CoV-2. Les identifiant des séquences commencent par le nom de hôte du virus. 
 
 | Préfixe | Hôte |
 |-----------|---------------------|
-| Bt | Chauve-souris (bat) |
-| Pn | Pangolin |
-| Hu | Humain |
+| Rhinolophus affinis | Chauve-souris |
+| Rhinolophus malayanus | Chauve-souris |
+| Manis javanica | Pangolin |
+| Human | Humain |
 
-1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi_2021.fasta)) qui contient la génomes de SARS-Cov-2 et cinq autres génomes de coronavirus que nous allons comparer. 
-    **Dans l'identifiant des séquences *Bt*, *Pn* et *Hu* indiquent l'hôte de chaque génome: Chauve-souris (Bat), Pangolin, Humain.**
+1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi_2021.fasta)) qui contient la génomes de SARS-Cov-2 et quatre autres génomes de coronavirus que nous allons comparer. 
 
 2.  Enregistrerez sur votre ordinateur le **fichier d'annotations génomiques** [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir interpréter les profils de PPI, ou pour focaliser l'analyse sur l'un ou l'autre gène.
 
@@ -95,7 +96,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
     - Cliquez sur **Import sequences** dans le menu 
     - Choisissez le bouton **Input FASTA** et sélectionnez le fichier *genomes_ppi_2021.fasta*.
-    - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 6 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**.
+    - Quand **Upload complete** est affiché, vérifiez dans la section **Summary** que les 5 génomes sont bien lus, assurez vous que **DNA** est choisi comme **Nature of the sequence** et cliquez sur **OK**.
 
 
 <a href="images/02_import-fasta-sequence.png">
@@ -104,7 +105,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 5. Dans l'onglet **Filters** vous pouvez faire une série de réglages
 
-    - Assurez-vous que le génome HuCoV2_WN01_2019 est sélectionné comme référence dans la fenêtre **1 - Select Reference sequence**. Cette séquence sera comparée à toutes les autres du jeux de données.
+    - Assurez-vous que le génome Human_SARS-CoV2_WN01_2019 est sélectionné comme référence dans la fenêtre **1 - Select Reference sequence**. Cette séquence sera comparée à toutes les autres du jeux de données.
     - Dans la fenêtre **2 - Select query sequences**, les séquences disponibles sont affichées à gauche, les séquences sélectionnées sont à droite. Assurez-vous que tous les séquences sont sélectionnées pour la comparaison.
     - Choisissez *global-local* dans l'étape **3 - Pairwise Alignment type**
     - Entrez *600* dans **4- Select a windows size**. Le pourcentage d'identité sera calculé pour chaque fragment de 600 nucléotides. On dit que 600 est la *longueur de la fenêtre*.
@@ -131,83 +132,60 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
     - Faites un mise à jour (**Update**) après chaque séquence. 
 
 Nous vous conseillons les couleurs suivants
-    - Bleu - BtRaTG13_2013_Yunnan
-    - Rouge - Bt-BANAL-20-52_Rhinolophus_malayanus_CoV
-    - Noir - Bt-BANAL-20-116_Rhinolophus_malayanus_CoV
-    - Vert - PnMP789
-    - Gris - HuSARS-Frankfurt-1_2003 
+    - Bleu - Rhinolophus_affinis_RaTG13_2013_Yunnan
+    - Rouge - Rhinolophus_malayanus_CoV_BANAL_20_52
+    - Noir - Rhinolophus_malayanus_CoV_BANAL_20_116
+    - Vert - Manis_javanica_MP789
 
 <a href="images/05_recolored-profiles.png">
 <img src="images/05_recolored-profiles.png" alt="Fenêtre de paramétrage et filtrage des équences" width="600px">
 </a>
 
-
-
-```question
-Questions 1.1 Pourcentage de Positions Identiques (PPI , en anglais PIP) de génomes des coronavirus
-
-1.1.1 Quel génome a le pourcentage d'identité moyen le plus élévé avec le SARS-CoV-2 (Reference: HuCoV2_WH01_2019) ?
-
-1.1.2 Quel est son pourcentage d'identité avec le génôme de référence ? 
-
-1.1.3 Quel est le pourcentage d'identité entre la séquence Bt-BANAL-20-52 et le HuCoV2_WH01_2019 ? ? 
-
-1.1.4 A TERMINER
-
-```
-
 Focalisons-nous maintenant sur le **gène S**.
 
-1. Dans **Feature Exploration**, sélectionnez je gène **S** et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier. .
+1. Dans **Feature Exploration**, sélectionnez je gène **S** (code pour la protéine Spike) et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier. .
 
-2. Pour pouvoir comparer les séquences de Gène S de façon plus fine, fixez la largeur de la fenêtre à *120*  dans : **Settings > Size of the sliding window** et cliquez **Update**. Le graphique est mis à jour, et de nouveau, le PPI est affiché pour le génome complet. 
+2. Pour pouvoir comparer les séquences de Gène S de façon plus fine, fixez la largeur de la fenêtre à *120*  dans : **Settings > General > Size of the sliding window** et cliquez **Update**. Le graphique est mis à jour, et de nouveau, le PPI est affiché pour le génome complet. 
 
     - Revenez sur l'affichage de gène S en cliquant sur **Focus** dans **Feature exploraion**. 
     
 3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspond au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Selected area > Mean** 
 
-```question
-Questions 1.2 PPI de gène S des coronavirus
+4. Explorez les différents options offertes par l'outil PIPprofileR et repondez aux questions suivantes. Il sera utile à changer le focus de profiles PPI entre le génome complet et le gène S. Comme il est difficile d'afficher plusieurs PPI à la fois, vous trouverez la capture d'éran de PPI de gène S ici : 
 
-1.2.1 Quel génome a le gène S le plus similaire à celui de le SARS-CoV-2 (Observez les moyennes entre les fenêtres) ?
+<a href="images/PPI_gene_S.png">
+<img src="images/PPI_gene_S.png" alt="PPI de gene S entre le SARSCov2 et qualques génomes proches" width="600px">
+</a>
 
-A TERMINER
-1.2.2 Quel est ce pourcentage d'identité ?
-
-1.2.3 Quel est le pourcentage d'identité moyen entre les gènes S des séquences PnMP789 et HuCoV2_WH01_2019 ?
-
-```
-
-4. Affichez la séquence *BtRATG13* en rouge et la séquence *PnMP789* en bleu pour mieux visualiser les courbes.
-
-5. Sélectionnez sur le graphique la région la plus longue où la PPI de la séquence *PnMP789* est plus grande que celle de *BtRATG13*.
 
 ```question
-Questions 1.3 PPI de gène S des coronavirus - région de recombinaison
+Questions 1.1 Interpretation de Pourcentage de Positions Identiques (PPI , en anglais PIP) de génomes des coronavirus
 
-1.3.1 Quel est le pourcentage d'identité moyen sur la zone sélectionnée entre les séquences BtRATG13 et HuCoV2_WH01_2019 ?
+1.1.1 Quel est le génome le plus similaire au génome de SARS-Cov2 ?
 
-1.3.2 Quel est le pourcentage d'identité moyen sur la zone sélectionnée entre les séquences PnMP789 et HuCoV2_WH01_2019 ? 
+1.1.2 Sur combien de portions de la séquence ce virus a-t-il plus de 10% de différence qu'une autre séquence comparée à la séquence de référence ?
 
-Répondez par VRAI ou FAUX
+1.1.3 Quels sont les hôtes des virus ayant des portions plus proches de la séquences de référence que RaTG13 (Rhinolophus_affinis_RaTG13) sur le gène S? 
 
-1.3.3 La région sélectionnée de génome de SARS-CoV-2 est probablement le résultat d'un recombinaison entre génomes.
+1.1.4 Les séquences issues des virus trouvés sur Rhinolophus malayanus ont été découvertes en 2021. Pourquoi a-t-on pensé en 2019 que SARS-Cov2 pourrait venir du pangolin (Manis javanica) ?
 
-1.3.4 Cette recombinaison a eu lieu très probablement entre les génomes BtRATG13 et PnMP789.
+1.1.5 Sur quel gène se base l'hypothèse de 2019 selon laquelle le pangolin était le dernier hôte non humain de SARS-COV-2 ?
 
-1.3.5 La similarité entre ce fragment de génome PnMP789 et le SARS-CoV-2 est suffisamment élevée pour en déduire que le virus de pangolin a constitué la source d'unepartie du génome de SARS-CoV-2.
+1.1.6 Pourquoi la découverte du virus Rhinolophus_malayanus_CoV_BANAL_20_52 est-elle importante? 
+
+1.1.7 Quel génome possède un gène S le plus similaire au gène S de SARS-Cov2 ?
+
+1.1.8 Quel génome possède un gène S est le moins similaire au gène S de SARS-Cov2 ?
+
+1.1.9 Les génomes SARS-Cov2 et Rhinolophus_malayanus_CoV_BANAL_20_116 sont fort similaires sur la majorité du génome. Sur quel gène sont-ils les plus divergents ?
+(Ne tenez pas compte des 600 premiers éléments de la séquence où nous suspectons un problème de séquençage/assemblage)
 
 ```
 
 
 ### Exercice 2 - Construction et interprétation des arbres phylogénétiques
 
-La [Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG) représente un arbre phylogénétique construite sur base des génomes de quelques coronavirus. 
-Dans cet exercice, vous allez construire une arbre phylogénétique sur base de *protéine Spike* de quelques coronavirus, comparer les arbres et tenter d'expliquer des éventuelles incohérences entre eux.
-
-<a href="../figures/Figure_1_PhyML_based_on_genomes.PNG">
-<img src="../figures/Figure_1_PhyML_based_on_genomes.PNG" alt="PhyML based on genomes" width="600px" border=10 color="blue">
-</a>
+Dans cet exercice, vous allez construire une arbre phylogénétique sur base de *protéine Spike* de quelques coronavirus.
 
 La construction des arbres suit les étapes suivantes.      
 
@@ -223,9 +201,9 @@ La construction des arbres suit les étapes suivantes.
 
 Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline pour enchainer tous ces étapes tout en rendent disponible de résultats de chaque étapes. 
 
-1. Téléchargez le fichier [spike_proteins_16.fasta](../data/spike-protein/spike_proteins_16.fasta) et enregistrez le sur votre ordinateur. 
+1. Téléchargez le fichier [spike_proteins_2021.fasta](../data/spike-protein/spike_proteins_2021.fasta) et enregistrez le sur votre ordinateur. 
 
-2. Ce fichier contient les protéines spike de 16 différents coronavirus. Les virus choisis pour votre analyses sont indiqués par une flèche rouge sur le [Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG).
+2. Ce fichier contient les protéines spike de 24 différents coronavirus. 
 
 3. Rendez vous sur la page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/). 
 
@@ -233,16 +211,16 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
 5. Donnez un nom à votre analyse (**Name**), et choisissez les logiciels suivants pour chaque étape
 
-    - **Multiple Alignment** : *MUSCLE*
-    - **Alignment Curation** : *Gblocks*
-    - **Tree Inference** : *PhyML*
+    - **Multiple Alignment** : *MAFFT*
+    - **Alignment Curation** : *BMGE*
+    - **Tree Inference** : *FastME*
     - **Multiple Alignment** : *Newick Display*
   
 6.  Créez le pipeline : cliquez (**Create workflow**)
 
-7. Sélectionnez le fichier *spike_proteins_16.fasta* dans la section **Input data**. 
+7. Sélectionnez le fichier *spike_proteins_2021.fasta* dans la section **Input data**. 
 
-    **Note :** Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Nous allons commencer les analyses avec les paramètres par défaut.
+8. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Cliquez sur le signe *+* après **FastME** et sélectionnez **yes** pour **Bootstrap branch supports**. Une fenêtre apparait. Entrez *100* à **Number of replicates**. Laissez les autres paramètres par défaut.
 
 8. Cliquez sur **Submit** pour commencer les analyses. 
 
@@ -250,7 +228,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
 9. Au fur et à mesure de l'analyse, les liens apparaissent pour pouvoir découvrir le résultat de chaque étape.
 
->Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder à une copie de secours des résultats : [Page de Résultats](https://ngphylogeny.fr/workspace/history/6390d9efe7809836)
+>Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder à une copie de secours des résultats : [Page de Résultats](https://ngphylogeny.fr/workspace/history/27b87941a3bbc668)
 
 #### Analyse des résultats
 
