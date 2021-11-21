@@ -53,7 +53,7 @@ Le but de cette série de TP sera d'utiliser une série de méthodes bioinformat
     - Effectuer une recherche par similarité de séquences.
 
 - TP2 
-    - Interpreter de graphique de pourcentage de position identiques (PPI)
+    - Interpréter de graphique de pourcentage de position identiques (PPI)
     - Effectuer des alignements multiples.
     - Inférer des arbres phylogénétiques basés sur différentes protéines des coronavirus.
 
@@ -81,7 +81,7 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 | Manis javanica | Pangolin |
 | Human | Humain |
 
-1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi.fasta](../data/genomes/genomes_ppi_2021.fasta)) qui contient la génomes de SARS-Cov-2 et quatre autres génomes de coronavirus que nous allons comparer. 
+1. Enregistrerez sur votre ordinateur le fichier  ([genomes_ppi_2021.fasta](../data/genomes/genomes_ppi_2021.fasta)) qui contient la génomes de SARS-Cov-2 et quatre autres génomes de coronavirus que nous allons comparer. 
 
 2.  Enregistrerez sur votre ordinateur le **fichier d'annotations génomiques** [GCF_009858895.2_ASM985889v3_genomic.gff](../data/genomes/GCF_009858895.2_ASM985889v3_genomic.gff) contenant l'annotation du génome de SARS-Cov-2. Ce fichier contient la position des différents gènes dans le génome de SARS-CoV-2 et sera utilisé pour pouvoir interpréter les profils de PPI, ou pour focaliser l'analyse sur l'un ou l'autre gène.
 
@@ -132,18 +132,18 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
     - Faites un mise à jour (**Update**) après chaque séquence. 
 
 Nous vous conseillons les couleurs suivants
-    - Bleu - Rhinolophus_affinis_RaTG13_2013_Yunnan
-    - Rouge - Rhinolophus_malayanus_CoV_BANAL_20_52
-    - Noir - Rhinolophus_malayanus_CoV_BANAL_20_116
-    - Vert - Manis_javanica_MP789
+    - Bleu : Rhinolophus_affinis_RaTG13_2013_Yunnan
+    - Rouge : Rhinolophus_malayanus_CoV_BANAL_20_52
+    - Noir : Rhinolophus_malayanus_CoV_BANAL_20_116
+    - Vert : Manis_javanica_MP789
 
-<a href="images/05_recolored-profiles.png">
-<img src="images/05_recolored-profiles.png" alt="Fenêtre de paramétrage et filtrage des équences" width="600px">
+<a href="images/PPI_genome_2021.png">
+<img src="images/PPI_genome_2021.png" alt="Fenêtre de paramétrage et filtrage des séquences" width="600px">
 </a>
 
 Focalisons-nous maintenant sur le **gène S**.
 
-1. Dans **Feature Exploration**, sélectionnez je gène **S** (code pour la protéine Spike) et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier. .
+1. Dans **Feature Exploration**, sélectionnez je gène **S** (code pour la protéine Spike) et cliquer sur **Focus**. La graphique de PPI est mis à jour et uniquement le gène S est représenté. La graphique semble plus "lisse", car les le PPI sont calculés sur des fragments de 600 nucléotides, qui conviennent pour afficher un génome de 30 kb, mais deviennent trop larges quand on désire se focaliser sur un gène particulier.
 
 2. Pour pouvoir comparer les séquences de Gène S de façon plus fine, fixez la largeur de la fenêtre à *120*  dans : **Settings > General > Size of the sliding window** et cliquez **Update**. Le graphique est mis à jour, et de nouveau, le PPI est affiché pour le génome complet. 
 
@@ -151,11 +151,7 @@ Focalisons-nous maintenant sur le **gène S**.
     
 3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspond au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Selected area > Mean** 
 
-4. Explorez les différents options offertes par l'outil PIPprofileR et repondez aux questions suivantes. Il sera utile à changer le focus de profiles PPI entre le génome complet et le gène S. Comme il est difficile d'afficher plusieurs PPI à la fois, vous trouverez la capture d'éran de PPI de gène S ici : 
-
-<a href="images/PPI_gene_S.png">
-<img src="images/PPI_gene_S.png" alt="PPI de gene S entre le SARSCov2 et qualques génomes proches" width="600px">
-</a>
+4. Explorez les différents options offertes par l'outil PIPprofileR et repondez aux questions suivantes. Il sera utile à changer le focus de profiles PPI entre le génome complet et le gène S. Comme il est difficile d'afficher plusieurs PPI à la fois, vous trouverez la capture d'éran de PPI plus haut.
 
 
 ```question
@@ -185,7 +181,7 @@ Questions 1.1 Interpretation de Pourcentage de Positions Identiques (PPI , en an
 
 ### Exercice 2 - Construction et interprétation des arbres phylogénétiques
 
-Dans cet exercice, vous allez construire une arbre phylogénétique sur base de *protéine Spike* de quelques coronavirus.
+Dans cet exercice, vous allez construire une arbre phylogénétique sur base de la *protéine Spike* de quelques coronavirus.
 
 La construction des arbres suit les étapes suivantes.      
 
@@ -199,13 +195,13 @@ La construction des arbres suit les étapes suivantes.
 
 #### Création d'un arbre par NGphylogeny.fr
 
-Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline pour enchainer tous ces étapes tout en rendent disponible de résultats de chaque étapes. 
+Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline pour enchainer tous ces étapes tout en rendent disponible les résultats de chaque étape. 
 
-1. Téléchargez le fichier [spike_proteins_2021.fasta](../data/spike-protein/spike_proteins_2021.fasta) et enregistrez le sur votre ordinateur. 
+1. Téléchargez le fichier [spike_proteins_2021.fasta](../data/spike-protein/spike_proteins_2021.fasta) et enregistrez-le sur votre ordinateur. 
 
-2. Ce fichier contient les protéines spike de 24 différents coronavirus. 
+2. Ce fichier contient les protéines spike de 24 coronavirus différents. 
 
-3. Rendez vous sur la page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/). 
+3. Allez sur la page d'accueil de [NGphylogeny.fr](https://ngphylogeny.fr/). 
 
 4. Choisissez l'option **A la carte** qui va vous permettre de choisir un logiciel pour chaque étape. 
 
@@ -220,7 +216,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
 7. Sélectionnez le fichier *spike_proteins_2021.fasta* dans la section **Input data**. 
 
-8. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe *+* après le nom des logiciels. Cliquez sur le signe *+* après **FastME** et sélectionnez **yes** pour **Bootstrap branch supports**. Une fenêtre apparait. Entrez *100* à **Number of replicates**. Laissez les autres paramètres par défaut.
+8. Il est possible de paramétrer chaque logiciel de pipeline sur cette page en cliquant sur le signe **+** après le nom des logiciels. Cliquez sur le signe **+** après **FastME** et sélectionnez *yes* pour **Bootstrap branch supports**. Une fenêtre apparait. Entrez *100* à **Number of replicates**. Laissez les autres paramètres par défaut.
 
 8. Cliquez sur **Submit** pour commencer les analyses. 
 
@@ -228,90 +224,74 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
 9. Au fur et à mesure de l'analyse, les liens apparaissent pour pouvoir découvrir le résultat de chaque étape.
 
->Si au bout de 5 minutes https://ngphylogeny.fr apparait bloqué, vous pouvez utiliser le lien suivant pour accéder à une copie de secours des résultats : [Page de Résultats](https://ngphylogeny.fr/workspace/history/27b87941a3bbc668)
+>Si au bout de 5 minutes https://ngphylogeny.fr apparaît bloqué, vous pouvez utiliser le lien suivant pour accéder à une copie de secours des résultats : [Page de Résultats](https://ngphylogeny.fr/workspace/history/27b87941a3bbc668)
 
 #### Analyse des résultats
 
 ##### Alignement multiple
 
-1. Cliquez sur le buton **MSAViewer** de Step 2 (**Muscle alignement**)
+1. Cliquez sur le bouton **MSAViewer** de Step 2 (**Mafft alignement**)
 
-    - Le code couleur vous permet de visualiser facilement les positions conservées : les acides aminés similaires sont colorés par des couleurs de même type. 
+    - Le code couleur vous permet de visualiser facilement les positions conservées : les acides aminés similaires sont colorés par des couleurs voisines. 
     - Les gaps sont indiqués en blanc. 
     - Naviguez de gauche à droite pour explorer l'alignement dans son ensemble.   
+    
+ 2. Identifiez le site de coupure de furine dans l'alignement: cliquez sur **Selection** dans le menu, choisssez **Find Motif** et tapez le motif **PRRA**.
 
-```question
+```questions
 Questions 2.1 - Alignement multiple
 
 2.1.1 Quel est la longueur (nombre de colonnes) de l'alignement ? 
 
-2.1.2 Quelle séquence apparaît la plus divergente par rapport aux autres ?
+2.1.2. A quelle position de l'alignement commence le site de coupure de furine ?
+
+2.1.3. Dans combien de séquences trouvez-vous un site de coupure de furine ?
+
+2.1.4. Quels sont les hôtes des virus contenant des site de coupure de furin ?
 
 Répondez par VRAI ou FAUX
 
-2.1.3 La première moitié de l'alignement contient plus d'indels que la seconde. 
-
-2.1.4 Les lettres de tailles variables au-dessous de chaque position reflètent le niveau de la conservation de chaque site (colonne).
-
+2.1.5 La première moitié de l'alignement contient plus d'indels que la seconde. 
 ```
+
 
 ##### Curation de l'alignement
 
 Cet étape permet de "nettoyer" l'alignement multiple, pour n'en retenir que les sites (colonnes de l'alignement) pertinents pour l'inférence phylogénétique qui suivra.
-Dans un alignement multiple la position des gaps est souvent ambiguë, si les séquences ne sont pas fortement conservées. Pour cette raison, il est préférable de se baser sur les blocks (colonnes contigües dans l’alignent) sans gap pour inférer des arbres phylogénétiques.
-
-Le logiciel *Gblock* ne fait pas qu'enlever les colonnes de l’alignement avec gaps, il élimine aussi les blocks trop courts entre deux gaps, car ces positions se trouvent généralement dans une région relativement peu fiable de l’alignent.
-
+Dans un alignement multiple la position des gaps est souvent ambiguë, si les séquences ne sont pas fortement conservées. Pour cette raison, il est préférable de se baser sur les blocks (colonnes contigües dans l’alignement) sans les gaps ambiguës pour inférer des arbres phylogénétiques.
 
 1. Pour revenir en arrière d'une étape, cliquez sur **Go back**.
 
-2.  **Cliquez sur l'icone .html** de **Step 6 Gblocks Sequences information** pour visualiser les régions de l'alignement retenues par *Gblocks*. Ces régions sont soulignées en bleu foncé. La reconstruction phylogénétique sera basée uniquement sur elles. 
-
-3. Vous pouvez voir l'alignement multiple qui contient uniquement des positions retenues en cliquant sur le bouton **MSAViewer** de **Step 5 Gblocks Cleaned sequences**.
+2.  Cliquez sur **MSAViewer** de **Step 6 BMGE Cleaned sequences Fasta** pour visualiser les régions de l'alignement retenues par *BMGE*. La reconstruction phylogénétique sera basée uniquement sur celles-ci. 
 
 ```question
 Questions 2.2 - Curation de l'alignement
 
-2.2.1 Combien de positions ont été retenues pour la construction de l'arbre par Gblocks ?
+2.2.1 Combien de positions ont été retenues pour la construction de l'arbre par BMGE ?
 
-2.2.2 Combien de régions (blocks) ont été sélectionnées ?
+2.2.2 Combien de positions ont été suprimées par BMGE ?
 
-2.2.3 Combien de positions contient la région (block) la plus longue ?
+2.2.3 Y a-t-il encore des gaps dans cet alignement ?
 
 ```
 
 ##### Manipulation et interprétation de l'arbre
 
-1. Cliquez sur le bouton **Viewer** de **Step 8 PhyML newick tree** pour visualiser l'arbre.
+1. Cliquez sur le bouton **Viewer** de **Step 15 Output Tree** pour visualiser l'arbre.
 
-2. L'arbre produit par la méthode de *Maximum de vraisemblance* (logiciel *PhyML*) est enraciné par un méthode automatique, généralement peu fiable. Nous pouvons placer la racine correctement (re-enraciner l'arbre) en nous basant sur nos connaissances à priori. Par exemple, vous pouvez choisir l'emplacement de la racine sur base de l'arbre des génomes ([Figure1](../figures/Figure_1_PhyML_based_on_genomes.PNG)). 
-
-```question
-
-Questions 2.3 - Position de la racine
-
-Répondez par VRAI ou FAUX
-
-2.3.1 En se basant sur l'arbre des génomes de Figure 1 du tutoriel, la racine de l'arbre de protéines Spike devrait être placée entre la séquence de HuMERS_172-06_2015 et les autres.
-
-2.3.2 La longueur de la branche de la séquence HuMERS_172-06_2015 soutient la réponse à la question précédente.
-
-```
-
-3. Cliquez sur n'importe quel noeud de l'arbre (ou séquence, du point de vue mathématique les séquences sont considérées comme noeuds). Un menu apparait. Choisissez **Reroot on this node**. pour placer la racine entre ce noeud et le reste de l'arbre. 
-
-4. Prenez le temps de découvrir les différentes options d'affichage 
+2. Prenez le temps de découvrir les différentes options d'affichage 
 
     - *Phylogram/Dendogram*
     - *Linear/Radial/Slanted*
     - *Display support values* : affiche les valeur de robustesse de chaque nœud
     - *Display branch length* : affiche la longueur de chaque branche (nombre des mutation per site)
 
-5.  Ré-enracinez correctement votre arbre PhyML. 
+3. L'arbre produit par la méthode de *FastME*  n'est pas enraciné. Cliquez sur n'importe quel noeud de l'arbre (ou séquence, du point de vue mathématique les séquences sont considérées comme noeuds). Un menu apparait. Choisissez **Reroot on this node**. pour placer la racine entre ce noeud et le reste de l'arbre. 
 
+4. Placez la séquneces **Rhinolophus_cornutus_Rco319_LC556375_Japan_2013_CDS_S** comme groupe extérieur.
 
 ```question
-Questions 2.4 - Interprétation de l'arbre
+Questions 2.3 - Interprétation de l'arbre
 
 2.4.1 Selon votre arbre, quelle(s) séquence(s) de virus de chauves-souris (identifiant commençant par par Bt) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
 
@@ -324,7 +304,17 @@ Questions 2.4 - Interprétation de l'arbre
 	a. Non, selon l'arbre de génomes la séquence PnMP789 est plus proche de la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est la plus eloignée parmi les trois séquences de virus de pangolins.
 	b. Oui, les 3 séquences des virus des pangolins sont tout aussi proches de HuCoV2_WH01_2019 dans les deux arbres.
 	c. Oui, selon les deux arbres la séquence PnMP789 est plus proche de la séquence HuCoV2_WH01_2019 que les deux autres.
+	
+	
+2.3.1 De quel hôte vient la séquence virale la plus proche des séquences de SARS-Cov2 sur humain ?
 
+2.3.2. Selon cet arbre sur les données de proteine spike, combien de fois le pangolin aurait-il été contaminé à partir de chauve souris ?
+
+2.3.4. Combien d'espèces de chauve-souris sont reprises dans ce dendrogramme ?
+
+2.3.5. Combien de genres de chauve-souris sont repris dans ce dendrogramme ?
+
+2.3.6. Une phylogénie obtenue sur l'ensemble du génome plutôt que sur la protéine spike donnerait-elle un  dendrogramme avec le même ordre des branchements (topologie) ?
 ```
 
 
@@ -338,7 +328,6 @@ Questions 2.4 - Interprétation de l'arbre
 | NCBI Entrez | Bases de données biologiques | [www.ncbi.nlm.nih.gov/](https://www.ncbi.nlm.nih.gov/) |
 | EMBOSS needle | Alignement de paires de séquences | [www.ebi.ac.uk/Tools/psa/emboss_needle/](https://www.ebi.ac.uk/Tools/psa/emboss_needle/) |
 | NCBI BLAST | Recherche de séquences par similarité | [blast.ncbi.nlm.nih.gov/Blast.cgi](https://blast.ncbi.nlm.nih.gov/Blast.cgi) |
-| PIPprofileR |Serveur temporaire pour ce TP-ci | [134.158.247.37:443/app/PIPprofileR](http://134.158.247.37:443/app/PIPprofileR/) |
 | PIPprofileR | Profils de pourcentages de positions identiques. Adresse permanente | [pipprofiler.france-bioinformatique.fr/](https://pipprofiler.france-bioinformatique.fr/) |
 | Clustal | Alignement multiple | [www.ebi.ac.uk/Tools/msa/clustalo/](https://www.ebi.ac.uk/Tools/msa/clustalo/) |
 | phylogeny.fr | Phylogénie moléculaire | [www.phylogeny.fr/](https://ngphylogeny.fr/) |
