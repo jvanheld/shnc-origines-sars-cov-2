@@ -304,6 +304,12 @@ Questions 2.3 - Interprétation de l'arbre
 ```
 
 
+Les séquences de cet exercices sont courtoisement fournies par Marc Eloit. 
+Pour aller plus loin:
+Temmam S, Vongphayloth K, Salazar EB, et al. Coronaviruses with a SARS-CoV-2-like receptor-binding domain allowing ACE2-mediated entry into human cells isolated from bats of Indochinese peninsula. In Review, 2021 [DOI:10.21203/rs.3.rs-871965/v1](https://www.researchsquare.com/article/rs-871965/v1).
+
+
+
 ## Ressources bioinformatiques
 
 
