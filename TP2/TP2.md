@@ -33,7 +33,7 @@ Le matériel de support est disponible ici: [[diapos CM1](../slides/NC3_enquete
 
 * Biologie de SARS-CoV-2
 * Bases de données biologiques
-* Alignement par paire
+* Alignement par paires
 * Recherche de séquences par similarité
 * Profil d'identité
 * Alignement multiple
@@ -127,16 +127,18 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
 
 9. Vous pouvez sélectionner des couleurs pour chaque séquence. Ce choix de couleur est très pratique si vous voulez mettre en valeur des séquences d'intérêt.
 
-    - Allez dans **Settings** > **Colors**
-    - Choisissez une séquence du menu déroulant et un couleur, en ajustant des curseurs de la boite **Select color**. 
-    - Faites un mise à jour (**Update**) après chaque séquence. 
+    - Allez dans **Settings** (en bas de la page) > **Colors** 
+    Nous vous conseillons les couleurs suivantes:
 
-   Nous vous conseillons les couleurs suivants
-    
     - Bleu : Rhinolophus_affinis_RaTG13_2013_Yunnan
     - Rouge : Rhinolophus_malayanus_CoV_BANAL_20_52
     - Noir : Rhinolophus_malayanus_CoV_BANAL_20_116
     - Vert : Manis_javanica_MP789
+    
+    - Choisissez une séquence du menu déroulant et un couleur, en ajustant des curseurs de la boite **Select color**. 
+    - Faites un mise à jour (**Update**) après chaque séquence. 
+
+   
 
 <a href="images/PPI_genome_2021.png">
 <img src="images/PPI_genome_2021.png" alt="Fenêtre de paramétrage et filtrage des séquences" width="600px">
@@ -152,7 +154,7 @@ Focalisons-nous maintenant sur le **gène S**.
     
 3. Sélectionnez à l'aide du curseur un rectangle englobant la partie du graphique qui correspond au gène S. Les pourcentages d'identité moyens sur la région sélectionnée sont affichés dans **Exploration PIP > Selected area > Mean** 
 
-4. Explorez les différents options offertes par l'outil PIPprofileR et repondez aux questions suivantes. Il sera utile à changer le focus de profiles PPI entre le génome complet et le gène S. Comme il est difficile d'afficher plusieurs PPI à la fois, vous trouverez la capture d'éran de PPI plus haut.
+4. Explorez les différents options offertes par l'outil PIPprofileR et repondez aux questions suivantes. Il sera utile de changer le focus de profiles PPI entre le génome complet et le gène S. Comme il est difficile d'afficher plusieurs PPI à la fois, vous trouverez la capture d'écran de PPI plus haut.
 
 
 ```question
@@ -170,7 +172,7 @@ Questions 1.1 Interpretation de Pourcentage de Positions Identiques (PPI , en an
 
 1.1.6 Quel génome possède un gène S le plus similaire au gène S de SARS-Cov2 ?
 
-1.1.7 Quel génome possède un gène S est le moins similaire au gène S de SARS-Cov2 ?
+1.1.7 Quel génome possède un gène S le moins similaire au gène S de SARS-Cov2 ?
 
 1.1.8 Les génomes SARS-Cov2 et Rhinolophus_malayanus_CoV_BANAL_20_116 sont fort similaires sur la majorité du génome. Sur quel gène sont-ils les plus divergents ?
 (Ne tenez pas compte des 600 premiers éléments de la séquence où nous suspectons un problème de séquençage/assemblage)
@@ -194,7 +196,7 @@ La construction des arbres suit les étapes suivantes.
 
 #### Création d'un arbre par NGphylogeny.fr
 
-Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline pour enchainer tous ces étapes tout en rendent disponible les résultats de chaque étape. 
+Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline pour enchainer tous ces étapes tout en rendant disponible les résultats de chaque étape. 
 
 1. Téléchargez le fichier [spike_proteins_2021.fasta](../data/spike-protein/spike_proteins_2021.fasta) et enregistrez-le sur votre ordinateur. 
 
@@ -233,7 +235,7 @@ Le site de [NGphylogeny.fr](https://ngphylogeny.fr/) permet de faire un pipeline
 
     - Le code couleur vous permet de visualiser facilement les positions conservées : les acides aminés similaires sont colorés par des couleurs voisines. 
     - Les gaps sont indiqués en blanc. 
-    - Naviguez de gauche à droite pour explorer l'alignement dans son ensemble.   
+    - Naviguez de gauche à droite et de haut en bas pour explorer l'alignement dans son ensemble.   
     
  2. Identifiez le site de coupure de furine dans l'alignement: cliquez sur **Selection** dans le menu, choisssez **Find Motif** et tapez le motif **PRRA**.
 
@@ -257,7 +259,7 @@ Répondez par VRAI ou FAUX
 ##### Curation de l'alignement
 
 Cet étape permet de "nettoyer" l'alignement multiple, pour n'en retenir que les sites (colonnes de l'alignement) pertinents pour l'inférence phylogénétique qui suivra.
-Dans un alignement multiple la position des gaps est souvent ambiguë, si les séquences ne sont pas fortement conservées. Pour cette raison, il est préférable de se baser sur les blocks (colonnes contigües dans l’alignement) sans les gaps ambiguës pour inférer des arbres phylogénétiques.
+Dans un alignement multiple la position des gaps est souvent ambiguë, si les séquences ne sont pas fortement conservées. Pour cette raison, il est préférable de se baser sur les blocks (colonnes contigües dans l’alignement) sans les gaps ambigus pour inférer des arbres phylogénétiques.
 
 1. Pour revenir en arrière d'une étape, cliquez sur **Go back**.
 
@@ -283,11 +285,11 @@ Questions 2.2 - Curation de l'alignement
     - *Phylogram/Dendogram*
     - *Linear/Radial/Slanted*
     - *Display support values* : affiche les valeur de robustesse de chaque nœud
-    - *Display branch length* : affiche la longueur de chaque branche (nombre des mutation per site)
+    - *Display branch length* : affiche la longueur de chaque branche (nombre de mutations par site)
 
 3. L'arbre produit par la méthode de *FastME*  n'est pas enraciné. Cliquez sur n'importe quel noeud de l'arbre (ou séquence, du point de vue mathématique les séquences sont considérées comme noeuds). Un menu apparait. Choisissez **Reroot on this node**. pour placer la racine entre ce noeud et le reste de l'arbre. 
 
-4. Placez la séquneces **Rhinolophus_cornutus_Rco319_LC556375_Japan_2013_CDS_S** comme groupe extérieur.
+4. Placez la séqunece **Rhinolophus_cornutus_Rco319_LC556375_Japan_2013_CDS_S** comme groupe extérieur.
 
 ```question
 Questions 2.3 - Interprétation de l'arbre
