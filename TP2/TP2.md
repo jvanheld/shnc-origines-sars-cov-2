@@ -131,7 +131,8 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
     - Choisissez une séquence du menu déroulant et un couleur, en ajustant des curseurs de la boite **Select color**. 
     - Faites un mise à jour (**Update**) après chaque séquence. 
 
-Nous vous conseillons les couleurs suivants
+   Nous vous conseillons les couleurs suivants
+    
     - Bleu : Rhinolophus_affinis_RaTG13_2013_Yunnan
     - Rouge : Rhinolophus_malayanus_CoV_BANAL_20_52
     - Noir : Rhinolophus_malayanus_CoV_BANAL_20_116
@@ -159,21 +160,19 @@ Questions 1.1 Interpretation de Pourcentage de Positions Identiques (PPI , en an
 
 1.1.1 Quel est le génome le plus similaire au génome de SARS-Cov2 ?
 
-1.1.2 Sur combien de portions de la séquence ce virus a-t-il plus de 10% de différence qu'une autre séquence comparée à la séquence de référence ?
+1.1.2 Quels sont les hôtes des virus ayant des portions plus proches de la séquences de référence que RaTG13 (Rhinolophus_affinis_RaTG13) sur le gène S? 
 
-1.1.3 Quels sont les hôtes des virus ayant des portions plus proches de la séquences de référence que RaTG13 (Rhinolophus_affinis_RaTG13) sur le gène S? 
+1.1.3 Les séquences issues des virus trouvés sur Rhinolophus malayanus ont été découvertes en 2021. Pourquoi a-t-on pensé en 2019 que SARS-Cov2 pourrait venir du pangolin (Manis javanica) ?
 
-1.1.4 Les séquences issues des virus trouvés sur Rhinolophus malayanus ont été découvertes en 2021. Pourquoi a-t-on pensé en 2019 que SARS-Cov2 pourrait venir du pangolin (Manis javanica) ?
+1.1.4 Sur quel gène se base l'hypothèse de 2019 selon laquelle le pangolin était le dernier hôte non humain de SARS-COV-2 ?
 
-1.1.5 Sur quel gène se base l'hypothèse de 2019 selon laquelle le pangolin était le dernier hôte non humain de SARS-COV-2 ?
+1.1.5 Pourquoi la découverte du virus Rhinolophus_malayanus_CoV_BANAL_20_52 est-elle importante? 
 
-1.1.6 Pourquoi la découverte du virus Rhinolophus_malayanus_CoV_BANAL_20_52 est-elle importante? 
+1.1.6 Quel génome possède un gène S le plus similaire au gène S de SARS-Cov2 ?
 
-1.1.7 Quel génome possède un gène S le plus similaire au gène S de SARS-Cov2 ?
+1.1.7 Quel génome possède un gène S est le moins similaire au gène S de SARS-Cov2 ?
 
-1.1.8 Quel génome possède un gène S est le moins similaire au gène S de SARS-Cov2 ?
-
-1.1.9 Les génomes SARS-Cov2 et Rhinolophus_malayanus_CoV_BANAL_20_116 sont fort similaires sur la majorité du génome. Sur quel gène sont-ils les plus divergents ?
+1.1.8 Les génomes SARS-Cov2 et Rhinolophus_malayanus_CoV_BANAL_20_116 sont fort similaires sur la majorité du génome. Sur quel gène sont-ils les plus divergents ?
 (Ne tenez pas compte des 600 premiers éléments de la séquence où nous suspectons un problème de séquençage/assemblage)
 
 ```
@@ -293,28 +292,15 @@ Questions 2.2 - Curation de l'alignement
 ```question
 Questions 2.3 - Interprétation de l'arbre
 
-2.4.1 Selon votre arbre, quelle(s) séquence(s) de virus de chauves-souris (identifiant commençant par par Bt) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
-
-
-2.4.2 Selon votre arbre, quelle(s) séquence(s) de virus de pangolins (identifiant commençant par Pn) est/sont les plus proches de la protéine Spike de SARS-CoV-2 (HuCoV2_WH01_2019) ?
-
-
-2.4.3 Ceci est-il cohérent avec l'arbre des génomes de la Figure 1 du tutoriel ?
-
-	a. Non, selon l'arbre de génomes la séquence PnMP789 est plus proche de la séqunece HuCoV2_WH01_2019 que les deux autres. Dans l'arbre de protéine spike, elle est la plus eloignée parmi les trois séquences de virus de pangolins.
-	b. Oui, les 3 séquences des virus des pangolins sont tout aussi proches de HuCoV2_WH01_2019 dans les deux arbres.
-	c. Oui, selon les deux arbres la séquence PnMP789 est plus proche de la séquence HuCoV2_WH01_2019 que les deux autres.
-	
-	
 2.3.1 De quel hôte vient la séquence virale la plus proche des séquences de SARS-Cov2 sur humain ?
 
 2.3.2. Selon cet arbre sur les données de proteine spike, combien de fois le pangolin aurait-il été contaminé à partir de chauve souris ?
 
-2.3.4. Combien d'espèces de chauve-souris sont reprises dans ce dendrogramme ?
+2.3.3. Combien d'espèces de chauve-souris sont reprises dans ce dendrogramme ?
 
-2.3.5. Combien de genres de chauve-souris sont repris dans ce dendrogramme ?
+2.3.4. Combien de genres de chauve-souris sont repris dans ce dendrogramme ?
 
-2.3.6. Une phylogénie obtenue sur l'ensemble du génome plutôt que sur la protéine spike donnerait-elle un  dendrogramme avec le même ordre des branchements (topologie) ?
+2.3.5. Une phylogénie obtenue sur l'ensemble du génome plutôt que sur la protéine spike donnerait-elle un  dendrogramme avec le même ordre des branchements (topologie) ?
 ```
 
 
