@@ -141,12 +141,14 @@ Les tutoriels sont entrecoupés des questions auxquelles vous pouvez répondre e
    
 
 <a href="images/PPI_genome_2021.png">
-<img src="images/PPI_genome_2021.png" alt="Capture d'écran de PPI SRARS-Cov-2 genome" width="600px">
+<img src="images/PPI_genome_2021.png" alt="Capture d'écran de PPI SARS-Cov-2 genome" width="600px">
 </a>
+Capture d'écran de PPI de quelques génomes contre le génome de SARS-Cov-2
 
 <a href="images/PPI_gene_S_2021.png">
 <img src="images/PPI_gene_S_2021.png" alt="Capture d'écran de PPI SRARS-Cov-2 gene S" width="600px">
 </a>
+Capture d'écran de PPI de quelques gènes S contre le gène S de SARS-Cov-2
 
 Focalisons-nous maintenant sur le **gène S**.
 
